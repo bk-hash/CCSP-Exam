@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CCSP Exam Quiz and Flashcards</title>
+    <script src="https://cdn.jsdelivr.net/npm/react@18.2.0/umd/react.development.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/react-dom@18.2.0/umd/react-dom.development.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@babel/standalone@7.18.9/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./generatedQuestions_domain1.js"></script>
+    <script src="./generatedQuestions_domain2.js"></script>
+    <script src="./generatedQuestions_domain3.js"></script>
+    <script src="./generatedQuestions_domain4.js"></script>
+    <script src="./generatedQuestions_domain5.js"></script>
+    <script src="./generatedQuestions_domain6.js"></script>
+    <script src="./alldomains_quiz.js"></script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      const { useState, useEffect } = React;
+
+      // Function to shuffle an array
+      const shuffleArray = (array) => {
+        for (let i = array.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+      };
+
+      // Combine all questions from different domains
+      const combineQuestions = () => {
+        const allQuestions = [
+          ...quizQuestionsDomain1,
+          ...quizQuestionsDomain2,
+          ...quizQuestionsDomain3,
+          ...quizQuestionsDomain4,
+          ...quizQuestionsDomain5,
+          ...quizQuestionsDomain6,
+        ];
+        return shuffleArray(allQuestions);
+      };
+
+      const App = () => {
+        const [questions, setQuestions] = useState([]);
+
+        useEffect(() => {
+          setQuestions(combineQuestions());
+        }, []);
+
+        return (
+          <div>
+            <h1 className="text-2xl font-bold">CCSP Quiz</h1>
+            {/* Render questions here */}
+            {questions.map((question, index) => (
+              <div key={index} className="my-4 p-4 border rounded">
+                <h2 className="font-semibold">{question.question}</h2>
+                <ul>
+                  {question.options.map((option, i) => (
+                    <li key={i}>{option}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        );
+      };
+
+      ReactDOM.render(<App />, document.getElementById('root'));
+    </script>
+  </body>
+</html>
