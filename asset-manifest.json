@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/CCSP-Exam/js-quiz-app/static/css/main.e6c13ad2.css",
+    "main.js": "/CCSP-Exam/js-quiz-app/static/js/main.91fa068a.js",
+    "static/js/453.feb066c5.chunk.js": "/CCSP-Exam/js-quiz-app/static/js/453.feb066c5.chunk.js",
+    "index.html": "/CCSP-Exam/js-quiz-app/index.html",
+    "main.e6c13ad2.css.map": "/CCSP-Exam/js-quiz-app/static/css/main.e6c13ad2.css.map",
+    "main.91fa068a.js.map": "/CCSP-Exam/js-quiz-app/static/js/main.91fa068a.js.map",
+    "453.feb066c5.chunk.js.map": "/CCSP-Exam/js-quiz-app/static/js/453.feb066c5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c13ad2.css",
+    "static/js/main.91fa068a.js"
+  ]
+}
