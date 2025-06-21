@@ -1,7 +1,11 @@
 {
   "name": "ccsp-quiz-flashcards",
   "version": "0.1.0",
+<<<<<<< HEAD
   "homepage": "https://bk-hash.github.io/CCSP-Exam/js-quiz-app/",
+=======
+  "homepage": "https://bk-hash.github.io/CCSP-Exam/js-quiz-app/"
+>>>>>>> 88eea6b7b119f5e987ebb17510b3084acd0752c3
   "private": true,
   "dependencies": {
     "@testing-library/dom": "^10.4.0",
