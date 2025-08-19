@@ -44,4 +44,34 @@ domains.forEach(domain => {
 });
 
 fs.writeFileSync('flashcards.generated.json', JSON.stringify(flashcards, null, 2));
-console.log(`Generated ${flashcards.length} flashcards.`);
+// --- Added from test practice.txt ---
+// The following is valid JSON array data, not executable JS:
+/*
+[
+  {
+    "domain": "Cloud Concepts, Architecture and Design",
+    "term": "Notorious Nine",
+    "definition": "A list of common threats to cloud computing published by the Cloud Security Alliance (CSA)."
+  },
+  {
+    "domain": "Cloud Data Security",
+    "term": "GLBA Opt Out",
+    "definition": "Under the Gramm-Leach-Bliley Act, subjects must opt out to prevent vendors from sharing their personal data."
+  },
+  {
+    "domain": "Cloud Platform and Infrastructure Security",
+    "term": "Type 1 Hypervisor Risk",
+    "definition": "Type 1 hypervisors are preferred targets for attackers due to their greater attack surface."
+  },
+  {
+    "domain": "Cloud Application Security",
+    "term": "Buffer Overflow Attack",
+    "definition": "Occurs when input exceeds buffer storage, potentially allowing code execution."
+  },
+  {
+    "domain": "Cloud Concepts, Architecture and Design",
+    "term": "Multitenancy Risk",
+    "definition": "Multitenancy increases risk of malicious insiders in cloud environments."
+  }
+]
+*/

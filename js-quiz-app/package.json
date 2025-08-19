@@ -1,7 +1,7 @@
 {
   "name": "js-quiz-app",
   "version": "1.0.0",
-  "homepage": "https://bk-hash.github.io/CCSP-Exam/js-quiz-app/",
+  "homepage": "https://bk-hash.github.io/CCSP-Exam/",
   "description": "A JavaScript quiz application with timed quizzes and practice mode.",
   "main": "src/app.js",
   "scripts": {
@@ -20,12 +20,12 @@
   "author": "bk-hash",
   "license": "MIT",
   "dependencies": {
-    "live-server": "^1.2.1",
-    "webpack": "^5.64.4",
-    "webpack-cli": "^4.9.1",
-    "gh-pages": "^6.0.0"
+    "gh-pages": "^6.0.0",
+    "live-server": "^1.2.1"
   },
   "devDependencies": {
+    "webpack": "^5.99.9",
+    "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^3.11.2"
   }
 }

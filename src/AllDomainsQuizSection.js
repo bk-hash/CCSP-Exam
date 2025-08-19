@@ -34,7 +34,7 @@ function AllDomainsQuizSection() {
   return (
     <div>
       <h2 style={{ color: "#2196f3", textAlign: "center" }}>All Domains Quiz</h2>
-      <Quiz questions={allQuestions} showScore={true} />
+      <Quiz questions={allQuestions} showScore={true} sessionKey="all-domains-quiz" />
     </div>
   );
 }

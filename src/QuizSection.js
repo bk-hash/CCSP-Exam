@@ -68,7 +68,7 @@ function QuizSection() {
           ))}
         </select>
       </div>
-      <Quiz questions={questions} showScore={true} />
+      <Quiz questions={questions} showScore={true} sessionKey={`domain-quiz-${selectedDomain}`} />
     </div>
   );
 }

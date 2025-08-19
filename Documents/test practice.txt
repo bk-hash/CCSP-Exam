@@ -1,0 +1,3238 @@
+
+Chapter 1  ■  Domain 1:  Cloud Concepts, Architecture, and Design 23
+   104.    The Cloud Security Alliance (CSA) publishes the Notorious Nine, a list of common threats
+to organizations participating in cloud computing. According to the CSA, what aspect of 
+managed cloud services makes the threat of malicious insiders so alarming? 
+  A.  Scalability 
+  
+B.  Multitenancy 
+  C.  Metered service 
+  
+D.  Flexibility
+   
+105.    The Cloud Security Alliance (CSA) publishes the Notorious Nine, a list of common threats 
+to organizations participating in cloud computing. According to the CSA, what aspect of 
+managed cloud services makes the threat of abuse of cloud services so alarming from a
+management perspective? 
+  A.  Scalability 
+  B.  Multitenancy 
+  C.  Resiliency 
+  D.  Broadband connections
+   106.    The Cloud Security Alliance (CSA) publishes the Notorious Nine, a list of common threats
+to organizations participating in cloud computing. According to the CSA, which of the 
+following is  not  an aspect of due diligence that the cloud customer should be concernedt
+with when considering a migration to a cloud provider? 
+  A.  Ensuring that any legacy applications are not dependent on internal security controls
+before moving them to the cloud environment
+  B.  Reviewing all contractual elements to appropriately define each party’s roles,
+responsibilities, and requirements
+  C.  Assessing the provider’s financial standing and soundness
+  D.  Vetting the cloud provider’s administrators and personnel to ensure the same level of 
+trust as the legacy environment       
+   1 07.    The Cloud Security Alliance (CSA) publishes the Notorious Nine, a list of common
+threats to organizations participating in cloud computing. A cloud customer that does not
+perform sufficient due diligence can suffer harm if the cloud provider they’ve selected goes 
+out of business. What do we call this problem? 
+  A.  Vendor lock-in
+  B.  Vendor lockout 
+  C.  Vendor incapacity
+  
+D.  Unscaled       
+   108.    Which of the following is  not 
+ a method for creating logical segmentation in a cloud datat
+center?
+  
+A.  Virtual local area networks (VLANs)
+  B.  Network address translation (NAT)
+  C.  Bridging 
+  
+D.  Hubs       
+24 Chapter 1  ■  Domain 1:  Cloud Concepts, Architecture, and Design
+   
+109.    According to (ISC) 2 
+, the lack/ambiguity of physical endpoints as individual network
+components in the cloud environment creates what kind of threat/concern?
+  A.  The lack of defined endpoints makes it difficult to uniformly define, manage, and
+protect IT assets.
+  
+B.  Without physical endpoints, it is impossible to apply security controls to an
+environment. 
+  C.  Without physical endpoints, it is impossible to track user activity. 
+  
+D.  The lack of physical endpoints increases the opportunity for physical theft/damage.
+  
+ 110.    When should cloud providers allow platform as a service (PaaS) customers shell access to 
+the servers running their instances? 
+  
+A.  Never 
+  
+B.  Weekly
+  C.  Only when the contract stipulates that requirement
+  D.  Always
+  
+ 111.    In a PaaS implementation, each instance should have its own user-level permissions; 
+when instances share common policies/controls, the cloud security professional should be 
+careful to reduce the possibility of  and 
+over time. 
+  A.  Denial of service (DoS)/physical theft
+  
+B.  Authorization creep/inheritance
+  C.  Sprawl/hashing 
+  
+D.  Intercession/side-channel attacks
+  
+ 112.    In a platform as a service (PaaS) environment, user access management often requires that
+data about user activity be collected, analyzed, audited, and reported against rule-based 
+criteria. These criteria are usually based on . 
+  A.  International standards
+  
+B.  Federal regulations
+  C.  Organizational policies
+  
+D.  Federation directives
+  
+ 113.    An essential element of access management,  is the practice of 
+confirming that an individual is who they claim to be. 
+  A.  Authentication
+  B.  Authorization
+  C.  Nonrepudiation 
+  D.  Regression
+Chapter 1  ■  Domain 1:  Cloud Concepts, Architecture, and Design 25
+  
+ 114.    An essential element of access management,  is the practice of 
+granting permissions based on validated identification.
+  A.  Authentication
+  
+B.  Authorization
+  C.  Nonrepudiation 
+  
+D.  Regression
+  
+ 115.    What is the usual order of an access management process? 
+  A.  Access-authorization-authentication
+  B.  Authentication-authorization-access
+  C.  Authorization-authentication-access
+  D.  Authentication-access-authorization
+  
+ 116.    Why are platform as a service (PaaS) environments at a higher likelihood of suffering 
+backdoor vulnerabilities? 
+  A.  They rely on virtualization.
+  
+B.  They are often used for software development.
+  C.  They have multitenancy. 
+  
+D.  They are scalable.
+  
+ 117.    Backdoors are sometimes left in software by developers .
+  
+A.  In lieu of other security controls
+  
+B.  As a means to counter denial of service (DoS) attacks 
+  C.  Inadvertently or on purpose 
+  
+D.  As a way to distract attackers
+  
+ 118.    Alice is staging an attack against Bob’s website. She is able to introduce a string of 
+command code into a database Bob is running, simply by entering the command string 
+into a data field. This is an example of which type of attack?
+  A.  Insecure direct object reference
+  
+B.  Buffer overflow 
+  C.  SQL injection 
+  D.  Denial of service       
+  
+ 119.    Bob is staging an attack against Alice’s website. He is able to embed a link on her site that 
+will execute malicious code on a visitor’s machine if the visitor clicks on the link. This is 
+an example of which type of attack?
+  A.  Cross-site scripting
+  B.  Broken authentication/session management
+  C.  Security misconfiguration 
+  D.  Insecure cryptographic storage       
+26 Chapter 1  ■  Domain 1:  Cloud Concepts, Architecture, and Design
+   120.    Alice is staging an attack against Bob’s website. She has discovered that Bob has been 
+storing cryptographic keys on a server with a default admin password and is able to get 
+access to those keys and violate confidentiality and access controls. This is an example of 
+which type of attack?
+  A.  SQL injection
+  
+B.  Buffer overflow 
+  C.  Using components with known vulnerabilities
+  
+D.  Security misconfiguration
+  
+ 121.    Which of the following is a management risk that organizations migrating to the cloud 
+will have to address? 
+  A.  Insider threat
+  
+B.  Virtual sprawl 
+  C.  Distributed denial of service (DDoS) attacks
+  D.  Natural disasters       
+   
+122.    Which kind of hypervisor is the preferred target of attackers, and why?
+  
+A.  Type 1, because it is more straightforward
+  
+B.  Type 1, because it has a greater attack surface 
+  C.  Type 2, because it is less protected
+  
+D.  Type 2, because it has a greater attack surface
+   123.    Which of the following would make a good provision to include in the service-level 
+agreement (SLA) between cloud customer and provider?
+  A.  Location of the data center
+  B.  Amount of data uploaded/downloaded during a pay period
+  C.  Type of personnel security controls for network administrators
+  
+D.  Physical security barriers on the perimeter of the data center campus
+   124.    What is the  most 
+ significant aspect of the service-level agreement (SLA) that incentivizes t
+the cloud provider to perform? 
+  A.  The thoroughness with which it details all aspects of cloud processing
+  B.  The financial penalty for not meeting service levels 
+  C.  The legal liability for violating data breach notification requirements 
+  D.  The risk exposure to the cloud provider       
+   125.    From a customer perspective, all of the following are benefits of infrastructure as a service
+(IaaS) cloud services  except . 
+  A.  Reduced cost of ownership
+  B.  Reduced energy costs
+  C.  Metered usage
+  D.  Reduced cost of administering the operating system (OS) in the cloud environment
+Chapter 1  ■  Domain 1:  Cloud Concepts, Architecture, and Design 27
+   
+126.    From an academic perspective, what is the main distinction between an event and an
+incident?
+  A.  Incidents can last for extended periods (days or weeks), whereas an event is
+momentary. 
+  
+B.  Incidents can happen at the network level, whereas events are restricted to the system
+level.
+  C.  Events are anything that can occur in the IT environment, whereas incidents are 
+unscheduled events. 
+  
+D.  Events occur only during processing, whereas incidents can occur at any time.       
+  
+ 127.    The cloud computing characteristic of elasticity promotes which aspect of the CIA triad?
+  
+A.  Confidentiality
+  B.  Integrity 
+  C.  Availability 
+  D.  None
+   
+128.    A hosted cloud environment is great for an organization to use as . 
+  A.  Storage of physical assets
+  B.  A testbed/sandbox
+  C.  A platform for managing unsecured production data 
+  D.  A cost-free service for meeting all user needs       
+   129.    What is the entity that created the Statement on Standards for Attestation Engagements
+(SSAE) auditing standard and certifies auditors for that standard?
+  
+A.  National Institute of Standards and Technology (NIST) 
+  B.  European Network and Information Security Agency (ENISA) 
+  C.  General Data Protection Regulation (GDPR) 
+  D.  American Institute of Certified Public Accountants (AICPA)
+   130.    The current American Institute of Certified Public Accountants (AICPA) standard codifies 
+certain audit reporting mechanisms. What are these called? 
+  
+A.  Sarbanes-Oxley Act (SOX) reports
+  B.  Secure Sockets Layer (SSL) audits
+  C.  Sherwood Applied Business Structure Architecture (SABSA)
+  
+D.  System and Organization Controls (SOC) reports
+  
+ 1 31.    Which of the following is  not 
+ a report used to assess the design and selection of securityt
+controls within an organization? 
+  
+A.  Consensus Assessments Initiative Questionnaire (CAIQ)
+  B.  Cloud Security Alliance Cloud Controls Matrix (CSA CCM)
+  C.  SOC 1 
+  
+D.  SOC 2 Type 1
+28 Chapter 1  ■  Domain 1:  Cloud Concepts, Architecture, and Design
+   
+132.    Which of the following is a report used to assess the implementation and effectiveness of 
+security controls within an organization? 
+  A.  SOC 1 
+  
+B.  SOC 2 Type 1
+  C.  SOC 2 Type 2
+  
+D.  SOC 3
+   
+133.  is an example of due care, and  is an 
+example of due diligence. 
+  A.  Privacy data security policy; auditing the controls dictated by the privacy data
+security policy
+  
+B.  The European Union General Data Protection Regulation (GDPR); the Gramm-
+Leach-Bliley Act (GLBA) 
+  C.  Locks on doors; turnstiles 
+  D.  Perimeter defenses; internal defenses
+   134.    In a Lightweight Directory Access Protocol (LDAP) environment, each entry in a directory 
+server is identified by a . 
+  A.  Domain name (DN)
+  B.  Distinguished name (DN)
+  C.  Directory name (DN)
+  D.  Default name (DN)
+   135.    Each of the following is an element of the Identification phase of the identity and access
+management (IAM) process  except . 
+  A.  Provisioning
+  B.  Inversion
+  C.  Management
+  D.  Deprovisioning       
+   136.    Which of the following is true about two-person integrity? 
+  
+A.  It forces all employees to distrust one another.
+  B.  It requires two different identity and access management matrices (IAM). 
+  C.  It forces collusion for unauthorized access.
+  
+D.  It enables more thieves to gain access to the facility.
+  
+ 1 37.    All of the following are statutory regulations except  the t . 
+  
+A.  Gramm-Leach-Bliley Act (GLBA)
+  B.  Health Information Portability and Accountability Act (HIPAA) 
+  C.  Federal Information Systems Management Act (FISMA)
+  
+D.  Payment Card Industry Data Security Standard (PCI DSS)       
+Chapter 1  ■  Domain 1:  Cloud Concepts, Architecture, and Design 29
+   
+138.    A cloud data encryption situation where the cloud customer retains control of the 
+encryption keys and the cloud provider only processes and stores the data could be
+considered a . 
+  A.  Threat
+  
+B.  Risk 
+  C.  Hybrid cloud deployment model
+  
+D.  Case of infringing on the rights of the provider
+   139.    Which of the following is one of the benefits of a private cloud deployment?
+  
+A.  Less cost
+  
+B.  Higher performance 
+  C.  Retaining control of governance 
+  
+D.  Reduction in need for maintenance capability on the customer side       
+   
+140.    What are the two general delivery modes for the software as a service (SaaS) model? 
+  A.  Ranked and free
+  
+B.  Hosted application management and software on demand 
+  C.  Intrinsic motivation complex and undulating perspective details
+  
+D.  Framed and modular
+  
+ 141.    Your organization has migrated into a platform as a service (PaaS) configuration. A 
+network administrator within the cloud provider has accessed your data and sold a list
+of your users to a competitor. Who is required to make data breach notifications in 
+accordance with all applicable laws?
+  A.  The network admin responsible 
+  B.  The cloud provider
+  C.  The regulators overseeing your deployment
+  
+D.  Your organization       
+   
+142.    If an organization wants to retain the  most 
+ control of their assets in the cloud, which t
+service and deployment model combination should they choose?
+  A.  Platform as a service (PaaS), community
+  B.  Infrastructure as a service (IaaS), hybrid 
+  C.  Software as a service (SaaS), public
+  D.  Infrastructure as a service (IaaS), private
+   
+143.    If an organization wants to realize the  most  cost savings by reducing administrative t
+overhead, which service and deployment model combination should they choose? 
+  A.  Platform as a service (PaaS), community
+  B.  Infrastructure as a service (IaaS), hybrid 
+  C.  Software as a service (SaaS), public
+  D.  Infrastructure as a service (IaaS), private
+
+
+Chapter 2  ■  Domain 2: Cloud Data Security 51
+  
+ 110.    In protections afforded to personally identifiable information (PII) under the U.S. Gramm-
+Leach-Bliley Act (GLBA), the subject must  in order to prevent the vendor from 
+sharing their personal data.
+  A.  Opt in 
+  
+B.  Opt out
+  C.  Undergo screening
+  
+D.  Provide a biometric template
+  
+ 111.    The European Union (EU), with its implementation of privacy directives and regulations,
+treats individual privacy as .
+  
+A.  A passing fad
+  B.  A human right
+  C.  A legal obligation 
+  
+D.  A business expense
+  
+ 112.    If your organization collects/creates privacy data associated with European Union (EU) 
+citizens and you operate in the cloud, you must prevent 
+ your provider from storing/t
+moving/processing that data where?
+  A.  Argentina
+  
+B.  The United States 
+  C.  Japan 
+  
+D.  Israel
+  
+ 113.    European Union (EU) personal privacy protections include the right to be
+.
+  
+A.  Secure
+  
+B.  Delivered 
+  C.  Forgotten 
+  
+D.  Protected
+  
+ 114.    The Cloud Security Alliance (CSA) has developed a model for cloud privacy frameworks 
+called the Privacy Level Agreement (PLA). Why might a cloud service provider be reluctant 
+to issue or adhere to a PLA? 
+  A.  A PLA might limit the provider’s liability.
+  B.  A PLA would force the provider to accept more liability. 
+  C.  A PLA is nonbinding.
+  D.  A PLA is not enforceable.
+52 Chapter 2  ■  Domain 2: Cloud Data Security
+  
+ 115.    The Cloud Security Alliance Cloud Controls Matrix (CSA CCM) lists security controls 
+from all the following frameworks  except . 
+  
+A.  ISACA’s Control Objectives for Information and Related Technology (COBIT)
+  
+B.  Payment Card Industry Data Security Standard (PCI DSS) 
+  C.  The Capability Maturity Model (CMM)
+  
+D.  International Organization for Standardization (ISO) 27001
+  
+ 116.    The Cloud Security Alliance Cloud Controls Matrix (CSA CCM) lists security controls 
+from all the following laws  except . 
+  A.  Health Information Portability and Accountability Act (HIPAA) 
+  
+B.  Family Education Rights and Privacy Act (FERPA)
+  C.  Personal Information Protection and Electronic Documents Act (PIPEDA) 
+  
+D.  Digital Millennium Copyright Act (DMCA)
+  
+ 117.    Digital rights management (DRM) tools might be used to protect all the following assets
+except .
+  
+A.  A trusted device 
+  
+B.  Proprietary software 
+  C.  Medical records 
+  D.  Financial data       
+  
+ 118.    Deploying digital rights management (DRM) tools in a bring-your-own-device (BYOD) 
+environment will require . 
+  
+A.  User consent and action
+  
+B.  Enhanced security protocols
+  C.  Use of the cloud 
+  D.  Newer, upgraded devices
+  
+ 119.    Deploying digital rights management (DRM) tools in a bring-your-own-device (BYOD) 
+environment will require . 
+  
+A.  A uniform browser installation 
+  
+B.  Platform-agnostic solutions
+  C.  Turnsti les
+  D.  A secondary business continuity and disaster recovery (BC/DR) vendor
+   120.    The Cloud Security Alliance Cloud Controls Matrix (CSA CCM) addresses all the
+following security architecture elements except .
+  A.  Physical security
+  B.  Infrastructure as a service (IaaS)
+  C.  Application security
+  D.  Business drivers
+Chapter 2  ■  Domain 2: Cloud Data Security 53
+  
+ 121.    DRM requires that every data resource be provisioned with . 
+  
+A.  A tracking device
+  
+B.  An access policy
+  C.  A hardware security module (HSM) 
+  
+D.  A biometric system
+   
+122.    Digital rights management (DRM) tools can be combined with  to enhance 
+security capabilities. 
+  A.  Roaming identity services (RIS)
+  B.  Egress monitoring solutions (DLP) 
+  C.  Internal hardware settings (BIOS) 
+  D.  The TEMPEST program
+   
+123.    Digital rights management (DRM) tools should enforce , which is the 
+characteristic of access rights following the object, in whatever form or location it might
+be or move to. 
+  
+A.  Continuous audit trail
+  
+B.  Limiting printing output
+  C.  Persistence 
+  D.  Automatic expiration
+   
+124.    Digital rights management (DRM) tools should enforce , which is the practice of 
+capturing all relevant system events.
+  A.  Continuous audit trail
+  
+B.  Limiting printing output
+  C.  Persistence 
+  D.  Automatic expiration
+   
+125.    Digital rights management (DRM) tools should enforce , which is the capability 
+to revoke access based on the decision of the object owner or an administrator action. 
+  A.  Integration with email filtering engines
+  
+B.  Disabling screencap capabilities
+  C.  Continuous audit trail
+  D.  Dynamic policy control
+   126.    Digital rights management (DRM) tools should enforce , which is the revocation
+of access based on time. 
+  A.  Persistence
+  B.  Disabling screencap capabilities
+  C.  Automatic expiration
+  D.  Dynamic policy control
+54 Chapter 2  ■  Domain 2: Cloud Data Security
+  
+ 127.    Digital rights management (DRM) tools should enforce , which is interoperability 
+with the organization’s other access control activities.
+  A.  Persistence
+  
+B.  Support for existing authentication security infrastructure
+  C.  Continuous audit trail
+  
+D.  Dynamic policy control
+   
+128.    In a data retention policy, what is perhaps the most 
+ crucial element?t
+  
+A.  Location of the data archive
+  B.  Frequency of backups
+  C.  Security controls in long-term storage
+  D.  Data recovery procedures
+   
+129.  is the practice of taking data out of the production environment and putting it 
+into long-term storage.
+  A.  Deletion 
+  
+B.  Archiving
+  C.  Crypto-shredding
+  
+D.  Storing
+   130.    In general, all policies within an organization should include each of the following
+elements except . 
+  
+A.  The date on which the policy will expire
+  
+B.  The assignment of an entity to review the applicability of the possibility occasionally
+  C.  The assignment of an entity to monitor and maintain the process described in the
+policy
+  D.  A list of the laws, regulations, practices, and/or standards that drove the creation of 
+the policy
+   1 31.    The goals of secure sanitization (or “data destruction”) include all of the following except
+. 
+  
+A.  Removing data objects or files
+  B.  Minimizing or eliminating data remanence 
+  C.  Removing pointers and metadata about specific files or objects 
+  D.  Creating a secure, archived copy for business continuity and disaster recovery (BC/
+DR) purposes       
+   132.    Why is deleting a file or object insufficient for secure sanitization purposes?
+  A.  Drives and disks must be demagnetized for true secure destruction.
+  B.  Physical destruction is the only acceptable method of secure sanitization.
+  C.  Deletion usually only removes pointers or indicators of file location. 
+  D.  Only administrators should be allowed to delete files or objects.       
+Chapter 2  ■  Domain 2: Cloud Data Security 55
+   
+133.    Data destruction in the cloud is difficult because .
+  
+A.  Cloud data doesn’t have substance 
+  
+B.  Regulations prevent it
+  C.  The hardware belongs to the provider
+  
+D.  Most of the data is subterranean       
+   
+134.    Data destruction in the cloud is difficult because .
+  
+A.  Data in the cloud is constantly being replicated and backed up
+  
+B.  Delete commands are prohibited in the cloud
+  C.  Internet service providers (ISPs) will not allow destruction of data stored in the cloud
+  
+D.  The end clients may prevent it       
+   135.    Data destruction in the cloud is difficult because .
+  
+A.  Only law enforcement is permitted to destroy cloud data
+  
+B.  The largest cloud vendors have prevented customers from destroying data
+  C.  Cloud data renews itself automatically 
+  D.  The cloud is often a multitenant environment
+   136.    Which of the following is the best and only completely secure method of data destruction? 
+  
+A.  Degaussing
+  
+B.  Crypto-shredding
+  C.  Physical destruction of resources that store the data
+  
+D.  Legal order issued by the prevailing jurisdiction where the data is geographically
+situated
+  
+ 1 37.    Aside from the fact that the cloud customer probably cannot reach the physical storage
+assets of the cloud provider and that wiping an entire storage space would impact 
+other customers, why would degaussing probably not be an effective means of secure
+sanitization in the cloud? 
+  A.  All the data storage space in the cloud is already gaussed.
+  
+B.  Cloud data storage may not be affected by degaussing.
+  C.  Federal law prohibits it in the United States. 
+  D.  The blast radius is too wide.
+   
+138.    Is overwriting a feasible secure sanitization method in the cloud?
+  A.  Yes, but only if you use multiple passes. 
+  B.  No, because you can’t get physical access to cloud storage resources.
+  C.  Yes, but it requires a final pass with all zeros or ones. 
+  D.  No, because the logical location of the stored data is almost impossible to determine.
+56 Chapter 2  ■  Domain 2: Cloud Data Security
+   
+139.    All of the following are reasons overwriting is not a viable secure sanitization method for
+data stored in the cloud  except . 
+  
+A.  Overwriting an entire storage resource would affect other tenants’ data
+  
+B.  Regulators usually frown on the practice 
+  C.  Locating the specific storage locations of cloud data is almost impossible 
+  
+D.  Data is being backed constantly in the cloud; before you finished overwriting an
+entire data set, it would have been replicated elsewhere       
+   
+140.    Which of the following might make crypto-shredding difficult or useless?
+  
+A.  The cloud provider also managing the organization’s keys
+  
+B.  Lack of physical access to the environment
+  C.  External attackers 
+  
+D.  Lack of user training and awareness
+  
+ 141.    Crypto-shredding requires at least  cryptosystem(s). 
+  
+A.  One
+  
+B.  Two 
+  C.  Three 
+  
+D.  Four
+   
+142.    In addition to having it for business continuity and disaster recovery (BC/DR) purposes, 
+data archiving might also be useful for . 
+  A.  Ensuring profitability
+  
+B.  Increasing performance
+  C.  Motivating users 
+  
+D.  Correcting accidental errors
+   
+143.    In addition to having it for business continuity and disaster recovery (BC/DR) purposes, 
+data archiving might also be useful for . 
+  A.  Team building and morale
+  
+B.  Forensic investigation 
+  C.  Choosing security controls
+  D.  Enhancing quality       
+   
+144.    In addition to having it for business continuity and disaster recovery (BC/DR) purposes, 
+data archiving might also be useful for . 
+  A.  Compliance/audit
+  B.  Monitoring performance
+  C.  Gathering investment 
+  D.  Enforcing policy
+Chapter 2  ■  Domain 2: Cloud Data Security 57
+   145.    Who is responsible for performing archiving activities in a managed cloud environment? 
+  
+A.  The cloud customer 
+  
+B.  The cloud provider
+  C.  The customer’s regulator 
+  
+D.  Depends on the contract       
+   
+146.    Data archiving and retention policies should include .
+  
+A.  How long the data must be kept before destruction
+  
+B.  The depth of underground storage bunkers used for archiving
+  C.  The names of specific personnel tasked with restoring data in the event of data loss in 
+the operational environment
+  D.  The name(s) of regulators approving the policy
+   147.    What should data archiving and retention policies include?
+  A.  Names of personnel allowed to receive backup media, if third-party off-site archiving
+services are used
+  B.  Explicit statement of data formats and types of storage media 
+  C.  A list of personnel whose data will be archived on a regular basis 
+  D.  Which Internet service provider (ISP) should be used for backup procedures
+   
+148.    If the organization operates in a cloud environment, security operations procedures
+should include specific contact information for all of the following  except
+. 
+  A.  Applicable regulatory entities
+  B.  Federal and local law enforcement
+  C.  The originator or publisher of the governing policy 
+  D.  The cloud provider’s security response office
+   
+149.  If the organization operates in a cloud environment, security operations procedures 
+should include guidance for all of the following audit or logging processes  except
+. 
+  
+A.  Definition of security events and incidents
+  B.  The brand or vendor of the cloud provider’s audit or logging tool
+  C.  Process for adding new audit or logging rules 
+  
+D.  Process for filtering out false positives by amending the rule set
+   
+150.    What does nonrepudiation 
+ mean?
+  
+A.  Prohibiting certain parties from a private conversation 
+  B.  Ensuring that a transaction is completed before saving the results 
+  C.  Ensuring that someone cannot turn off auditing capabilities while performing a
+function
+  
+D.  Preventing any party that participates in a transaction from claiming that it did not
+
+
+78 Chapter 3   ■  Domain 3: Cloud Platform and Infrastructure Security
+ 
+103.  All of the following can be used in the process of anomaly detection except
+.
+A. The ratio of failed to successful logins
+B. Transactions completed successfully
+C. Event time of day
+D. Multiple concurrent logins
+ 
+104.  Critical components should be protected with .
+A. Strong passwords
+B. Chain-link fences
+C. Homomorphic encryption
+D. Multifactor authentication
+ 
+105.  It’s important to maintain a current asset inventory list, including surveying your environ-
+ment on a regular basis, in order to .
+A. Prevent unknown, unpatched assets from being used as back doors to the environment
+B. Ensure that any lost devices are automatically entered into the acquisition system for
+repurchasing and replacement
+C. Maintain user morale by having their devices properly catalogued and annotated
+D. Ensure that billing for all devices is handled by the appropriate departments
+ 
+106.  Which of the following can enhance data portability?
+A. Interoperable export formats
+B. Egress monitoring solutions
+C. Strong physical protections
+D. A gile business intelligence
+ 1 07. Which of the following can enhance application portability?
+A. Using the same cloud provider for the production environment and archiving
+B. Conducting service trials in an alternate cloud provider environment
+C. Providing cloud-usage training for all users
+D. Tunin g web application firewalls (WAFs) to detect anomalous activity in inbound
+communications
+ 108.  W hat should the cloud customer do to ensure that disaster recovery activities don’t exceed 
+the maximum allowable downtime (MAD)?
+A. Make sure any alternate provider can support the application needs of the organization.
+B. Ensure that contact information for all first responder agencies are correct and up-to-
+date at all times.
+C. Select an appropriate recovery time objective (RTO).
+D. Regularly review all regulatory directives for disaster response.
+Chapter 3   ■  Domain 3: Cloud Platform and Infrastructure Security 79
+ 109.  W hich of the following would probably best aid an organization in deciding whether to 
+migrate from a traditional environment to a particular cloud provider?
+A. Rate sheets comparing a cloud provider to other cloud providers
+B. Cloud provider offers to provide engineering assistance during the migration
+C. The cost/benefit measure of closing the organization’s relocation site (hot site/warm
+site) and using the cloud for disaster recovery instead
+D. SLA satisfaction surveys from other (current and past) cloud customers
+ 110. A cloud provider will probably require all of the following except
+before a customer conducts a penetration test.
+A. Notice
+B. Description of scope of the test
+C. P hysical location of the launch point
+D. Knowledge of time frame/duration
+ 111. C loud providers will probably not allow  as part of a customer’s
+penetration test.
+A. Network mapping
+B. Vulnerability scanning
+C. Reconnaissance
+D. Social engineering
+ 
+112. A cloud customer performing a penetration test without the provider’s permission is
+risking .
+A. Malware contamination
+B. Excessive fees for SLA violations
+C. Loss of market share
+D. Prosecution
+ 113. W hen a customer performs a penetration test in the cloud, why isn’t the test an optimum
+simulation of attack conditions?
+A. Attackers don’t use remote access for cloud activity.
+B. A dvanced notice removes the element of surprise.
+C. W hen cloud customers use malware, it’s not the same as when attackers use malware.
+D. Regulator involvement changes the attack surface.
+ 114. Managed cloud services exist because the service is less expensive for each customer than 
+creating the same services for themselves in a traditional environment. What is the tech-
+nology that creates most of the cost savings in the cloud environment?
+A. Emulation
+B. Secure remote access
+C. Crypto-shredding
+D. Virtualization
+80 Chapter 3   ■  Domain 3: Cloud Platform and Infrastructure Security
+ 115. Managed cloud services exist because the service is less expensive for each customer than 
+creating the same services for themselves in a traditional environment. From the customer 
+perspective, most of the cost differential created between the traditional environment and 
+the cloud through virtualization is achieved by removing .
+A. External risks
+B. Internal risks
+C. Regulatory compliance
+D. Sunk capital investment
+ 116. Managed cloud services exist because the service is less expensive for each customer than
+creating the same services for themselves in a traditional environment. Using a managed 
+service allows the customer to realize significant cost savings through the reduction of 
+.
+A. Risk
+B. Security controls
+C. Personnel
+D. Data
+ 117. W hich of the following is a risk posed by the use of virtualization?
+A. Internal threats interrupting service through physical accidents (spilling drinks, trip-
+ping over cables, etc.)
+B. T he ease of transporting stolen virtual machine images
+C. Increased susceptibility of virtual systems to malware
+D. E lectromagnetic pulse
+ 118. T he tasks performed by the hypervisor in the virtual environment can be most likened to 
+the tasks of the  in the traditional environment.
+A. Central processing unit (CPU)
+B. Security team
+C. Operating system (OS)
+D. Pretty Good Privacy (PGP)
+ 119. Mass storage in the cloud will most likely currently involve .
+A. S pinning platters
+B. Tape drives
+C. Magnetic disks
+D. Solid-state drives (SSDs)
+ 120. What is the type of cloud storage arrangement that involves the use of associating meta-
+data with the saved data?
+A. Volume
+B. B lock
+Chapter 3   ■  Domain 3: Cloud Platform and Infrastructure Security 81
+C. O bject
+D. Redundant
+ 
+121. According to the NIST Cloud Computing Reference Architecture, which of the following
+is most likely a cloud carrier?
+A. Amazon Web Services
+B. N etflix
+C. Verizon
+D. N essus
+ 122.  Resolving resource contentions in the cloud will most likely be the job of the
+.
+A. Router
+B. Emulator
+C. Regulator
+D. Hypervisor
+ 123.  Security controls installed on a guest virtual machine operating system (VM OS) will not
+function when .
+A. T he user is accessing the VM remotely
+B. T he OS is not scanned for vulnerabilities
+C. T he OS is not subject to version control
+D. T he VM is not active while in storage
+ 124.  T ypically, SSDs are .
+A. More expensive than spinning platters
+B. Larger than tape backup
+C. Heavier than tape libraries
+D. More subject to malware than legacy drives
+ 125.  Typica lly, SSDs are .
+A. Harder to install than magnetic memory
+B. Faster than magnetic drives
+C. Harder to administer than tape libraries
+D. More likely to fail than spinning platters
+ 126.  Typica lly, SSDs are .
+A. Impossible to destroy physically
+B. Not vulnerable to degaussing
+C. Subject to a longer warranty
+D. Protected by international trade laws
+82 Chapter 3   ■  Domain 3: Cloud Platform and Infrastructure Security
+ 127. Of the following control techniques/solutions, which can be combined to enhance the
+protections offered by each?
+A. F ences/firewalls
+B. Asset inventories/personnel training
+C. Data dispersion/encryption
+D. Intrusion prevention solutions/intrusion detection solutions
+ 128.  Of the following control techniques/solutions, which can be combined to enhance the
+protections offered by each?
+A. Razor tape/background checks
+B. Least privilege/generators
+C. DLP/DRM
+D. Personnel badging/secure baselines
+ 129.  Risk assessment is the responsibility of .
+A. Companies offering managed cloud services
+B. Regulatory bodies
+C. Every organization
+D. Legislative entities
+ 130.  Which entity can best aid the organization in avoiding vendor lock-in?t
+A. Senior management
+B. The IT security office
+C. General counsel
+D. The cloud security representative
+ 131. Perhaps the best method for avoiding vendor lock-out is also a means for enhancing
+BC/DR capabilities. This is .
+A. Having a warm site within 250 miles of the primary production environment
+B. Using one cloud provider for primary production and another for backup purposes
+C. Building a data center above the flood plain
+D. Cross-training all personnel
+ 132.  can often be the result of inadvertent activity.
+A. DDoS
+B. P hishing
+C. Sprawl
+D. D isasters
+Chapter 3   ■  Domain 3: Cloud Platform and Infrastructure Security 83
+ 
+133.  Of the following, which is probably the most significant risk in a managed cloud t
+environment?
+A. DDoS
+B. Management plane breach
+C. Guest escape
+D. Physical attack on the utility service lines
+ 
+134.  What is the optimal number of entrances to the cloud data center campus?
+A. One
+B. Two
+C. Three
+D. Four
+ 135.  The cloud data center campus physical access point should include all of the following
+except .
+A. Reception area
+B. Video surveillance
+C. Badging procedure
+D. Mantrap structures
+ 136.  Where should multiple egress points be included?
+A. At the power distribution substation
+B. Within the data center
+C. In every building on the campus
+D. In the security operations center
+ 137. Which of the following is a risk in the cloud environment that does not exist or is not as
+prevalent in the traditional environment?
+A. DDoS
+B. I solation failure
+C. External attack
+D. Internal attack
+ 138.  A ll security controls necessarily .
+A. Are expensive
+B. Degrade performance
+C. Require senior management approval
+D. Will work in the cloud environment as well as they worked in the traditional
+environment
+84 Chapter 3   ■  Domain 3: Cloud Platform and Infrastructure Security
+ 
+139.  W hich of the following is a risk in the cloud environment that does not exist or is not as
+prevalent in the traditional environment?
+A. Legal liability in multiple jurisdictions
+B. Loss of productivity due to DDoS
+C. Ability of users to gain access to their physical workplace
+D. Fire
+ 140.  Which of the following is a risk in the cloud environment that does not exist or is not as
+prevalent in the traditional environment?
+A. Loss of availability due to DDoS
+B. L oss of value due to DDoS
+C. Loss of confidentiality due to DDoS
+D. Loss of liability due to DDoS
+ 141. DDoS attacks do not affect  for cloud customers.
+A. Productivity
+B. Availability
+C. Connectivity
+D. Integrity
+ 142.  Sprawl in the cloud can lead to significant additional costs to the organization because of 
+.
+A. Larger necessary physical footprint
+B. Much larger utility consumption
+C. Software licensing
+D. Requisite additional training
+ 
+143.  It is  best to use variables in .
+A. Baseline configurations
+B. Security control implementations
+C. Contract language
+D. BC/DR tests
+
+
+100 Chapter 4  ■  Domain 4: Cloud Application Security
+  
+  81.    A cloud environment that lacks security controls is vulnerable to exploitation, data loss, 
+and interruptions. Conversely, excessive use of security controls . 
+  
+A.  Can lead to data breaches 
+  
+B.  Causes electromagnetic interference
+  C.  Will affect quality of service 
+  
+D.  Can cause regulatory noncompliance
+  
+  82.    A cloud environment that lacks security controls is vulnerable to exploitation, data loss, 
+and interruptions. Conversely, excessive use of security controls . 
+  A.  Can lead to distributed denial of service (DDoS)
+  
+B.  Allows malware infections
+  C.  Increases the risk of adverse environmental effects 
+  
+D.  Is an unnecessary expense
+  
+  83.    A cloud environment that lacks security controls is vulnerable to exploitation, data loss, 
+and interruptions. Conversely, excessive use of security controls . 
+  A.  Can lead to customer dissatisfaction
+  
+B.  Is a risk to health and human safety
+  C.  Brings down the organization’s stock price
+  D.  Negates the need for insurance
+    84.    You are the security manager for an online retail sales company with 100 employees and a 
+production environment hosted in a platform as a service (PaaS) model with a major cloud
+provider. According to your company policies, personnel are allowed to work equally
+from the company offices and their own homes or other locations, using their personal IT 
+devices. The policies also dictate which application programming interfaces (APIs) can be 
+used to access and manipulate company data and the process for getting an API added to 
+the list of approved programs. You conduct an approved scan of the company data set in
+the cloud, with the provider’s permission. This allows you to catalog all APIs that have 
+accessed and manipulated company data through authorized user accounts in the last 
+month. The scan reveals that 300 different APIs were used by authorized personnel. Of 
+these, 30 had been approved by the company and were on the list. Of the following, what 
+is the most  reasonable immediate action?t
+  A.  Delete accounts of all users who had utilized unapproved APIs to access company 
+data. 
+  B.  Suspend access for all users who had utilized unapproved APIs to access company 
+data. 
+  C.  Block all unapproved APIs from accessing company data.
+  D.  Notify whomever you report to in the company hierarchy, and suggest bringing the 
+matter to the attention of senior management immediately.
+Chapter 4  ■  Domain 4: Cloud Application Security 101
+  
+  85.    You are the security manager for an online retail sales company with 100 employees and a 
+production environment hosted in a platform as a service (PaaS) model with a major cloud
+provider. According to your company policies, personnel are allowed to work equally
+from the company offices and their own homes or other locations, using their personal 
+IT devices. The policies also dictate which application programming interfaces (APIs) can 
+be used to access and manipulate company data and the process for getting an API added 
+to the list of approved programs. You conduct an approved scan of the company data 
+set in the cloud, with the provider’s permission. This allows you to catalog all APIs that
+have accessed and manipulated company data through authorized user accounts in the
+last month. The scan reveals that 300 different APIs were used by authorized personnel. 
+Of these, 30 had been approved by the company and were on the list. You’ve brought the 
+matter to the attention of the chief executive officer (CEO), who understands the issue and
+asks for your recommendation. What is probably the best suggestion? 
+  A.  Gather more data about how users are utilizing the APIs and for what purposes. 
+  
+B.  Delete accounts of all users who had utilized unapproved APIs to access company 
+data. 
+  C.  Suspend access for all users who had utilized unapproved APIs to access company 
+data. 
+  D.  Block all unapproved APIs from accessing company data.
+  
+  86.    You are the security manager for an online retail sales company with 100 employees and a 
+production environment hosted in a platform as a service (PaaS) model with a major cloud
+provider. According to your company policies, personnel are allowed to work equally
+from the company offices and their own homes or other locations, using their personal IT 
+devices. The policies also dictate which application programming interfaces (APIs) can be 
+utilized to access and manipulate company data and the process for getting an API added
+to the list of approved programs. You conduct an approved scan of the company data 
+set in the cloud, with the provider’s permission. This allows you to catalog all APIs that
+have accessed and manipulated company data through authorized user accounts in the
+last month. The scan reveals that 300 different APIs were used by authorized personnel. 
+Of these, 30 had been approved by the company and were on the list. Upon performing
+an information-gathering investigation at the behest of the chief executive officer (CEO), 
+you determine that these APIs increased productivity 387 percent over the period since 
+they were adopted, at a cost that is negligible compared to getting even one API through
+the company’s current approval process. What is your suggestion on how to handle the
+situation? 
+  A.  Retroactively put all the APIs currently in use through the formal approval process,
+and require that all future APIs users want to install also get approved. 
+  B.  Have the CEO waive formal approval processing for all APIs currently in use, 
+granting them approval, but require all future APIs be approved through that process.
+  C.  Punish all employees who have installed or used any of the rogue APIs for violating
+company policy.
+  D.  Change the policy.
+102 Chapter 4  ■  Domain 4: Cloud Application Security
+  
+  87.    You are the security manager for an online retail sales company with 100 employees and a 
+production environment hosted in a platform as a service (PaaS) model with a major cloud
+provider. According to your company policies, personnel are allowed to work equally
+from the company offices and their own homes or other locations, using their personal IT 
+devices. The policies also dictate which application programming interfaces (APIs) can be 
+utilized to access and manipulate company data and the process for getting an API added
+to the list of approved programs. You conduct an approved scan of the company data 
+set in the cloud, with the provider’s permission. This allows you to catalog all APIs that
+have accessed and manipulated company data through authorized user accounts in the
+last month. The scan reveals that 300 different APIs were used by authorized personnel. 
+Of these, 30 had been approved by the company and were on the list. As a subject matter 
+expert, what should you also recommend to the chief executive officer (CEO)? 
+  A.  Reward the users who committed the infractions, for aiding the company even when
+they were violating the policy. 
+  
+B.  Replace all the personnel that violated the policy, and have the new personnel use the 
+new policy from their start of hire.
+  C.  Restrict user access to possible APIs.
+  D.  Augment the current set of security controls used by the company in order to offset
+risks posed by the anticipated use of even more APIs from unknown sources.
+    88.    You are the security manager for an online retail sales company with 100 employees and a 
+production environment hosted in a platform as a service (PaaS) model with a major cloud
+provider. According to your company policies, personnel are allowed to work equally
+from the company offices and their own homes or other locations, using their personal IT 
+devices. The policies also allow users to select which application programming interfaces 
+(APIs) they install and use on their own devices in order to access and manipulate 
+company data. Of the following, what is a security control you’d like to implement to
+offset the risk(s) incurred by this practice?
+  A.  Encrypt all routers between mobile users and the cloud.
+  
+B.  Use additional anti-malware detection capabilities on both user devices and the
+environment to which they connect. 
+  C.  Implement strong multifactor authentication on all user-owned devices. 
+  
+D.  Employ regular performance monitoring in the cloud environment to ensure that the
+cloud provider is meeting the service level agreement (SLA) targets.       
+    89.    You are the security manager for an online retail sales company with 100 employees and a 
+production environment hosted in a platform as a service (PaaS) model with a major cloud
+provider. According to your company policies, personnel are allowed to work equally
+from the company offices and their own homes or other locations, using their personal IT 
+devices. The policies also allow users to select which application programming interfaces 
+(APIs) they install and use on their own devices in order to access and manipulate 
+company data. Of the following, what is a security control you’d like to implement to
+offset the risk(s) incurred by this practice?
+  A.  Regular and widespread integrity checks on sampled data throughout the managed 
+environment
+  
+B.  More extensive and granular background checks on all employees, particularly new 
+hires 
+Chapter 4  ■  Domain 4: Cloud Application Security 103
+  C.  Inclusion of references to all applicable regulations in the policy documents
+  
+D.  Increased enforcement of separation of duties for all workflows
+    90.    You are the security manager for an online retail sales company with 100 employees and a 
+production environment hosted in a platform as a service (PaaS) model with a major cloud
+provider. According to your company policies, personnel are allowed to work equally
+from the company offices and their own homes or other locations, using their personal IT 
+devices. The policies also allow users to select which application programming interfaces 
+(APIs) they install and use on their own devices in order to access and manipulate 
+company data. Of the following, what is a security control you’d like to implement to
+offset the risk(s) incurred by this practice?
+  
+A.  Enact secure connections between the user devices and the cloud environment using 
+end-to-end encryption. 
+  B.  Enact secure connections between the user devices and the cloud environment using 
+link encryption. 
+  C.  Employ additional user training. 
+  D.  Tunnel all connections with a virtual private network (VPN).       
+    91.    Users in your organization have been leveraging application programming interfaces
+(APIs) for enhancing their productivity in the cloud environment. To ensure that
+you are securing API access to the production environment, you should deploy
+ and . 
+  
+A.  Secure Sockets Layer (SSL) and message-level cryptography 
+  B.  Transport Layer Security (TLS) and message-level cryptography 
+  C.  SSL and whole drive encryption 
+  D.  TLS and whole drive encryption
+  
+  9 2.    You implement identity and access management (IAM) in order to control access between 
+subjects and objects. What is the ultimate purpose of this effort?
+  A.  Identification. Determine who the specific, individual subjects are.
+  B.  Authentication. Verify and validate any identification assertions.
+  C.  Authorization. Grant subjects permissions to objects once they’ve been authenticated.
+  D.  Accountability. Be able to reconstruct a narrative of who accessed what.       
+  
+  9 3.     is perhaps the main external factor driving identity and access 
+management (IAM) efforts. 
+  
+A.  Regulation 
+  B.  Business need 
+  C.  The evolving threat landscape
+  
+D.  Monetary value       
+104 Chapter 4  ■  Domain 4: Cloud Application Security
+    94.    Whether in a cloud or traditional environment, it is important to implement both 
+ and  access controls.
+  
+A.  Internal and managed
+  
+B.  Provider and customer
+  C.  Physical and logical 
+  
+D.  Administrative and technical
+  
+  95.    Access to specific data sets should be granted by .
+  
+A.  The data subjects
+  B.  The data owners
+  C.  The data processors
+  D.  The data regulators
+  
+  96.    Access should be granted based on all of the following  except . 
+  
+A.  Policy 
+  
+B.  Business needs
+  C.  Performance
+  
+D.  Acceptable risk
+    97.    Federation allows  across organizations. 
+  
+A.  Role replication
+  
+B.  Encryption
+  C.  Policy 
+  
+D.  Access
+  
+  98.    Federation should be  to the users. 
+  
+A.  Hostile
+  
+B.  Proportional 
+  C.  Transparent 
+  
+D.  Expensive
+    99.    A web application firewall (WAF) understands which protocol(s)?
+  A.  All protocols that use the Internet as a medium 
+  B.  Transport Layer Security (TLS)
+  C.  Hypertext Transfer Protocol (HTTP)
+  D.  File Transfer Protocol (FTP)
+Chapter 4  ■  Domain 4: Cloud Application Security 105
+   
+100.    Web application firewalls and database activity monitors function at levels 
+ and  of the Open Systems Interconnection
+(OSI) model, respectively.
+  A.  1 and 7
+  
+B.  7 and 1
+  C.  7 and 7 
+  
+D.  3 and 4
+  
+ 101.    What can tokenization be used for? 
+  
+A.  Encryption
+  
+B.  Compliance with the Payment Card Industry Data Security Standard (PCI DSS)
+  C.  Enhancing the user experience 
+  
+D.  Giving management oversight to e-commerce functions
+   102.    Merchants who accept credit card payments can avoid some of the compliance burden
+for the Payment Card Industry Data Security Standard (PCI DSS) by outsourcing the
+tokenization function to . 
+  A.  A third party 
+  
+B.  The data owner 
+  C.  The data subject
+  
+D.  The PCI Security Standards Council
+   
+103.    Which of the following is an example of useful and sufficient data masking of the string 
+“CCSP”?
+  A.  XCSP
+  B.  PSCC
+  C.  TtLp
+  
+D.  3X91
+   104.    A cloud-based sandbox should not 
+ be used fort . 
+  
+A.  Application interoperability testing 
+  
+B.  Processing sensitive data 
+  C.  Application security testing
+  D.  Malware analysis       
+   105.    Which of the following should occur at each stage of the software development lifecycle
+(SDLC)? 
+  A.  Added functionality
+  B.  Management review 
+  C.  Verification and validation
+  D.  Repurposing of any newly developed components
+106 Chapter 4  ■  Domain 4: Cloud Application Security
+   
+106.    Software that includes security elements from the outset of the software development
+lifecycle (SDLC) process will be . 
+  
+A.  More secure in deployment
+  
+B.  Less secure in deployment
+  C.  More likely to malfunction
+  
+D.  Less likely to malfunction
+  
+ 107.    Software that includes security elements from the outset of the software development 
+lifecycle (SDLC) process will . 
+  A.  Be less expensive to operate securely in the production environment 
+  
+B.  Be more expensive to operate securely in the production environment
+  C.  Not be interoperable with other software and systems in the production environment 
+  
+D.  Have a greater likelihood of interoperability with other software and systems in the
+production environment
+   108.    The inclusion of security controls in the software design process is dictated by 
+. 
+  
+A.  The National Institute of Standards and Technology (NIST) 800-37
+  
+B.  The American Institute of Certified Public Accountants (AICPA) 
+  C.  ISO 27034 
+  
+D.  The Health Insurance Portability and Accountability Act (HIPAA)       
+   
+109.    Software development should be perceived as . 
+  
+A.  Including all members of the organization
+  
+B.  The paramount goal of the organization
+  C.  The greatest risk to the organization
+  D.  A lifecycle
+  
+ 110.    Dynamic testing of software is perhaps most useful for . 
+  
+A.  Simulating negative test cases 
+  
+B.  Finding errors in the source code 
+  C.  Determining the effect of social engineering
+  D.  Penetration tests     
+
+  
+Chapter 5  ■  Domain 5: Cloud Security Operations 121
+  
+  73.    Most attacks that overcome encryption protections exploit . 
+  
+A.  Mathematical principles
+  
+B.  Misconfigurations 
+  C.  Supercomputers 
+  
+D.  Statistical probabilities       
+  
+  74.    Administrators and engineers who work for cloud service providers will have a significant
+amount of control over multiple customer environments and therefore pose a severe risk.
+Which of the following is  not  a technique used to mitigate this level of increased risk fromt
+privileged users in the cloud data center?
+  A.  Two-person control
+  B.  Enhanced logging of administrative activity
+  C.  Granting privileged access only on a temporary basis
+  
+D.  Assigning permanent administrators to select customer accounts
+  
+  7 5.    Which of these is a vital action to determine whether the business continuity and disaster
+recovery (BC/DR) effort has a chance of being successful? 
+  A.  Perform an integrity check on archived data to ensure that the backup process is not
+corrupting the data.
+  B.  Encrypt all archived data to ensure that it can’t be exposed while at rest in the long 
+term.
+  C.  Periodically restore from backups. 
+  D.  Train all personnel on BC/DR actions they should take to preserve health and human
+safety.
+    7 6.    Patches do all the following  except . 
+  
+A.  Address newly discovered vulnerabilities
+  
+B.  Solve cloud interoperability problems 
+  C.  Add new features and capabilities to existing systems 
+  D.  Address performance issues
+  
+ 77.    When applying patches, it is necessary to do all of the following  except . 
+  
+A.  Test t he patch in a sandbox that simulates the production environment 
+  B.  Put the patch through the formal change management process 
+  C.  Be prepared to roll back to the last known good build
+  D.  Inform users of any impact or interruptions
+  
+  7 8.    Which of the following is a risk associated with automated patching? 
+  A.  Users can be leveraged by intruders. 
+  B.  A patch may not be applicable to a given environment. 
+  C.  Patches can come loaded with malware, in a Trojan horse attack.
+  D.  Automated patching is slow and inefficient.
+122 Chapter 5  ■  Domain 5: Cloud Security Operations
+  
+  7 9.    Which of the following is a risk associated with automated patching, especially in the 
+cloud?
+  A.  Snapshot/saved virtual machine (VM) images won’t take a patch.
+  
+B.  Remote access disallows patching.
+  C.  Cloud service providers aren’t responsible for patching. 
+  
+D.  Patches aren’t applied among all cloud data centers.
+  
+  80.    Which of the following is a risk associated with automated patching, especially in the 
+cloud?
+  A.  Patches may interfere with some tenants’ production environments.
+  
+B.  Patches don’t work with software as a service (SaaS) service models.
+  C.  Patches don’t work with private cloud builds. 
+  D.  Vendors don’t issue patches to cloud providers.
+    81.    Which of the following is a risk associated with manual patching, especially in the cloud? 
+  A.  It can happen too quickly.
+  B.  Vendors release patches that work only with their proprietary automated tools. 
+  C.  It’s not scalable. 
+  D.  Users can be tricked into installing malware that looks like a patch.
+    82.    Which of the following is a risk associated with manual patching especially in the cloud? 
+  
+A.  No notice before the impact is realized 
+  B.  There is a lack of applicability to the environment. 
+  C.  Patches may or may not address the vulnerability they were designed to fix. 
+  D.  The possibility for human error exists.
+  
+  83.    You are the security manager for an organization that uses the cloud for its production 
+environment. According to your contract with the cloud provider, your organization is 
+responsible for patching. A new patch is issued by one of your vendors. You decide not to 
+apply it immediately for fear of interoperability problems. What additional risk are you 
+accepting?
+  
+A.  The cloud provider will suspend your access for violating its terms of service.
+  B.  The cloud provider may sue your organization for breach of contract.
+  C.  Your organization is subject to the vulnerability the patch addresses. 
+  
+D.  Your end clients will no longer trust your organization, and this will hurt your
+revenue flow.
+Chapter 5  ■  Domain 5: Cloud Security Operations 123
+    84.    You are the security manager for an organization that uses the cloud for its production 
+environment. According to your contract with the cloud provider, your organization is 
+responsible for patching. A new patch is issued by one of your vendors. You decide not to 
+apply it immediately for fear of interoperability problems. Who may impose penalties on
+your organization for this decision if the vulnerability is exploited? 
+  A.  The cloud provider
+  
+B.  Regulators
+  C.  Your end clients 
+  
+D.  Your Internet service provider (ISP)       
+  
+  85.    Which of the following aspects of a cloud environment is most 
+ likely to add risk to thet
+patch management process? 
+  A.  Variations in user training and familiarity with the cloud
+  B.  A cloud services contract that specifies which parties are responsible for which
+aspects of patching 
+  C.  VMs located physically in one location but operating in different time zones
+  D.  The prevalence of attacker activity at the time the patch is applied
+    86.    Which type of web application monitoring most closely measures actual activity?
+  A.  Synthetic performance monitoring 
+  B.  Real-user monitoring (RUM) 
+  C.  Security information and event management (SIEM)
+  D.  Database application monitor (DAM)
+    87.    When using real-user monitoring (RUM) for web application activity analysis, which of 
+the following do you need to take into account? 
+  A.  False positives
+  B.  Attacker baseline actions
+  C.  Privacy concerns
+  D.  Sandboxed environments
+    88.    Synthetic performance monitoring may be preferable to real-user monitoring (RUM) 
+because . 
+  A.  It costs less 
+  B.  It is a more accurate depiction of user behavior
+  C.  It is more comprehensive 
+  
+D.  It can take place in the cloud
+124 Chapter 5  ■  Domain 5: Cloud Security Operations
+    89.    You are the security manager for an organization with a cloud-based production
+environment. You are tasked with setting up the event monitoring and logging systems.
+In your jurisdiction, private entities are allowed to monitor all activity involving their
+systems, without exception. Which of the following best describes a logging scheme you 
+would recommend? 
+  A.  Logging every event, at all levels of granularity, including continual screen shots, 
+keystroke logging, and browser history 
+  
+B.  Sufficient logging to reconstruct a narrative of events at some later date
+  C.  Logging only data related to incidents after they have occurred
+  
+D.  Logging specific data sets recommended by industry standards and guidelines       
+  
+  90.    Who should be performing log review?
+  A.  Only certified, trained log review professionals with a great deal of experience with
+the logging tool 
+  B.  The internal audit body 
+  C.  External audit providers 
+  D.  Someone with knowledge of the operation and a security background
+    91.    Which of these subsystems is probably  most  important for acquiring useful logt
+information? 
+  A.  Fan
+  B.  RAM 
+  C.  Clock 
+  D.  Uninterruptible power supply (UPS)
+    92.    A SIEM (security information and event management) system does not  eliminate the need t
+for human participation in . 
+  A.  Log collection
+  B.  Responding to alerts 
+  C.  Mathematical normalization of different logs 
+  D.  Detecting and alerts
+  
+  9 3.    Log data should be protected . 
+  
+A.  One level below the sensitivity level of the systems from which it was collected
+  B.  At least at the same sensitivity level as the systems from which it was collected 
+  C.  With encryption in transit, at rest, and in use 
+  
+D.  According to National Institute of Standards and Technology (NIST) guidelines
+    94.    Risk is usually viewed with consideration for all the following elements  except
+. 
+  
+A.  Impact that could occur if a given circumstance is realized 
+  
+B.  The likelihood or probability a circumstance will occur
+Chapter 5  ■  Domain 5: Cloud Security Operations 125
+  C.  In the context of specific threats to an organization 
+  
+D.  According to risks recently realized by other organizations in the same industry
+  
+  95.    Risk management entails evaluating all of the following  except .
+  
+A.  Threats
+  
+B.  Vulnerabilities
+  C.  Countermeasures
+  
+D.  Customers
+  
+  9 6.    Impact resulting from risk being realized is often measured in terms of 
+. 
+  
+A.  Amount of data lost
+  B.  Money
+  C.  Amount of property lost 
+  D.  Number of people affected
+  
+  97.    You are the security officer for a small nonprofit organization. You are tasked with 
+performing a risk assessment for your organization; you have one month to complete it. 
+The IT personnel you work with have been with the organization for many years and
+have built the systems and infrastructure from the ground up. They have little training
+and experience in the field of risk. Which type of risk assessment would you choose to 
+conduct?
+  A.  Quantitative
+  B.  Qualitative
+  C.  Pro forma 
+  D.  Informal
+    98.    Which of the following is  most 
+ useful in determining the single loss expectancy (SLE) of t
+an asset? 
+  
+A.  The frequency with which you expect that type of loss to occur
+  B.  The dollar value of the asset 
+  C.  The sensitivity of the asset
+  D.  The size and scope of the asset
+  
+  99.    Which of the following will likely  best 
+ help you predict the annualized rate of occurrence t
+(ARO) of a specific loss? 
+  
+A.  Threat intelligence data
+  B.  Historical data
+  C.  Vulnerability scans
+  
+D.  Aggregation analysis
+126 Chapter 5  ■  Domain 5: Cloud Security Operations
+   100.    Which of the following has the most 
+ effect on exposure factor (EF)? t
+  
+A.  The type of threat vector 
+  
+B.  The source location of the attack
+  C.  The target of the attack
+  
+D.  The jurisdiction where the attack takes place
+  
+ 101.    You are a consultant, performing an external security review on a large manufacturing 
+firm. You determine that its newest assembly plant, which cost $24 million, could be 
+completely destroyed by a fire but that a fire suppression system could effectively protect
+the plant. The fire suppression system costs $15 million. An insurance policy that would 
+cover the full replacement cost of the plant costs $1 million per month. What is the annual
+rate of occurrence (ARO) in this scenario? 
+  A.  12
+  B.  $24 million 
+  C.  1 
+  D.  $10 million
+   102.    You are a consultant performing an external security review on a large manufacturing 
+firm. You determine that its newest assembly plant, which cost $24 million, could be 
+completely destroyed by a fire but that a fire suppression system could effectively protect
+the plant. The fire suppression system costs $15 million. An insurance policy that would 
+cover the full replacement cost of the plant costs $1 million per month. What would you
+recommend? 
+  A.  Accept the risk of fire, and save money by not spending anything on controls/
+countermeasures.
+  B.  Get the fire suppression system.
+  C.  Get the insurance policy. 
+  D.  It is impossible to decide from this information.       
+   103.    You are a consultant performing an external security review on a large manufacturing 
+firm. You determine that its newest assembly plant, which cost $24 million, could be 
+completely destroyed by a fire but that a fire suppression system could effectively protect
+the plant. The fire suppression system costs $15 million. An insurance policy that would 
+cover the full replacement cost of the plant costs $1 million per month. In order to
+establish the true annualized loss expectancy (ALE), you would need all of the following 
+information except . 
+  A.  The amount of revenue generated by the plant
+  B.  The rate at which the plant generates revenue 
+  C.  The length of time it would take to rebuild the plant 
+  
+D.  The amount of product the plant creates       
+Chapter 5  ■  Domain 5: Cloud Security Operations 127
+   104.    You are a consultant performing an external security review on a large manufacturing 
+firm. You determine that its newest assembly plant, which cost $24 million, could be 
+completely destroyed by a fire but that a fire suppression system could effectively protect
+the plant. The fire suppression system costs $15 million. An insurance policy that 
+would cover the full replacement cost of the plant costs $1 million per month. The plant 
+generates $2 million of revenue each month. The time to rebuild the plant at the current
+location is six months. What should you recommend? 
+  A.  Accept the risk of fire, and save money by not spending anything on controls and
+countermeasures.
+  
+B.  Get the fire suppression system.
+  C.  Get the insurance policy. 
+  
+D.  It is impossible to decide from this information.
+   105.    Risk mitigation must  always  also entail which other method of addressing risk? 
+  A.  Risk acceptance 
+  B.  Risk avoidance
+  C.  Risk transfer 
+  D.  Risk attenuation
+   106.    Which of the following poses a secondary risk?
+  A.  Fire exit signs 
+  B.  Oxygen-displacing fire suppression
+  C.  Automated fire detection systems 
+  D.  Fail-safe fire egress paths
+  
+ 1 07.    Which of the following is  not 
+ true about risk mitigation?t
+  A.  A given control/countermeasure should never cost more than the impact of the risk it
+mitigates.
+  B.  Risk cannot be reduced to zero.
+  C.  The end state of risk mitigation is risk at a tolerable level.
+  D.  Risk mitigation is always the best means to address risk.
+   
+108.    Which of the following is  not 
+ true about risk mitigation?t
+  
+A.  The cost of the control/countermeasure per year is simple: the overall cost (of 
+acquisition, implementation, and maintenance) divided by life span, in years. 
+  B.  Ignoring risk is not risk mitigation; ignoring risk is risk acceptance.
+  C.  The cost of mitigation can be compared against the cost of a control/countermeasure
+to determine the optimum course of action.
+  
+D.  Risk is fluid, so all risk assessments are pointless.
+128 Chapter 5  ■  Domain 5: Cloud Security Operations
+   109.    Which comes first? 
+  
+A.  Accreditation
+  
+B.  Operation 
+  C.  Maintenance 
+  
+D.  Certification
+  
+ 110.    The National Institute of Standards and Technology (NIST) Risk Management 
+Framework (RMF) is required for federal agencies in the United States. Which of the 
+following is  not 
+ a characteristic of the RMF?t
+  
+A.  Automation of controls wherever possible
+  
+B.  Focuses on continual improvement and near real-time risk management
+  C.  Is based on cost metrics and perceived threats
+  D.  Links risk management at the process level to risk management at the managerial
+level
+   111.    Symmetric encryption involves . 
+  A.  Two key pairs, mathematically related
+  B.  Unknown parties, sharing information 
+  C.  Signed certificates
+  D.  A shared secret
+  
+ 112.    Symmetric encryption involves . 
+  A.  The Diffie-Hellman key exchange
+  B.  Passing keys out of band
+  C.  Mathematically related key pairs
+  D.  A one-way mathematical algorithm for validating messages
+
+  
+Chapter 6  ■  Domain 6: Legal, Risk, and Compliance 139
+  
+  46.    You are the security manager for a software company that uses platform as a service 
+(PaaS) in a public cloud service. Your company’s general counsel informs you that 
+they have received a letter from a former employee who is filing a lawsuit against your 
+company. You should immediately issue a(n)  to all personnel and 
+offices within your company. 
+  A.  Litigation hold notice
+  
+B.  Audit scoping letter 
+  C.  Stop loss memo 
+  
+D.  Memorandum of agreement
+  
+ 47.    You are the security manager for a software company that uses platform as a service 
+(PaaS) in a public cloud service. Your company’s general counsel informs you that 
+they have received a letter from a former employee who is filing a lawsuit against your 
+company. If you do not take proper steps to retain, capture, and deliver pertinent data
+to the person making the request (or their attorney), the company could be facing legal
+problems with  as well as the lawsuit.
+  A.  Spoliation 
+  
+B.  Fraud
+  C.  Jurisdiction 
+  
+D.  Recompositing
+  
+  4 8.    You are the chief information officer (CIO) for an IT hardware manufacturer. Your
+company uses cloud-based software as a service (SaaS) services, including email. You 
+receive a legal request for data pertinent to a case. Your e-discovery efforts will largely be 
+dependent on . 
+  A.  The cloud provider
+  B.  Regulators
+  C.  The cloud customer 
+  
+D.  Internal IT personnel
+  
+  4 9.    You work for a company that operates a production environment in the cloud. Another
+company using the same cloud provider is under investigation by law enforcement
+for racketeering. Your company should be concerned about this because of the cloud 
+characteristic of . 
+  A.  Virtualization
+  B.  Pooled resources 
+  C.  Elasticity 
+  D.  Automated self-service
+140 Chapter 6  ■  Domain 6: Legal, Risk, and Compliance
+  
+  5 0.    You are the security manager for a software company that uses platform as a service 
+(PaaS) in a public cloud service. Your company’s general counsel informs you that 
+they have received a letter from a former employee who is filing a lawsuit against your 
+company. What is one of the common practices used in your industry that will have to be 
+halted until the resolution of the case? 
+  A.  Versioning
+  
+B.  Patching
+  C.  Threat modeling 
+  
+D.  Secure destruction
+  
+  51.    Your company receives a litigation hold notice from a customer that is suing you for 
+harm caused by one of your products. You are using a managed cloud service for your
+production environment. You determine that the data requested by the litigant is vast and
+is going be very difficult to review for pertinence to the case.
+   The senior executive at your firm who is making decisions about this case suggests
+handing over all data the company has archived for the time frame related to the case, 
+whether or not it may be pertinent, in order to both allow the litigant to find the pertinent 
+data and reduce the costs your company would incur if it performed the reform. 
+   What should be your response to the executive?
+  A.  This is an excellent idea; it fulfills the company’s legal requirements and reduces the 
+overall costs of the litigation. 
+  B.  This is a good idea; it may alleviate some of the costs associated with the court case.
+  C.  This is a bad idea; the company might not realize the full cost savings that it expects.
+  D.  This is a horrible idea; it could lead to extensive unauthorized disclosure and
+additional lawsuits.       
+  
+  5 2.    Your company receives a litigation hold notice from a customer that is suing you for 
+harm caused by one of your products. You are using a managed cloud service for your
+production environment. You determine that the data requested by the litigant is vast and
+is going be very difficult to review for pertinence to the case.
+  Which security control mechanism may also be useful in the e-discovery effort? 
+  
+A.  Trained and aware personnel
+  B.  An egress monitoring solution (data loss prevention or data leak protection [DLP]) 
+  C.  A digital rights management (DRM) solution 
+  
+D.  A multifactor authentication implementation
+  
+  5 3.    When targeting a cloud customer, a court grants an order allowing a law enforcement
+entity to seize .
+  
+A.  Electronic data 
+  B.  Hardware 
+  C.  Electronic data and the hardware on which it resides 
+  
+D.  Only data extracted from hardware
+Chapter 6  ■  Domain 6: Legal, Risk, and Compliance 141
+  
+  5 4.    Your company is defending itself during a civil trial for a breach of contract case.
+Personnel from your IT department have performed forensic analysis on event logs that 
+reflect the circumstances related to the case.
+   In order for your personnel to present the evidence they collected during forensic analysis 
+as expert witnesses, you should ensure that . 
+  A.  Their testimony is scripted, and they do not deviate from the script
+  
+B.  They present only evidence that is favorable to your side of the case
+  C.  They are trained and certified in the tools they used
+  
+D.  They are paid for their time while they are appearing in the courtroom
+  
+  55.    In some jurisdictions, it is mandatory that personnel conducting forensic analysis 
+collection or analysis have a proper . 
+  A.  Training credential 
+  B.  License
+  C.  Background check
+  D.  Approved toolset
+  
+  5 6.    You run an IT security incident response team. When seizing and analyzing data for 
+forensic purposes, your investigative personnel modify the data from its original content.
+For courtroom evidentiary purposes, this makes the data . 
+  A.  Inadmissible
+  B.  Less believable, if the changes aren’t documented
+  C.  Harder to control 
+  D.  Easily refutable
+    57.    You are the security manager for a small investing firm. After a heated debate regarding
+security control implementation, one of your employees strikes another employee with a
+keyboard. The local media hear about the incident and broadcast/publish stories about it 
+under the title “Computer-related attack.” 
+   What may be the result of this situation? 
+  
+A.  A criminal trial
+  B.  A civil case
+  C.  Both criminal and civil proceedings 
+  
+D.  Federal racketeering charges
+  
+  58.    You are the security manager for a small investing firm. After a heated debate regarding
+security control implementation, one of your employees strikes another employee with a
+keyboard. The local media hear about the incident and broadcast/publish stories about it 
+under the title “Computer-related attack.” 
+   In this circumstance, who would likely be prosecuted? 
+  
+A.  Your organ ization 
+  
+B.  The attacker
+  C.  The victim 
+  
+D.  You, as the manager of both parties
+142 Chapter 6  ■  Domain 6: Legal, Risk, and Compliance
+  
+  59.     is the legal concept that describes the actions and processes a 
+cloud customer uses to ensure that a reasonable level of protection is applied to the data in 
+their control.
+  A.  Due care 
+  
+B.  Due diligence 
+  C.  Liability 
+  
+D.  Reciprocity       
+    60.    Which of the following aspects of virtualization make the technology useful for evidence 
+collection? 
+  
+A.  Hypervisors
+  B.  Pooled resources 
+  C.  Snapshotting
+  
+D.  Live migration
+  
+  61.    Which of the following practices can enhance both operational capabilities and forensic
+readiness?
+  A.  Highly trained forensic personnel
+  
+B.  Regular full backups 
+  C.  A highly secure data archive 
+  
+D.  Homomorphic encryption
+    62.    Which of the following practices can enhance both operational capabilities and
+configuration management efforts? 
+  A.  Regular backups
+  B.  Constant uptime 
+  C.  Multifactor authentication
+  
+D.  File hashes
+    63.    Which of the following is probably the most 
+ volatile form of data that might serve at
+forensic purpose? 
+  A.  Virtual instance RAM
+  B.  Hardware RAM 
+  C.  Hypervisor logs
+  D.  Drive storage
+    64.    You are the security representative of a small company doing business through a cloud
+provider. Your company comes under investigation by law enforcement for possible
+wrongdoing. In performing e-discovery activity so as to comply with a court order, the 
+cloud provider offers to ship a piece of hardware, a storage drive, from their data center to 
+you for inspection/analysis.
+Chapter 6  ■  Domain 6: Legal, Risk, and Compliance 143
+   What should probably be your response?
+  
+A.  Yes. You want it because it gives you the most granular and comprehensive view of 
+the pertinent data.
+  
+B.  Yes. You want to be able to inspect it before law enforcement has the opportunity to 
+review it. 
+  C.  No. You don’t want the liability of possibly disclosing someone else’s privacy data.
+  D.  No. You don’t want the liability of possibly damaging someone else’s property.       
+  
+  6 5.    The Reporting phase of forensic investigation usually involves presenting findings to
+. 
+  
+A.  Senior management
+  B.  Regulators
+  C.  The court 
+  
+D.  Stakeholders
+  
+  66.    When presenting forensic evidence in court as testimony, you should include, if at all 
+possible, . 
+  
+A.  Your personal opinion
+  
+B.  A clear, concise view of your side of the case
+  C.  Alternative explanations
+  
+D.  Historical examples that have bearing on the circumstances of the current case
+    67.    When collecting digital evidence for forensic purposes, it is important to compare the 
+integrity value for any copied material against .
+  A.  The original
+  B.  The backup
+  C.  Another copy
+  
+D.  The industry standard
+  
+  68.    Who should be responsible for ensuring the state, security, and control of all evidence, 
+from the time it’s collected until it is presented in court?
+  A.  The data controller
+  B.  The evidence custodian
+  C.  The security manager
+  D.  The IT director
+    69.    When you’re accessing an electronic storage file for forensic purposes, it is a best practice 
+to use .
+  A.  Gloves
+  B.  A trusted computing base
+  C.  Sysadmin access 
+  D.  A write-blocker
+144 Chapter 6  ■  Domain 6: Legal, Risk, and Compliance
+  
+  7 0.    Which of the following should  not 
+ be true about any tests performed during forensic t
+analysis? 
+  A.  Tests should be repeatable by opposing attorneys.
+  
+B.  Tests should be standard to the forensics industry.
+  C.  Tests should be performed by trained, certified professionals.
+  
+D.  Tests should be tailored and customized for specific purposes.
+  
+  71.    Which of the following pieces of data is considered personally identifiable information 
+(PII) in the European Union (EU) but not 
+ in the United States?t
+  
+A.  Name
+  
+B.  Home address
+  C.  Birth date
+  D.  Mobile phone number       
+  
+  7 2.    The Privacy Shield program allows U.S. companies to collect and process privacy
+information about European Union (EU) citizens. The program is included in which law? 
+  A.  Federal Information Security Management Act (FISMA)
+  B.  The EU General Data Protection Regulation (GDPR) 
+  C.  Health Information Portability and Accountability Act (HIPAA) 
+  D.  Sarbanes-Oxley Act
+  
+  7 3.    You are the security manager for a U.S.-based company that has branches abroad, 
+including offices in Germany, Italy, and Brazil. If your company wants to process European
+Union (EU) citizen personally identifiable information (PII) data, one of the options is to
+use standard contractual clauses (also known as model contracts, or binding rules). 
+   If you choose this option, your company will have to get approval from
+. 
+  A.  Privacy officials in Italy
+  B.  Privacy officials in Brazil 
+  C.  Privacy officials in Italy and Germany 
+  D.  Privacy officials in Italy, Germany, and Brazil
+  
+  7 4.    Using cloud storage is considered  under most privacy frameworks
+and laws.
+  
+A.  Illegal
+  B.  Data collection
+  C.  Opt-in
+  D.  Processing
+Chapter 6  ■  Domain 6: Legal, Risk, and Compliance 145
+  
+  75.    Which U.S. federal government entity is in charge of administering the Privacy Shield
+program? 
+  A.  State Department
+  
+B.  Privacy Protection Office 
+  C.  Federal Trade Commission (FTC) 
+  
+D.  Department of Health and Human Services (HHS)
+  
+  7 6.    In deciding which cloud provider to use, one of the characteristics you may want to
+determine about the provider is their level of professionalism. Which of the following tools 
+could be used to determine the thoroughness, detail, and repeatability of the processes and 
+procedures offered by a cloud provider? 
+  A.  The Cloud Security Alliance (CSA) Security, Trust, and Assurance Registry (STAR) 
+certification program 
+  B.  The Risk Management Framework (RMF)
+  C.  The Capability Maturity Model (CMM)
+  D.  The EuroCloud Star Audit Certification
+    77.    Service Organization Control (SOC) 2 reports were intended to be . 
+  A.  Released to the public
+  B.  Only technical assessments
+  C.  Retained for internal use
+  D.  Nonbinding
+  
+  7 8.    To receive a Service Organization Control (SOC) 2 Type 2 report from a potential
+provider, the provider may require you to perform/provide a(n) . 
+  A.  Security deposit 
+  B.  Nondisclosure agreement (NDA) 
+  C.  Cloud Security Alliance (CSA) Security, Trust, and Assurance Registry (STAR) 
+certification application
+  D.  Act of fealty
+  
+  7 9.    The Generally Accepted Privacy Principles described by the American Institute of 
+Certified Public Accountants (AICPA) are very similar to the privacy principles described 
+by . 
+  
+A.  The Organisation for Economic Cooperation and Development (OECD) and
+European Union (EU) General Data Protection Regulation (GDPR) 
+  B.  National Institute of Standards and Technology (NIST) and European Union Agency
+for Network and Information Security (ENISA) 
+  C.  Health Information Portability and Accountability Act (HIPAA) and Gramm–Leach–
+Bliley Act (GLBA)
+  
+D.  The Federal Trade Commission (FTC) and the U.S. State Department
+146 Chapter 6 ■  Domain 6: Legal, Risk, and Compliance
+    80.    The Payment Card Industry Data Security Standard (PCI DSS) requires that all merchants
+who want to process credit card transactions be compliant with a wide variety of security
+control requirements. Approximately how many controls are listed in the PCI DSS?
+  A.  Around a dozen 
+  
+B.  About 20 
+  C.  About 100 
+  
+D.  Over 200
+    81.    The Payment Card Industry Data Security Standard (PCI DSS) requires that all merchants 
+who want to process credit card transactions be compliant with a wide variety of security
+control requirements. Merchants are assigned different tier levels under PCI DSS, based on 
+. 
+  A.  Availability
+  B.  Redundancy
+  C.  Location of their corporate headquarters 
+  D.  Number of transactions per year
+    82.    The Payment Card Industry Data Security Standard (PCI DSS) requires that all 
+merchants who want to process credit card transaction be compliant with a wide variety 
+of security control requirements. The different merchant tier requirements will dictate 
+. 
+  A.  Different types of audits each must conduct 
+  B.  Different amounts of audits each must conduct
+  C.  Different control sets based on tier level 
+  D.  Different cost of controls based on tier level
+    83.     are required to use only  cryptographic modules that are 
+compliant with Federal Information Processing Standard (FIPS) 140-2. 
+  A.  Americans 
+  B.  Cloud providers
+  C.  Infrastructure as a service (IaaS) providers 
+  
+D.  U.S. federal agencies       
+  
+  84.    In performing vendor management and selection, one of the questions you, as the 
+potential cloud customer, might ask is, “Does it seem as if this vendor is subject to any
+pending acquisitions or mergers?” In gathering data to answer this question, what are you 
+trying to avoid?
+  
+A.  Vendor lockout
+  B.  Due care 
+  C.  Third-party dependencies 
+  
+D.  Regulatory oversight
+
+
+Chapter 7  ■  Practice Exam 1 167
+    88.    Which of the following does not 
+ typically represent a means for enhanced authentication? t
+  
+A.  Challenge questions
+  
+B.  Variable keystrokes
+  C.  Out-of-band identity confirmation 
+  
+D.  Dynamic end-user knowledge
+  
+  8 9.    Which of the following is  not 
+ a common identity federation standard?t
+  
+A.  WS-Federation 
+  
+B.  OpenID 
+  C.  OISame 
+  
+D.  Security Assertion Markup Language (SAML)
+  
+  9 0.    Multifactor authentication typically includes two or more of all the following elements
+except . 
+  A.  What you know
+  B.  Who you know
+  C.  What you are
+  D.  What you have       
+    91.    Which of the following aspects of cloud computing can enhance the customer’s business 
+continuity and disaster recovery (BC/DR) efforts? 
+  
+A.  Multitenancy 
+  B.  Pooled resources 
+  C.  Virtualization 
+  D.  Remote access       
+  
+  9 2.    Which of the following aspects of cloud computing can enhance the customer’s business 
+continuity and disaster recovery (BC/DR) efforts? 
+  A.  Rapid elasticity
+  B.  Online collaboration 
+  C.  Support of common regulatory frameworks
+  D.  Attention to customer service
+  
+  9 3.    Which of the following aspects of cloud computing can enhance the customer’s business 
+continuity and disaster recovery (BC/DR) efforts? 
+  
+A.  On-demand self-service 
+  B.  Pooled resources 
+  C.  Virtualization 
+  
+D.  The control plane
+168 Chapter 7  ■  Practice Exam 1
+    94.    What functional process can aid business continuity and disaster recovery (BC/DR) 
+efforts? 
+  A.  The software development lifecycle (SDLC)
+  
+B.  Data classification
+  C.  Honeypots
+  
+D.  Identity management
+  
+  95.    Which common security tool can aid in the overall business continuity and disaster
+recovery (BC/DR) process?
+  A.  Honeypots
+  
+B.  Data loss prevention or data leak protection (DLP)
+  C.  Security information and event management (SIEM)
+  
+D.  Firewalls
+  
+  9 6.    Which of the following aspects of cloud computing can enhance the customer’s business 
+continuity and disaster recovery (BC/DR) efforts? 
+  A.  Geographical separation of data centers 
+  
+B.  Hypervisor security
+  C.  Pooled resources
+  D.  Multitenancy
+    97.    Which of the following is  not 
+ typically used as an information source for businesst
+continuity and disaster recovery (BC/DR) event anticipation?
+  A.  Open source news 
+  
+B.  Business threat intelligence
+  C.  Egress monitoring solutions 
+  D.  Weather monitoring agencies
+  
+  98.    Which of the following aspects of the business continuity and disaster recovery (BC/DR)
+process poses a risk to the organization?
+  A.  Premature return to normal operations 
+  
+B.  Event anticipation information 
+  C.  Assigning roles for BC/DR activities
+  D.  Preparing the continuity-of-operations plan
+  
+  99.    Which of the following aspects of the business continuity and disaster recovery (BC/DR)
+process poses a risk to the organization?
+  A.  Threat intelligence gathering 
+  B.  Preplacement of response assets
+  C.  Budgeting for disaster
+  D.  Full testing of the plan
+Chapter 7  ■  Practice Exam 1 169
+   
+100.    In container virtualization, unlike standard virtualization, what is not 
+ included?t
+  
+A.  Hardware emulation
+  
+B.  OS replication 
+  C.  A single kernel
+  
+D.  The possibility for multiple containers
+  
+ 101.    Which of the following is  not 
+ typically a phase in the software development lifecyclet
+(SDLC)? 
+  A.  Define
+  B.  Test
+  C.  Develop 
+  D.  Sanitization
+   102.    An application programming interface (API) gateway can typically offer all of the 
+following capabilities  except . 
+  
+A.  Rate limiting 
+  
+B.  Access control
+  C.  Hardware confirmation
+  
+D.  Logging
+   
+103.    Cloud customers in a public cloud managed services environment can install all the
+following types of firewalls  except . 
+  A.  Provider operated
+  
+B.  Host-based
+  C.  Third party
+  
+D.  Hardware
+   104.    The Transport Layer Security (TLS) protocol creates a secure communications channel
+over public media (such as the Internet). In a typical TLS session, who initiates the
+protocol? 
+  A.  The server
+  
+B.  The client
+  C.  The certifying authority 
+  D.  The Internet service provider (ISP)
+   105.    The Transport Layer Security (TLS) protocol creates a secure communications channel 
+over public media (such as the Internet). In a typical TLS session, what is the  usual 
+ meansl
+for establishing trust between the parties? 
+  A.  Out-of-band authentication 
+  B.  Multifactor authentication
+  C.  Public-key infrastructure (PKI) certificates 
+  D.  Preexisting knowledge of each other
+170 Chapter 7  ■  Practice Exam 1
+   
+106.    The Transport Layer Security (TLS) protocol creates a secure communications channel 
+over public media (such as the Internet). In a typical TLS session, what form of 
+cryptography is used for the session key?
+  A.  Symmetric key
+  
+B.  Asymmetric key pairs
+  C.  Hashing 
+  
+D.  One asymmetric key pair
+  
+ 107.    DevOps is a form of software development that typically joins the software development 
+team with . 
+  
+A.  The production team
+  B.  The marketing team
+  C.  The security office 
+  
+D.  Management
+   108.    The Agile Manifesto for software development focuses largely on . 
+  
+A.  Secure build 
+  
+B.  Thorough documentation 
+  C.  Working prototypes 
+  D.  Proper planning       
+   
+109.    When a program’s source code is open to review by the public, what is that software 
+called? 
+  
+A.  Freeware
+  
+B.  Malware
+  C.  Open source
+  D.  Shareware
+  
+ 110.    Why is Simple Object Access Protocol (SOAP) used for accessing web services instead of 
+the Distributed Component Object Model (DCOM) and the Common Object Request 
+Broker Architecture (CORBA)? 
+  
+A.  SOAP provides a much more lightweight solution. 
+  B.  SOAP replaces binary messaging with XML.
+  C.  SOAP is much more secure. 
+  D.  SOAP is newer.
+   111.    How does representational state transfer (REST) make web service requests? 
+  A.  XML 
+  B.  SAML
+  C.  URIs 
+  D.  TLS
+Chapter 7  ■  Practice Exam 1 171
+  
+ 112.    Representational state transfer (REST) outputs often take the form of 
+.
+  
+A.  JavaScript Object Notation (JSON)
+  
+B.  Certificates
+  C.  Database entries
+  
+D.  WS-Policy
+  
+ 113.    “Sensitive data exposure” is often included on the list of the Open Web Application 
+Security Project (OWASP) Top Ten web application vulnerabilities. In addition to 
+programming discipline and technological controls, what other approach is important for 
+reducing this risk?
+  A.  Physical access control to the facility
+  
+B.  User training
+  C.  Crafting sophisticated policies 
+  D.  Redundant backup power
+  
+ 114.    During maintenance mode for a given node in a virtualized environment, which of the 
+following conditions is  not 
+ accurate?t
+  
+A.  Generation of new instances is prevented.
+  
+B.  Admin access is prevented.
+  C.  Alerting mechanisms are suspended.
+  
+D.  Events are logged.
+  
+ 115.    How are virtual machines (VMs) moved from active hosts when the host is being put into
+maintenance mode? 
+  A.  As a snapshotted image file 
+  
+B.  In encrypted form
+  C.  As a live instance 
+  
+D.  Via portable media
+  
+ 116.    Which of the following is  not 
+ a typical mechanism used by intrusion detection systemt
+(IDS) and intrusion prevention system (IPS) solutions to detect threats? 
+  A.  Signature-based detection
+  B.  User input
+  C.  Statistical-based detection
+  D.  Heuristic detection
+  
+ 117.    When you’re deploying a honeypot/honeynet, it is best to fill it with 
+ data. 
+  A.  Masked
+  B.  Raw
+  C.  Encrypted 
+  D.  Useless
+172 Chapter 7  ■  Practice Exam 1
+  
+ 118.    The cloud provider should be required to make proof of vulnerability scans available to all 
+of the following  except . 
+  
+A.  Regulators
+  
+B.  The public
+  C.  Auditors
+  
+D.  The cloud customer       
+  
+ 119.    You are the security director for a chain of automotive repair centers across several states. 
+Your company uses a cloud software as a service (SaaS) provider for business functions
+that cross several of the locations of your facilities, such as ordering of parts, logistics and 
+inventory, billing, and marketing.
+   The manager at one of your newest locations reports that there is a competing car repair 
+company that has a logo that looks almost exactly like the one your company uses. This
+intellectual property is likely protected as a .   
+  
+A.  Copyright 
+  
+B.  Trademark
+  C.  Patent 
+  
+D.  Trade secret       
+   120.    You are the security director for a chain of automotive repair centers across several states. 
+Your company uses a cloud software as a service (SaaS) provider for business functions
+that cross several of the locations of your facilities, such as ordering of parts, logistics and 
+inventory, billing, and marketing.
+   The manager at one of your newest locations reports that there is a competing car repair 
+company that has a logo that looks almost exactly like the one your company uses. This
+conflict will most  likely have to be resolved with what legal method?t
+  A.  Breach of contract lawsuit 
+  
+B.  Criminal prosecution
+  C.  Civil suit 
+  D.  Military tribunal
+  
+ 121.    You are the security director for a chain of automotive repair centers across several states. 
+Your company uses a cloud software as a service (SaaS) provider for business functions
+that cross several of the locations of your facilities, such as ordering of parts, logistics and 
+inventory, billing, and marketing.
+   The manager at one of your newest locations reports that there is a competing car repair 
+company that has a logo that looks almost exactly like the one your company uses. What
+will  most likely  affect the determination of who has ownership of the logo?   
+  A.  Whoever first used the logo
+  B.  The jurisdiction where both businesses are using the logo simultaneously
+  C.  Whoever first applied for legal protection of the logo 
+  D.  Whichever entity has the most customers who recognize the logo       
+Chapter 7  ■  Practice Exam 1 173
+   
+122.    Which Statement on Standards for Attestation Engagements (SSAE) 18 audit report is 
+simply an attestation of audit results?
+  A.  Service Organization Control (SOC) 1
+  
+B.  SOC 2, Type 1
+  C.  SOC 2, Type 2 
+  
+D.  SOC 3
+   
+123.    Which Statement on Standards for Attestation Engagements (SSAE) 18 report is 
+purposefully designed for public release (for instance, to be posted on a company’s
+website)?
+  A.  Service Organization Control (SOC) 1
+  
+B.  SOC 2, Type 1
+  C.  SOC 2, Typ e 2 
+  D.  SOC 3
+   124.    Which of the following countries has a national privacy law that conforms to European
+Union (EU) legislation? 
+  A.  The United States
+  B.  Australia
+  C.  Jamaica
+  D.  Honduras
+   125.    Which of the following countries has a national privacy law that conforms to European
+Union (EU) legislation? 
+  
+A.  Japan 
+  B.  Alaska
+  C.  Belize 
+  D.  Madagascar
+
+
+Chapter 8  ■  Practice Exam 2 191
+  
+  84.    You are the security manager for a software development firm. Your company is interested 
+in using a managed cloud service provider for hosting its testing environment. Previous 
+releases have shipped with major flaws that were not detected in the testing phase; 
+leadership wants to avoid repeating that problem. What tool, technique, or technology 
+might you suggest to aid in identifying programming errors? 
+  A.  Vulnerability scans
+  
+B.  Open source review
+  C.  Service Organization Control (SOC) audits 
+  
+D.  Regulatory review
+  
+  85.    You are the security manager for a software development firm. Your company is
+interested in using a managed cloud service provider for hosting its testing environment. 
+Previous releases have shipped with major flaws that were not detected in the testing 
+phase; leadership wants to avoid repeating that problem. It is important to prevent
+ from being present during the testing. 
+  A.  Senior management
+  
+B.  Marketing department personnel
+  C.  Finance analysts 
+  
+D.  Programmers who worked on the software
+  
+  86.    You are the security manager for a software development firm. Your company is
+interested in using a managed cloud service provider for hosting its testing environment. 
+Management is interested in adopting an Agile development style. When you explain what 
+impact this will have, you note that  may be decreased by this 
+option. 
+  A.  Speed of development
+  B.  Thoroughness of documentation 
+  C.  Availability of prototypes
+  
+D.  Customer collaboration       
+  
+  87.    You are the security manager for a software development firm. Your company is
+interested in using a managed cloud service provider for hosting its testing environment. 
+Management is interested in adopting an Agile development style. In order for this to 
+happen, the company will have to increase the involvement of . 
+  A.  Security personnel
+  B.  Budget and finance representatives
+  C.  Members of the user group 
+  D.  Senior management
+192 Chapter 8  ■  Practice Exam 2
+    88.    You are the security manager for a software development firm. Your company is
+interested in using a managed cloud service provider for hosting its testing environment. 
+Management is interested in adopting an Agile development style. This will be typified by
+which of the following traits?
+  A.  Reliance on a concrete plan formulated during the Define phase
+  
+B.  Rigorous, repeated security testing
+  C.  Isolated programming experts for specific functional elements
+  
+D.  Short, iterative work periods
+  
+  8 9.    You are the security manager for a software development firm. Your company is
+interested in using a managed cloud service provider for hosting its testing environment. 
+Management is interested in adopting an Agile development style. This will be typified by
+which of the following traits?
+  A.  Daily meetings 
+  B.  A specific shared toolset
+  C.  Defined plans that dictate all efforts
+  D.  Addressing customer needs with an exhaustive initial contract       
+    9 0.    You are the security manager for a software development firm. Your company is interested 
+in using a managed cloud service provider for hosting its testing environment. The 
+backend of the software will have the data structured in a way to optimize XML requests.
+Which API programming style should programmers most likely concentrate on for the 
+frontend interface? 
+  A.  Simple Object Access Protocol (SOAP)
+  B.  Representational state transfer (REST)
+  C.  Security Assertion Markup Language (SAML) 
+  D.  Data loss prevention or data leak protection (DLP)
+    91.    You are the security manager for a software development firm. Your company is interested 
+in using a managed cloud service provider for hosting its testing environment. You
+recommend the use of STRIDE threat modeling to assess potential risks associated with
+the software. Which of the following is  not 
+ addressed by STRIDE?t
+  
+A.  External parties presenting false credentials
+  B.  External parties illicitly modifying information 
+  C.  Participants able to deny a transaction 
+  
+D.  Users unprepared for secure operation by lack of training
+Chapter 8  ■  Practice Exam 2 193
+    92.    You are the security manager for a software development firm. Your company is
+interested in using a managed cloud service provider for hosting its testing environment. 
+Management has decided that the company will deploy encryption, data loss prevention
+or data leak protection (DLP), and digital rights management (DRM) in the cloud
+environment for additional protection. When consulting with management, you explain
+that these tools will most likely reduce . 
+  A.  External threats
+  
+B.  Internal threats
+  C.  Software vulnerabilities 
+  
+D.  Quality of service
+  
+  93.    You are the security manager for a software development firm. Your company is interested 
+in using a managed cloud service provider for hosting its testing environment. Your 
+company has, and wishes to retain, ISO 27034 certification. For every new application it 
+creates, it will also have to create a(n) . 
+  A.  Organizational normative framework (ONF)
+  
+B.  Application normative framework (ANF)
+  C.  Intrinsic normative framework (INF) 
+  
+D.  Service Organization Control (SOC) 3 report       
+    94.    You are the security manager for a software development firm. Your company is interested 
+in using a managed cloud service provider for hosting a customer-facing production
+environment. Many of your end users are located in the European Union (EU) and will 
+provide personal data as they use your software. Your company will not be allowed to use
+a cloud data center in which of the following countries?
+  A.  Japan 
+  B.  Australia
+  C.  Belgium 
+  
+D.  Chile
+    95.    You are the security manager for a software development firm. Your company is interested 
+in using a managed cloud service provider for hosting a customer-facing production
+environment. Many of your end users are located in the European Union (EU) and will 
+provide personal data as they use your software. Your company will not be allowed to use
+a cloud data center in which of the following countries?
+  A.  Argentina
+  B.  Israel
+  C.  South Korea
+  D.  Switzerland
+194 Chapter 8  ■  Practice Exam 2
+  
+  96.    You are the security manager for a software development firm. Your company is interested 
+in using a managed cloud service provider for hosting a customer-facing production
+environment. Many of your end users are located in the European Union (EU) and will 
+provide personal data as they use your software. Your company will not be allowed to use
+a cloud data center in which of the following countries?
+  A.  Canada 
+  
+B.  Singapore 
+  C.  France
+  
+D.  Kenya
+  
+  97.    Which of the following is not a core principle included in the Organisation for Economic
+Cooperation and Development (OECD) privacy guidelines? 
+  A.  The individual must have the ability to refrain from sharing their data. 
+  
+B.  The individual must have the ability to correct errors in their data. 
+  C.  The individual must be able to request a purge of their data. 
+  
+D.  The entity holding the data must secure it.       
+  
+  98.    Who is the entity identified by personal data? 
+  A.  The data owner 
+  
+B.  The data processor 
+  C.  The data custodian 
+  
+D.  The data subject
+    99.    What is the current European Union (EU) privacy legislation that restricts dissemination
+of personal data outside the EU?
+  A.  The EU Data Directive
+  
+B.  Privacy Shield
+  C.  The General Data Protection Regulation (GDPR) 
+  
+D.  Sarbanes–Oxley (SOX)
+   100.    In order for American companies to process personal data belonging to European 
+Union (EU) citizens, they must comply with the Privacy Shield program. The program is 
+administered by the U.S. Department of Transportation and the . 
+  A.  U.S. State Department
+  B.  Fish and Wildlife Service
+  C.  Federal Trade Commission (FTC) 
+  D.  Federal Communication Commission (FCC)
+   1 01.    In addition to the Privacy Shield program, what other means can non–European Union
+(EU) companies use to be allowed to process personal data of EU citizens? 
+  A.  Enhanced security controls
+  
+B.  Standard contractual clauses
+  C.  Increased oversight
+  D.  Modified legal regulation
+Chapter 8  ■  Practice Exam 2 195
+   102.    Which entity is legally responsible for the protection of personal data? 
+  
+A.  The data subject
+  
+B.  The data controller
+  C.  The data processor 
+  
+D.  The data steward
+   
+103.    When a company is first starting and has no defined processes and little documentation,
+it can be said to be at level  of the Capability Maturity Model
+(CMM).
+  A.  1
+  
+B.  2
+  C.  3 
+  D.  4
+   104.    Which of the following standards addresses a company’s entire security program,
+involving all aspects of various security disciplines? 
+  A.  ISO 27001
+  B.  ISO 27002 
+  C.  National Institute of Standards and Technology (NIST) 800-37 
+  D.  Statement on Standards for Attestation Engagements (SSAE) 18
+   105.    A cloud provider might only release Service Organization Control (SOC 2), Type 2 reports
+to .
+  A.  Regulators
+  B.  The public
+  C.  Potential customers
+  D.  Current customers       
+   106.    A cloud provider’s Service Organization Control (SOC) 1 report may not be useful to
+customers interested in determining the provider’s security posture because the SOC 1
+report contains only information about . 
+  
+A.  Sales projections 
+  B.  Financial reporting 
+  C.  Previous customer satisfaction
+  
+D.  Process definition
+  
+ 1 07.    The Payment Card Industry (PCI) Data Security Standard requires different levels of 
+activity based on participants’ .
+  
+A.  Number of personnel
+  B.  Branch locations 
+  C.  Number of transactions per year 
+  
+D.  Preferred banking institutions
+196 Chapter 8  ■  Practice Exam 2
+   
+108.    Which IT product review framework is intended to determine the accuracy of vendor 
+claims regarding security functions of the product? 
+  A.  Underwriters Laboratories (UL)
+  
+B.  Federal Information Processing Standard (FIPS) 140-2
+  C.  Payment Card Industry (PCI) Data Security Standard (DSS) 
+  
+D.  Common Criteria
+   
+109.    What is the lowest level of cryptographic security for a cryptographic module, according 
+to the Federal Information Processing Standard (FIPS) 140-2 standard? 
+  A.  1
+  
+B.  2
+  C.  3 
+  D.  4
+  
+ 110.    What is the highest level of the Cloud Security Alliance Security, Trust, and Assurance 
+Registry (CSA STAR) certification program for cloud service providers?
+  A.  1
+  B.  2
+  C.  3 
+  D.  4
+   111.    Every cloud service provider that opts to join the Cloud Security Alliance Security,
+Trust, and Assurance Registry (CSA STAR) program registry must complete a 
+. 
+  
+A.  Service Organization Control (SOC) 2, Type 2 audit report
+  B.  Consensus Assessment Initiative Questionnaire (CAIQ)
+  C.  National Institute of Standards and Technology (NIST) 800-37 Risk Management 
+Framework (RMF) audit
+  D.  ISO 27001 information security management system (ISMS) review       
+  
+ 112.    The term  cloud carrier 
+ most often refers to . 
+  
+A.  The cloud provider
+  B.  The cloud customer 
+  C.  An Internet service provider (ISP)
+  
+D.  A cloud manager
+  
+ 113.    In a centralized broker identity federation, which entity typically creates and sends the 
+Security Assertion Markup Language (SAML) token?
+  
+A.  The cloud provider
+  B.  The Internet service provider (ISP) 
+  C.  The broker
+  
+D.  The cloud customer       
+Chapter 8  ■  Practice Exam 2 197
+   114.    Which of the following tools incorporates and references the requirements listed in all the 
+others? 
+  A.  ISO 27001
+  
+B.  Cloud Security Alliance (CSA) Cloud Controls Matrix (CCM) 
+  C.  Federal Risk and Authorization Management Program (FedRAMP) 
+  
+D.  European Union Agency for Network and Information Security (ENISA)
+  
+ 115.    Which of the following is an example of true multifactor authentication? 
+  
+A.  Having a login that requires both a password and a personal identification number
+(PIN)
+  
+B.  Using a thumbprint and voice recognition software for access control
+  C.  Presenting a credit card along with a Social Security card 
+  D.  Signing a personal check
+  
+ 116.    Which of the following is appropriate to include in a service-level agreement (SLA)?
+  A.  That the provider deliver excellent uptime
+  B.  That the provider host the customer’s data only within specific jurisdictions
+  C.  That any conflicts arising from the contract be settled within a particular jurisdiction 
+  D.  The specific amount of data that can be uploaded to the cloud environment in any 
+given month       
+   117.    Which of the following standards is typically used to convey public key information in a 
+public-key infrastructure (PKI) arrangement? 
+  A.  Security Assertion Markup Language (SAML)
+  B.  X.400
+  C.  X.509
+  D.  802.11
+  
+ 118.    In working with various networking technologies such as Frame Relay, ATM, and 
+Ethernet, the capability of the network to provide better service to selected traffic is called
+. 
+  
+A.  QaS 
+  B.  ASP
+  C.  OLA
+  
+D.  QoS       
+  
+ 119.    Which type of networking model is optimized for cloud deployments in which the 
+underlying storage and IP networks are combined so as to maximize the benefits of a
+cloud workload? 
+  
+A.  Software-defined networking model 
+  B.  Enterprise networking model
+  C.  Converged networking model
+  
+D.  Legacy networking model
+198 Chapter 8  ■  Practice Exam 2
+   120.    Which type of law consists of a body of rules and statutes that define prohibited conduct 
+and is set out to protect the safety and well-being of the public? 
+  A.  Tort
+  
+B.  Criminal
+  C.  Civil 
+  
+D.  Contract
+  
+ 121.    What is the primary reason for the use of SSDs in the cloud today? 
+  
+A.  They are faster than traditional spinning drives.
+  B.  They last longer than traditional spinning drives. 
+  C.  They are easier to replace than traditional spinning drives.
+  D.  They can be replaced quickly.       
+   122.    Which of the following are risks associated with virtualization?
+  A.  Loss of governance, snapshot and image security, and sprawl
+  B.  Public awareness, snapshot and image availability, and sprawl 
+  C.  Increased cost, snapshot and image security, and sprawl
+  D.  Loss of data
+   123.    Which of the following is the core of any system handling all input/output (I/O) 
+instructions?
+  
+A.  Central processing unit (CPU)
+  B.  Hypervisor
+  C.  User interface 
+  D.  Supervising application
+   124.    Which of the following is an international organization of network designers and
+architects who work together in establishing standards and protocols for the Internet?
+  A.  Internet Assigned Numbers Authority (IANA)
+  B.  International Organization for Standardization (ISO)/ International Electrotechnical
+Commission (IEC) 
+  C.  National Institute of Standards and Technology (NIST) 
+  
+D.  Internet Engineering Task Force (IETF)
+   125.  is a symmetric block type of cipher used to encrypt information 
+and is currently the standard for the U.S. government in protecting sensitive and secret
+documents.
+  
+A.  MD5
+  B.  Secure Socket Layer (SSL)
+  C.  Blowfish
+  
+D.  Advanced Encryption Standard (AES)
+
+
+340 Appendix ■  Answers to Review Questions
+    86.  B.  The Agile method reduces the dependence and importance of documentation in favor 
+of functioning software versions.
+ All the other options are elements that will most likely be increased by transitioning to an 
+Agile model. 
+    87.  C.  Agile requires interaction between developers and personnel who will use the software. 
+ All the other options are not essential roles in Agile development.
+    88.  D.  Agile development is usually organized in relatively short iterations of effort, between a
+week and a month in duration. 
+ Dependence on planning is directly contrary to Agile methodology; option A is incorrect. 
+ 
+In Agile, prototyping is favored over testing; option B is incorrect.
+ Agile relies on cooperative development instead of stovepiped expertise; option C is
+incorrect. 
+    89.  A.  Agile development often involves daily meetings (called Scrums). 
+ Agile methodology spurns the use of specifi c tools and concrete planning; options B and C
+are incorrect. 
+ 
+Agile also favors customer collaboration and prototyping instead of an elaborate contract 
+mechanism; option D is incorrect. 
+    90.  A.  SOAP is a web service programming format that requires the use of XML.
+ 
+REST relies more often on uniform resource identifi ers (URIs) than XML; option B is
+incorrect. 
+ 
+SAML is a protocol for passing identity assertions over the Internet; option C is incorrect.
+ 
+DLP is a data egress monitoring tool; option D is incorrect.
+    91.  D.  STRIDE  does not address user security training. 
+ All the other options are aspects addressed by the STRIDE model.
+    92.  D.  Every additional security measure might reduce a potential threat but defi nitely will 
+reduce productivity and quality of service. There is always an overhead cost of security.
+    93.  B.  ISO 27034 compliance requires an ANF for every application within the organization.
+ 
+Under 27034, the organization only needs one ONF, of which every ANF is a subset. 
+Option A is incorrect.
+ There is no INF. The term is a distractor; option C is incorrect.
+ 
+SOC 3 reports are for the Statement on Standards for Attestation Engagements (SSAE) 
+standard, not ISO 27034; option D is incorrect. 
+    94.  D.  Chile does not currently have a federal privacy law that conforms to EU legislation. All
+the other options are countries that do (Belgium is in the EU). 
+    95.  C.  South Korea does not currently have a federal privacy law that conforms to EU 
+legislation. All the other options are countries that do.
+Chapter 8: Practice Exam 2 341
+    96.  D.  Kenya  does not currently have a federal privacy law that conforms to EU legislation. 
+All the other options are countries that do (France is in the EU). 
+    97.  C.  This is an aspect of the current European Union (EU) legislation, known colloquially 
+as “the right to be forgotten”—it is not an aspect of the OECD principles.
+ 
+All the other options are included in the OECD principles. 
+    98.  D.  The data subject is the person who is identifi ed by personal data.
+ 
+All the other options are other privacy-data-related roles.
+    99.  C.  The GDPR is the current prevailing EU privacy data legislation. It replaced the Data 
+Directive. Privacy Shield is the program under which entities in non-adhering countries
+can still be allowed to process the personal data of EU citizens. SOX is an American law.
+  100.  C.  The FTC is the local U.S. enforcement arm for most Privacy Shield activity.
+ All the other options are U.S. government agencies not involved with Privacy Shield. 
+  101.  B.  Companies that are not in countries that have laws in accordance with the EU privacy
+regulations can instead opt for creating contract language that voluntarily complies with 
+the laws. 
+ All the other options are incorrect because they do not allow non–European Union com-
+panies to process personal data of EU citizens. 
+  102.  B.  The data controller is legally liable for protecting any privacy data it has. All the other 
+options are other data privacy roles that do not have ultimate legal responsibility.
+  103.  A.  Level 1 is the initial level of maturity for a company and its processes; activity may be
+performed in an ad hoc manner.
+ All the other options are greater maturity levels of the CMM.
+  104.  A.  The ISO 27001 standard reviews an organization’s security in terms of an information
+security management system (ISMS), which involves a holistic view of the entire security 
+program.
+ ISO 27002 is a standard for applying controls to the ISMS; option B is incorrect. 
+ NIST 800-37 is the Risk Management Framework; option C is incorrect.
+ SSAE is an audit standard for fi nancial reporting and the controls within an environment; 
+option D is incorrect. 
+  
+105.  D.  Because of the sensitive nature of the material covered in the SOC 2, Type 2 report, 
+a cloud provider might not be willing to share it with any entity that does not have a
+fi nancial stake in the cloud service. 
+ All the other options are entities that are unlikely to receive a SOC 2, Type 2 report from a 
+cloud provider. 
+  
+106.  B.  The SOC 1 report reviews the accuracy and completeness of an organization’s fi nancial
+reporting mechanisms.
+ All the other options are incorrect. 
+342 Appendix  ■  Answers to Review Questions
+  107.  C.  There are four PCI merchant levels, based on the number of transactions an
+organization conducts per year.
+ All the other options are incorrect answers. 
+  
+108.  D.  The Common Criteria is a framework for reviewing product security functions, as 
+stated by the vendor. 
+ The UL is a standards and certifi cation entity concerned with product safety; option A is 
+incorrect. 
+ FIPS 140-2 is a standard for certifying cryptographic modules; option B is incorrect. 
+ PCI DSS is a security standard for credit card merchants and processors; option C is
+incorrect. 
+  109. A.  The lowest level of the FIPS 140-2 standard is 1. All the other options are incorrect. 
+  110.  C.  There are three levels of the CSA STAR program, and 3 is the highest. All the other
+options are incorrect. 
+  111.  B.  The CAIQ is the CSA’s mechanism for STAR applicants to evaluate their own service. 
+ 
+The SOC reports are part of the Statement on Standards for Attestation Engagements 
+(SSAE) 18 audit standard; option A is incorrect.
+ The NIST RMF is only mandated for U.S. federal agencies and not part of the CSA purview; 
+option C is incorrect. 
+ The ISMS is one of the ISO standards and not part of the CSA purview; option D is
+incorrect. 
+  112.  C.  Cloud carrier is a term describing the intermediary between cloud customer and
+provider that delivers connectivity; this is typically an ISP. 
+ Options A and B are other typical cloud computing roles; option D is a not a term with
+any meaning in this context.
+  113.  C.  In a centralized broker federation, the broker (typically a third party) acting as the 
+identity provider, creates the SAML identity assertion tokens and delivers them to the 
+relying parties. 
+ All the other options are distractors and not entities that are assigned specifi c roles in a 
+federation motif. 
+  114.  B.  The CCM is a tool for determining control coverage for compliance with a variety of 
+standards and regulations. 
+ All the other options are standards or regulations.
+  115.  D.  The check involves two kinds of security elements: something you have (the check) and
+something you are (the biometric control, the signature).
+ Option A is two elements of the same kind: something you know. This is incorrect. 
+ 
+Option B is two elements of the same kind: something you are. This is incorrect.
+ 
+Option C is two elements of the same kind: something you have. This is incorrect. 
+Chapter 8: Practice Exam 2 343
+  116.  D.  SLA elements should be objective, numeric values, for repeated activity.
+ Options B and C are useful elements to be included in the contract, but not specifi cally the
+SLA. Options B and C are incorrect. 
+ Option A is too ambiguous; “excellent” is not a discrete value. Option A is incorrect. 
+  117.  C.  Option A is incorrect because software-defi ned networking refers to a networking 
+architecture consisting of three layers: application, control, and infrastructure.
+ 
+Enterprise networking is a general term, not specifi cally related to the cloud. Option B is
+incorrect. 
+ Legacy networking or traditional networking is designed for traditional networks that use
+physical devices and components rather than virtual. Option D is incorrect.
+  118.  D.  Quality of service (QoS) refers to the capability of a network to provide better service
+for certain traffi c regardless of network type or topology.
+ The other options contain uppercase and lowercase letters that may or may not be related 
+to the cloud. Option D is the only option that answers the question correctly. T he acronym
+QoS represents Quality of Service. QoS is used to set priorities for specifi c types of data to
+dependably run high-priority applications and traffi c. 
+  119.  C.  Optimized for cloud deployments, the converged networking model combines the 
+underlying storage and IP networks to maximize the benefi ts of a cloud workload. ss
+  120.  B.  Criminal law is set out in rules and statutes created by a government, prohibiting 
+certain activities as a means of protecting the safety and well-being of its citizens.
+Violations generally consist of both monetary and/or loss of liberty punishments. 
+ 
+Tort law refers the body of laws that provide remedies to individuals who have been
+caused harm by unreasonable acts of others. Negligence is the most common type of tort 
+lawsuit. Therefore, option A is incorrect.
+ Option C is incorrect because civil law pertains to contracts, property, and family law as 
+opposed to crimes like murder and theft that are associated with criminal law. 
+ 
+Contracts are agreements between parties to exchange goods and services; Option D is 
+incorrect. 
+  121.  A.  Solid-state disks (SSDs) are used in cloud computing today because they operate at high 
+speeds as compared to traditional spinning drives. 
+ Option B is incorrect. SSDs do not necessarily last longer than magnetic drives. 
+ 
+Options C and D are incorrect because SSDs are not noticeably easier or quicker to replace
+than traditional drives.
+  122.  A.  The primary risks associated with virtualization are loss of governance, snapshot and 
+image security, and sprawl. 
+ Options B and C are incorrect. Public awareness and increased costs are not risks associ-
+ated with virtualization. 
+ 
+Option D is incorrect because the loss of data is not associated with virtualization any-
+more than the loss of data is associated with non-virtualization. 
+344 Appendix ■  Answers to Review Questions
+  
+123.  A.  The central processing unit (CPU) is the core of any and all systems, handling all the 
+basic I/O instructions as they originate from the software.
+ The question focuses on the handling of all input/output (I/O) instructions. Only the CPU
+does that. Options B, C, and D function as a result of the CPU handling all of I/O for the
+hypervisor, user interface, and supervising application. The CPU is the core of computing 
+systems. Options B, C, and D are incorrect.
+  124.  D.  The IETF is an international organization of network designers and architects who 
+work together in establishing standards and protocols for the Internet. 
+ 
+IANA oversees global IP address allocation among other Internet tasks. IANA does not 
+establish standards and protocols for the Internet. Option A is incorrect. 
+ Option B is incorrect because the ISO/IEC develops, maintains and promotes standards in
+information technology and information communication technology.
+ Option C is incorrect because NIST is a federal government standards body in the US.
+  125.  D.  The Advanced Encryption Standard (AES) is currently used to encrypt and protect U.S.
+government sensitive and secret data. There are variants, but the most common is 256-bit, 
+which is virtually impossible to break today.
+ Option A is incorrect because MD5 is a cryptographic hash function used to verify that a 
+fi le has not been altered.
+ 
+SSL uses certifi cates to create a secure connection using encryption. Option B is incorrect.
+ Blowfi sh is a symmetric-key block cipher that has been replaced by AES encryption. The
+U.S. government uses AES and not Blowfi sh. Option C is incorrect
+
+338 Appendix ■  Answers to Review Questions
+    71.  C.  This  question is challenging because it requires some abstract thought and all answers 
+seem correct at fi rst glance. Intrusion detection systems (IDSs) and intrusion prevention
+systems (IPSs) do not secure data; they detect attack activity.
+ Domain Name System Security Extensions (DNSSEC) protects data in transit by reducing 
+the risk of DNS poisoning; Transport Layer Security (TLS) and Internet Protocol Security 
+(IPSec) reduce the risk of eavesdropping and interception of data. 
+    72.  D.  Administrative access may be limited but not prevented. 
+ 
+All the other options are common steps of OS hardening. 
+    73.  B.  The baseline confi guration can be used as a template of controls applied throughout the 
+environment.
+ The BIA and fi nancial records may offer an auditor insight into asset valuation/risk but 
+will not provide meaningful data for a control audit. Options A and C are incorrect. 
+ The SOC 3 report is only an attestation by an auditor that an audit has taken place; it does 
+not provide any useful information about security controls. 
+    74.  D.  During maintenance mode, all maintenance activities should still be logged and
+tracked. 
+ All the other actions are recommended for a cloud node entering maintenance mode. 
+    75.  B.  This action is pointless and excessive; the option is a distractor.
+ 
+All the other options are actions the cloud provider should undertake when conducting
+scheduled maintenance.
+    76.  B.  By defi nition, the tightly coupled cluster has a maximum capacity, whereas the loosely 
+coupled cluster does not. 
+ The other options do not have a set maximum capacity and are therefore incorrect. 
+    77.  C.  OpenStack is an open source project for creating cloud environments regardless of 
+hardware brand. 
+ Open Web Application Security Project (OWASP) is an open source web application devel-
+opment project and does not involve the use of any of the tools mentioned in the question. 
+Option A is incorrect.
+ 
+OAuth is a set of standards for identity federation. Option B is incorrect. 
+ 
+Mozilla is a company that produces and administers open source software such as the
+Firefox web browser. Option D is incorrect.
+    78.  C.  Masking the data (such as replacing the majority of the credit card number with Xs,
+leaving only the last four digits in view) should suffi ce for the purpose; it allows the call 
+center personnel to determine which card was used in the sale but does not reveal the card 
+number to the call center.
+ 
+Encrypting the data in storage but allowing call center personnel to decrypt it creates a
+vast opportunity for fraud and abuse; option A is incorrect.
+Chapter 8: Practice Exam 2 339
+ 
+Encrypting the data while the call center is trying to make the refund would be counter-
+productive; the call center personnel would be unable to determine which card gets the 
+refund. Option B is incorrect.
+ Relying on the customer to provide the correct card number invites inaccuracy and
+exposes the transaction to fraud; option D is not correct.
+    79.  C.  Describe is not a common phase in the SDLC; the software should be described in the
+Defi ne phase. 
+ 
+All the other options are common phases of the SDLC.
+    80.  D.  Business requirements are paramount because they incorporate the elements of all the 
+other options as well as additional inputs.
+    81.  D.  A DAM can recognize and block malicious SQL traffi c. 
+ 
+A WAF is a Layer 7 fi rewall that understands hostile HTTP traffi c. Option A is incorrect. 
+ An API gateway fi lters API traffi c. Option B is incorrect. 
+ 
+DLP solutions are used for egress monitoring, not incoming SQL commands. Option C is
+incorrect. 
+    82.  B.  PaaS is optimum for software testing as it allows the software to run across multiple
+platforms/OSs. 
+ All the other options are service/deployment models that are not as optimum for software 
+testing as PaaS. 
+    83.  C.  Sandboxing allows software to be run in an isolated environment, which can aid in 
+error detection.
+ 
+Software testing should not include raw production data, so there is no purpose for using
+DLP and DRM solutions; options A and B are incorrect.
+ The WAF is used to fi lter web traffi c; in the testing environment, there should not be any 
+live traffi c going to the software. Option D is incorrect. 
+    84.  B.  Open source review can detect fl aws that a structured testing method might not.
+ 
+Vulnerability scans will only detect known problems, not programming defects that have
+not yet been identifi ed; option A is incorrect. 
+ 
+Neither SOC audit nor regulatory review have anything to do with fi nding software fl aws; 
+options C and D are incorrect.
+    85.  D.  Programmers  have a vested interest in, and a specifi c perspective of, software they 
+create. They can unduly infl uence testing outcomes, even unintentionally. It is best to
+prevent programmers from attending testing of software they helped create.
+ All the other options are personnel who do not need to be present but will not necessarily
+cause undue infl uence of the testing process. 
+340 Appendix ■  Answers to Review Questions
+    86.  B.  The Agile method reduces the dependence and importance of documentation in favor 
+of functioning software versions.
+ All the other options are elements that will most likely be increased by transitioning to an 
+Agile model. 
+    87.  C.  Agile requires interaction between developers and personnel who will use the software. 
+ All the other options are not essential roles in Agile development.
+    88.  D.  Agile development is usually organized in relatively short iterations of effort, between a
+week and a month in duration. 
+ Dependence on planning is directly contrary to Agile methodology; option A is incorrect. 
+ 
+In Agile, prototyping is favored over testing; option B is incorrect.
+ Agile relies on cooperative development instead of stovepiped expertise; option C is
+incorrect. 
+    89.  A.  Agile development often involves daily meetings (called Scrums). 
+ Agile methodology spurns the use of specifi c tools and concrete planning; options B and C
+are incorrect. 
+ 
+Agile also favors customer collaboration and prototyping instead of an elaborate contract 
+mechanism; option D is incorrect. 
+    90.  A.  SOAP is a web service programming format that requires the use of XML.
+ 
+REST relies more often on uniform resource identifi ers (URIs) than XML; option B is
+incorrect. 
+ 
+SAML is a protocol for passing identity assertions over the Internet; option C is incorrect.
+ 
+DLP is a data egress monitoring tool; option D is incorrect.
+    91.  D.  STRIDE  does not address user security training. 
+ All the other options are aspects addressed by the STRIDE model.
+    92.  D.  Every additional security measure might reduce a potential threat but defi nitely will 
+reduce productivity and quality of service. There is always an overhead cost of security.
+    93.  B.  ISO 27034 compliance requires an ANF for every application within the organization.
+ 
+Under 27034, the organization only needs one ONF, of which every ANF is a subset. 
+Option A is incorrect.
+ There is no INF. The term is a distractor; option C is incorrect.
+ 
+SOC 3 reports are for the Statement on Standards for Attestation Engagements (SSAE) 
+standard, not ISO 27034; option D is incorrect. 
+    94.  D.  Chile does not currently have a federal privacy law that conforms to EU legislation. All
+the other options are countries that do (Belgium is in the EU). 
+    95.  C.  South Korea does not currently have a federal privacy law that conforms to EU 
+legislation. All the other options are countries that do.
+Chapter 8: Practice Exam 2 341
+    96.  D.  Kenya  does not currently have a federal privacy law that conforms to EU legislation. 
+All the other options are countries that do (France is in the EU). 
+    97.  C.  This is an aspect of the current European Union (EU) legislation, known colloquially 
+as “the right to be forgotten”—it is not an aspect of the OECD principles.
+ 
+All the other options are included in the OECD principles. 
+    98.  D.  The data subject is the person who is identifi ed by personal data.
+ 
+All the other options are other privacy-data-related roles.
+    99.  C.  The GDPR is the current prevailing EU privacy data legislation. It replaced the Data 
+Directive. Privacy Shield is the program under which entities in non-adhering countries
+can still be allowed to process the personal data of EU citizens. SOX is an American law.
+  100.  C.  The FTC is the local U.S. enforcement arm for most Privacy Shield activity.
+ All the other options are U.S. government agencies not involved with Privacy Shield. 
+  101.  B.  Companies that are not in countries that have laws in accordance with the EU privacy
+regulations can instead opt for creating contract language that voluntarily complies with 
+the laws. 
+ All the other options are incorrect because they do not allow non–European Union com-
+panies to process personal data of EU citizens. 
+  102.  B.  The data controller is legally liable for protecting any privacy data it has. All the other 
+options are other data privacy roles that do not have ultimate legal responsibility.
+  103.  A.  Level 1 is the initial level of maturity for a company and its processes; activity may be
+performed in an ad hoc manner.
+ All the other options are greater maturity levels of the CMM.
+  104.  A.  The ISO 27001 standard reviews an organization’s security in terms of an information
+security management system (ISMS), which involves a holistic view of the entire security 
+program.
+ ISO 27002 is a standard for applying controls to the ISMS; option B is incorrect. 
+ NIST 800-37 is the Risk Management Framework; option C is incorrect.
+ SSAE is an audit standard for fi nancial reporting and the controls within an environment; 
+option D is incorrect. 
+  
+105.  D.  Because of the sensitive nature of the material covered in the SOC 2, Type 2 report, 
+a cloud provider might not be willing to share it with any entity that does not have a
+fi nancial stake in the cloud service. 
+ All the other options are entities that are unlikely to receive a SOC 2, Type 2 report from a 
+cloud provider. 
+  
+106.  B.  The SOC 1 report reviews the accuracy and completeness of an organization’s fi nancial
+reporting mechanisms.
+ All the other options are incorrect. 
+342 Appendix  ■  Answers to Review Questions
+  107.  C.  There are four PCI merchant levels, based on the number of transactions an
+organization conducts per year.
+ All the other options are incorrect answers. 
+  
+108.  D.  The Common Criteria is a framework for reviewing product security functions, as 
+stated by the vendor. 
+ The UL is a standards and certifi cation entity concerned with product safety; option A is 
+incorrect. 
+ FIPS 140-2 is a standard for certifying cryptographic modules; option B is incorrect. 
+ PCI DSS is a security standard for credit card merchants and processors; option C is
+incorrect. 
+  109. A.  The lowest level of the FIPS 140-2 standard is 1. All the other options are incorrect. 
+  110.  C.  There are three levels of the CSA STAR program, and 3 is the highest. All the other
+options are incorrect. 
+  111.  B.  The CAIQ is the CSA’s mechanism for STAR applicants to evaluate their own service. 
+ 
+The SOC reports are part of the Statement on Standards for Attestation Engagements 
+(SSAE) 18 audit standard; option A is incorrect.
+ The NIST RMF is only mandated for U.S. federal agencies and not part of the CSA purview; 
+option C is incorrect. 
+ The ISMS is one of the ISO standards and not part of the CSA purview; option D is
+incorrect. 
+  112.  C.  Cloud carrier is a term describing the intermediary between cloud customer and
+provider that delivers connectivity; this is typically an ISP. 
+ Options A and B are other typical cloud computing roles; option D is a not a term with
+any meaning in this context.
+  113.  C.  In a centralized broker federation, the broker (typically a third party) acting as the 
+identity provider, creates the SAML identity assertion tokens and delivers them to the 
+relying parties. 
+ All the other options are distractors and not entities that are assigned specifi c roles in a 
+federation motif. 
+  114.  B.  The CCM is a tool for determining control coverage for compliance with a variety of 
+standards and regulations. 
+ All the other options are standards or regulations.
+  115.  D.  The check involves two kinds of security elements: something you have (the check) and
+something you are (the biometric control, the signature).
+ Option A is two elements of the same kind: something you know. This is incorrect. 
+ 
+Option B is two elements of the same kind: something you are. This is incorrect.
+ 
+Option C is two elements of the same kind: something you have. This is incorrect. 
+Chapter 8: Practice Exam 2 343
+  116.  D.  SLA elements should be objective, numeric values, for repeated activity.
+ Options B and C are useful elements to be included in the contract, but not specifi cally the
+SLA. Options B and C are incorrect. 
+ Option A is too ambiguous; “excellent” is not a discrete value. Option A is incorrect. 
+  117.  C.  Option A is incorrect because software-defi ned networking refers to a networking 
+architecture consisting of three layers: application, control, and infrastructure.
+ 
+Enterprise networking is a general term, not specifi cally related to the cloud. Option B is
+incorrect. 
+ Legacy networking or traditional networking is designed for traditional networks that use
+physical devices and components rather than virtual. Option D is incorrect.
+  118.  D.  Quality of service (QoS) refers to the capability of a network to provide better service
+for certain traffi c regardless of network type or topology.
+ The other options contain uppercase and lowercase letters that may or may not be related 
+to the cloud. Option D is the only option that answers the question correctly. T he acronym
+QoS represents Quality of Service. QoS is used to set priorities for specifi c types of data to
+dependably run high-priority applications and traffi c. 
+  119.  C.  Optimized for cloud deployments, the converged networking model combines the 
+underlying storage and IP networks to maximize the benefi ts of a cloud workload. 
+  120.  B.  Criminal law is set out in rules and statutes created by a government, prohibiting 
+certain activities as a means of protecting the safety and well-being of its citizens.
+Violations generally consist of both monetary and/or loss of liberty punishments. 
+ 
+Tort law refers the body of laws that provide remedies to individuals who have been
+caused harm by unreasonable acts of others. Negligence is the most common type of tort 
+lawsuit. Therefore, option A is incorrect.
+ Option C is incorrect because civil law pertains to contracts, property, and family law as 
+opposed to crimes like murder and theft that are associated with criminal law. 
+ 
+Contracts are agreements between parties to exchange goods and services; Option D is 
+incorrect. 
+  121.  A.  Solid-state disks (SSDs) are used in cloud computing today because they operate at high 
+speeds as compared to traditional spinning drives. 
+ Option B is incorrect. SSDs do not necessarily last longer than magnetic drives. 
+ 
+Options C and D are incorrect because SSDs are not noticeably easier or quicker to replace
+than traditional drives.
+  122.  A.  The primary risks associated with virtualization are loss of governance, snapshot and 
+image security, and sprawl. 
+ Options B and C are incorrect. Public awareness and increased costs are not risks associ-
+ated with virtualization. 
+ 
+Option D is incorrect because the loss of data is not associated with virtualization any-
+more than the loss of data is associated with non-virtualization. 
+344 Appendix ■  Answers to Review Questions
+  
+123.  A.  The central processing unit (CPU) is the core of any and all systems, handling all the 
+basic I/O instructions as they originate from the software.
+ The question focuses on the handling of all input/output (I/O) instructions. Only the CPU
+does that. Options B, C, and D function as a result of the CPU handling all of I/O for the
+hypervisor, user interface, and supervising application. The CPU is the core of computing 
+systems. Options B, C, and D are incorrect.
+  124.  D.  The IETF is an international organization of network designers and architects who 
+work together in establishing standards and protocols for the Internet. 
+ 
+IANA oversees global IP address allocation among other Internet tasks. IANA does not 
+establish standards and protocols for the Internet. Option A is incorrect. 
+ Option B is incorrect because the ISO/IEC develops, maintains and promotes standards in
+information technology and information communication technology.
+ Option C is incorrect because NIST is a federal government standards body in the US.
+  125.  D.  The Advanced Encryption Standard (AES) is currently used to encrypt and protect U.S.
+government sensitive and secret data. There are variants, but the most common is 256-bit, 
+which is virtually impossible to break today.
+ Option A is incorrect because MD5 is a cryptographic hash function used to verify that a 
+fi le has not been altered.
+ 
+SSL uses certifi cates to create a secure connection using encryption. Option B is incorrect.
+ Blowfi sh is a symmetric-key block cipher that has been replaced by AES encryption. The
