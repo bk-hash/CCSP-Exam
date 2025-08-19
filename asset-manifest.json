@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/CCSP-Exam/static/css/main.2bf11226.css",
-    "main.js": "/CCSP-Exam/static/js/main.ae961b2d.js",
+    "main.js": "/CCSP-Exam/static/js/main.072645e2.js",
     "static/js/453.feb066c5.chunk.js": "/CCSP-Exam/static/js/453.feb066c5.chunk.js",
     "index.html": "/CCSP-Exam/index.html",
     "main.2bf11226.css.map": "/CCSP-Exam/static/css/main.2bf11226.css.map",
-    "main.ae961b2d.js.map": "/CCSP-Exam/static/js/main.ae961b2d.js.map",
+    "main.072645e2.js.map": "/CCSP-Exam/static/js/main.072645e2.js.map",
     "453.feb066c5.chunk.js.map": "/CCSP-Exam/static/js/453.feb066c5.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.2bf11226.css",
-    "static/js/main.ae961b2d.js"
+    "static/js/main.072645e2.js"
   ]
 }
