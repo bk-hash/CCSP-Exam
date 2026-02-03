@@ -280,20 +280,6 @@ const questions = [
     difficulty: "medium"
   },
   {
-    question: "Of the following options, which is a reason cloud data center audits are often less easy to verify than traditional audits?",
-    options: [
-      "A. Cryptography is present.",
-      "B. Auditors don’t like the cloud.",
-      "C. Cloud equipment is resistant to audit.",
-      "D. They often rely on data the provider chooses to disclose."
-    ],
-    correctAnswer: "D",
-    explanation: "Cloud audits often rely on provider-disclosed data.",
-    domain: "Cloud Platform and Infrastructure Security",
-    type: "multiple-choice",
-    difficulty: "medium"
-  },
-  {
     question: "Of the following options, which is a reason cloud data center audits are often less easy to verify than audits in standard data centers?",
     options: [
       "A. They frequently rely on third parties.",
@@ -331,20 +317,6 @@ const questions = [
     ],
     correctAnswer: "B",
     explanation: "Automated vulnerability scan on startup is useful for VM baseline images.",
-    domain: "Cloud Platform and Infrastructure Security",
-    type: "multiple-choice",
-    difficulty: "medium"
-  },
-  {
-    question: "Which of the following controls would be useful to build into a virtual machine baseline image for a cloud environment?",
-    options: [
-      "A. Automatic registration with the configuration management system",
-      "B. Enhanced user training and awareness media",
-      "C. Mechanisms that prevent the file from being copied",
-      "D. Keystroke loggers"
-    ],
-    correctAnswer: "A",
-    explanation: "Automatic registration with configuration management is useful for VM baseline images.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
     difficulty: "medium"
@@ -1314,8 +1286,7 @@ const questions = [
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
     difficulty: "hard"
-  }
-  ,
+  },
   {
     question: "Which of the following probably poses the most significant risk to the organization?",
     options: [
@@ -1326,20 +1297,6 @@ const questions = [
     ],
     correctAnswer: "A",
     explanation: "Not having essential BC/DR personnel available during a contingency is a significant risk.",
-    domain: "Cloud Platform and Infrastructure Security",
-    type: "multiple-choice",
-    difficulty: "medium"
-  },
-  {
-    question: "Which of the following probably poses the most significant risk to the organization?",
-    options: [
-      "A. Lack of data confidentiality during a contingency",
-      "B. Lack of regulatory compliance during a contingency",
-      "C. Returning to normal operations too late",
-      "D. Lack of encrypted communications during a contingency"
-    ],
-    correctAnswer: "B",
-    explanation: "Lack of regulatory compliance during a contingency is a significant risk.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
     difficulty: "medium"
@@ -1471,20 +1428,6 @@ const questions = [
     difficulty: "medium"
   },
   {
-    question: "Which of the following poses a new risk in the cloud, not affecting the traditional, on-premise IT environment?",
-    options: [
-      "A. User carelessness",
-      "B. Inadvertent breach",
-      "C. Device failure",
-      "D. Resource exhaustion"
-    ],
-    correctAnswer: "D",
-    explanation: "Resource exhaustion is a new risk in the cloud environment.",
-    domain: "Cloud Platform and Infrastructure Security",
-    type: "multiple-choice",
-    difficulty: "medium"
-  },
-  {
     question: "Where is isolation failure probably least likely to pose a significant risk?",
     options: [
       "A. Public cloud",
@@ -1564,134 +1507,6 @@ const questions = [
     ],
     correctAnswer: "C",
     explanation: "Vendor lock-in is a potential risk due to lack of standards.",
-    domain: "Cloud Platform and Infrastructure Security",
-    type: "multiple-choice",
-    difficulty: "medium"
-  }
-  // ...additional questions from 63–73, 133–143 can be appended in the next batch...
-  ,
-  {
-    question: "In addition to BC/DR, what other benefit can your data archive/backup provide?",
-    options: [
-      "A. Physical security enforcement",
-      "B. Access control methodology",
-      "C. Security control against data breach",
-      "D. Availability for data lost accidentally"
-    ],
-    correctAnswer: "D",
-    explanation: "Availability for data lost accidentally is an additional benefit of data archive/backup.",
-    domain: "Cloud Platform and Infrastructure Security",
-    type: "multiple-choice",
-    difficulty: "medium"
-  },
-  {
-    question: "Which of the following risks is probably most significant when choosing to use one cloud provider for your operational environment and another for BC/DR backup/archive?",
-    options: [
-      "A. Physical intrusion",
-      "B. Proprietary formats/lack of interoperability",
-      "C. Vendor lock-in/lock-out",
-      "D. Natural disasters"
-    ],
-    correctAnswer: "C",
-    explanation: "Vendor lock-in/lock-out is a significant risk when using different providers.",
-    domain: "Cloud Platform and Infrastructure Security",
-    type: "multiple-choice",
-    difficulty: "medium"
-  },
-  {
-    question: "Return to normal operations is a phase in BC/DR activity when the emergency is over and regular production can resume. Which of the following can sometimes be the result when the organization uses two different cloud providers for the production and BC/DR environments?",
-    options: [
-      "A. Both providers are affected by the emergency, extending the time before return to normal can occur.",
-      "B. The BC/DR provider becomes the new normal production environment.",
-      "C. Regulators will find the organization in violation of compliance guidance.",
-      "D. All data is lost irretrievably."
-    ],
-    correctAnswer: "A",
-    explanation: "Both providers affected by emergency can delay return to normal operations.",
-    domain: "Cloud Platform and Infrastructure Security",
-    type: "multiple-choice",
-    difficulty: "medium"
-  },
-  {
-    question: "Which of these determines the critical assets, recovery time objective (RTO), and recovery point objective (RPO) for BC/DR purposes?",
-    options: [
-      "A. Business drivers",
-      "B. User input",
-      "C. Regulator mandate",
-      "D. Industry standards"
-    ],
-    correctAnswer: "A",
-    explanation: "Business drivers determine critical assets, RTO, and RPO for BC/DR.",
-    domain: "Cloud Platform and Infrastructure Security",
-    type: "multiple-choice",
-    difficulty: "medium"
-  },
-  {
-    question: "What artifact—which should already exist within the organization—can be used to determine the critical assets necessary to protect in the BC/DR activity?",
-    options: [
-      "A. Quantitative risk analysis",
-      "B. Qualitative risk analysis",
-      "C. Business impact analysis",
-      "D. Risk appetite"
-    ],
-    correctAnswer: "C",
-    explanation: "Business impact analysis determines critical assets for BC/DR.",
-    domain: "Cloud Platform and Infrastructure Security",
-    type: "multiple-choice",
-    difficulty: "medium"
-  },
-  {
-    question: "Which of the following is probably the most important element to address if your organization is using two different cloud providers for the production and BC/DR environments?",
-    options: [
-      "A. Do they cost the same?",
-      "B. Do they have similar facility protections in place?",
-      "C. What level of end-user support do they each offer?",
-      "D. Can the backup provider meet the same SLA requirements as the primary?"
-    ],
-    correctAnswer: "D",
-    explanation: "Backup provider meeting the same SLA is most important.",
-    domain: "Cloud Platform and Infrastructure Security",
-    type: "multiple-choice",
-    difficulty: "medium"
-  },
-  {
-    question: "In a managed cloud services arrangement, who invokes a BC/DR action?",
-    options: [
-      "A. The cloud provider",
-      "B. The cloud customer",
-      "C. Depends on the contract",
-      "D. Any user"
-    ],
-    correctAnswer: "C",
-    explanation: "Who invokes BC/DR depends on the contract in managed cloud services.",
-    domain: "Cloud Platform and Infrastructure Security",
-    type: "multiple-choice",
-    difficulty: "medium"
-  },
-  {
-    question: "What do you need to do in order to fully ensure that a BC/DR action will function during a contingency?",
-    options: [
-      "A. Audit all performance functions.",
-      "B. Audit all security functions.",
-      "C. Perform a full-scale test.",
-      "D. Mandate this capability in the contract."
-    ],
-    correctAnswer: "C",
-    explanation: "Performing a full-scale test ensures BC/DR action will function.",
-    domain: "Cloud Platform and Infrastructure Security",
-    type: "multiple-choice",
-    difficulty: "medium"
-  },
-  {
-    question: "Which of the following is probably the most important activity, of those listed?",
-    options: [
-      "A. Regularly update the BC/DR plan/process.",
-      "B. Have contact information for all personnel in the organization.",
-      "C. Have contact information for essential BC/DR personnel.",
-      "D. Have contact information for local law enforcement."
-    ],
-    correctAnswer: "A",
-    explanation: "Regularly updating the BC/DR plan/process is most important.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
     difficulty: "medium"
@@ -1809,34 +1624,6 @@ const questions = [
     difficulty: "hard"
   },
   {
-    question: "Which of the following is a risk in the cloud environment that does not exist or is not as prevalent in the traditional environment?",
-    options: [
-      "A. Legal liability in multiple jurisdictions",
-      "B. Loss of productivity due to DDoS",
-      "C. Ability of users to gain access to their physical workplace",
-      "D. Fire"
-    ],
-    correctAnswer: "A",
-    explanation: "Legal liability in multiple jurisdictions is a unique cloud risk.",
-    domain: "Cloud Platform and Infrastructure Security",
-    type: "multiple-choice",
-    difficulty: "hard"
-  },
-  {
-    question: "Which of the following is a risk in the cloud environment that does not exist or is not as prevalent in the traditional environment?",
-    options: [
-      "A. Loss of availability due to DDoS",
-      "B. Loss of value due to DDoS",
-      "C. Loss of confidentiality due to DDoS",
-      "D. Loss of liability due to DDoS"
-    ],
-    correctAnswer: "A",
-    explanation: "Loss of availability due to DDoS is a unique cloud risk.",
-    domain: "Cloud Platform and Infrastructure Security",
-    type: "multiple-choice",
-    difficulty: "hard"
-  },
-  {
     question: "DDoS attacks do not affect _____ for cloud customers.",
     options: [
       "A. Productivity",
@@ -1879,4 +1666,5 @@ const questions = [
     difficulty: "hard"
   }
 ];
+
 export default questions;

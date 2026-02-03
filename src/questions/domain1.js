@@ -1,5 +1,4 @@
 const questions = [
-  // Original 50 questions (as provided)
   {
     question: "Which of the following best defines the term 'cloud computing' according to NIST SP 800-145?",
     options: [
@@ -8,7 +7,7 @@ const questions = [
       "C. A protocol for securing data in transit",
       "D. A software suite for virtualization management"
     ],
-  correctAnswer: "A",
+    correctAnswer: "A",
     explanation: "NIST SP 800-145 defines cloud computing as a model for enabling on-demand network access to a shared pool of configurable resources, such as networks, servers, storage, applications, and services.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
@@ -22,7 +21,7 @@ const questions = [
       "C. The consumer has no control over the underlying infrastructure",
       "D. The consumer manages the entire software stack"
     ],
-  correctAnswer: "B",
+    correctAnswer: "B",
     explanation: "In IaaS, the consumer controls the operating systems, server software, and deployed applications, while the provider manages the underlying infrastructure.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
@@ -36,7 +35,7 @@ const questions = [
       "C. Community cloud",
       "D. Hybrid cloud"
     ],
-  correctAnswer: "B",
+    correctAnswer: "B",
     explanation: "A private cloud is dedicated to a single organization, providing greater control and security compared to other models.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
@@ -50,7 +49,8 @@ const questions = [
       "C. Flexibility to combine on-premises and cloud resources",
       "D. Simplified management of public resources"
     ],
-  correctAnswer: "C",
+    correctAnswer: "C",
+    domain: "",
     type: "multiple-choice",
     difficulty: "medium"
   },
@@ -62,7 +62,8 @@ const questions = [
       "C. Responsibilities are divided between the provider and customer",
       "D. The customer has no security responsibilities"
     ],
-  correctAnswer: "C",
+    correctAnswer: "C",
+    domain: "",
     type: "multiple-choice",
     difficulty: "medium"
   },
@@ -74,7 +75,8 @@ const questions = [
       "C. Both the provider and customer",
       "D. A third-party vendor"
     ],
-  correctAnswer: "B",
+    correctAnswer: "B",
+    domain: "",
     type: "multiple-choice",
     difficulty: "medium"
   },
@@ -100,7 +102,7 @@ const questions = [
       "C. Managing customer-owned hardware",
       "D. Reducing network bandwidth usage"
     ],
-  correctAnswer: "B",
+    correctAnswer: "B",
     explanation: "Logical separation of tenant data, such as through virtualization and access controls, is critical in multi-tenant cloud architectures to ensure security.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
@@ -109,9 +111,9 @@ const questions = [
   {
     question: "Which of the following best describes the role of a cloud architect?",
     options: [
-  "A. Managing physical data center operations",
-  "B. Designing scalable and secure cloud solutions",
-  "C. Developing application code",
+      "A. Managing physical data center operations",
+      "B. Designing scalable and secure cloud solutions",
+      "C. Developing application code",
       "D. Monitoring network performance"
     ],
     correctAnswer: "B",
@@ -143,7 +145,6 @@ const questions = [
       "D. Rapid elasticity"
     ],
     correctAnswer: "B",
-  // removed duplicate correctAnswer
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
     difficulty: "easy"
@@ -162,7 +163,6 @@ const questions = [
     type: "multiple-choice",
     difficulty: "medium"
   },
-  // ...existing code...
   {
     question: "What is a primary benefit of using a multi-cloud strategy?",
     options: [
@@ -382,7 +382,6 @@ const questions = [
       "D. Hybrid cloud"
     ],
     correctAnswer: "C",
-  // removed duplicate correctAnswer
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
     difficulty: "medium"
@@ -499,7 +498,6 @@ const questions = [
     type: "multiple-choice",
     difficulty: "medium"
   },
-  // New 50 very hard questions
   {
     question: "A global retailer designs a multi-cloud architecture with AWS and Azure to achieve 99.999% uptime, integrating data encryption from Cloud Data Security. What advanced design mitigates a quantum computing threat during peak sales? (D1.1, D3.1)",
     options: [
@@ -509,7 +507,6 @@ const questions = [
       "D. Load balancing without encryption"
     ],
     correctAnswer: "A",
-  // removed duplicate correctAnswer
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
     difficulty: "very hard"
@@ -523,7 +520,6 @@ const questions = [
       "D. Public key infrastructure with no validation"
     ],
     correctAnswer: "C",
-  // removed duplicate correctAnswer
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
     difficulty: "very hard"
@@ -536,8 +532,7 @@ const questions = [
       "C. Unencrypted multi-region storage",
       "D. Local backups without audits"
     ],
-  correctAnswer: "A",
-  // removed duplicate correctAnswer
+    correctAnswer: "A",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
     difficulty: "very hard"
@@ -1159,21 +1154,6 @@ const questions = [
     difficulty: "medium"
   },
   {
-    question: "Which of the following is a management risk that organizations migrating to the cloud will have to address?",
-    options: [
-      "A. Insider threat",
-      "B. Virtual sprawl",
-      "C. Distributed denial of service (DDoS) attacks",
-      "D. Natural disasters"
-    ],
-    correctAnswer: "B",
-    explanation: "Virtual sprawl is a management risk for organizations migrating to the cloud.",
-    domain: "Cloud Concepts, Architecture and Design",
-    type: "multiple-choice",
-    difficulty: "medium"
-  }
-  ,
-  {
     question: "Which cloud deployment model provides the highest level of control and customization for an organization?",
     options: [
       "A. Public cloud",
@@ -1257,189 +1237,6 @@ const questions = [
     type: "multiple-choice",
     difficulty: "medium"
   },
-  {
-    question: "Which of the following is a key challenge when designing a cloud architecture for global operations?",
-    options: [
-      "A. Managing physical server hardware",
-      "B. Ensuring compliance with regional regulations",
-      "C. Reducing network bandwidth",
-      "D. Automating user provisioning"
-    ],
-    correctAnswer: "B",
-    explanation: "Ensuring compliance with regional regulations, such as data residency laws, is a key challenge for global cloud architectures.",
-    domain: "Cloud Concepts, Architecture and Design",
-    type: "multiple-choice",
-    difficulty: "hard"
-  },
-  {
-    question: "What is a primary benefit of using a cloud-based API-first design approach?",
-    options: [
-      "A. Managing physical data centers",
-      "B. Enhancing interoperability and developer agility",
-      "C. Monitoring network performance",
-      "D. Developing application code"
-    ],
-    correctAnswer: "B",
-    explanation: "An API-first design approach enhances interoperability and developer agility, facilitating integration in cloud architectures.",
-    domain: "Cloud Concepts, Architecture and Design",
-    type: "multiple-choice",
-    difficulty: "medium"
-  },
-  {
-    question: "Which cloud deployment model is best suited for organizations with strict regulatory requirements?",
-    options: [
-      "A. Public cloud",
-      "B. Private cloud",
-      "C. Community cloud",
-      "D. Hybrid cloud"
-    ],
-    correctAnswer: "B",
-    explanation: "A private cloud offers greater control and isolation, making it ideal for organizations with strict regulatory requirements.",
-    domain: "Cloud Concepts, Architecture and Design",
-    type: "multiple-choice",
-    difficulty: "medium"
-  },
-  {
-    question: "What is a key consideration when designing a cloud-based monitoring system?",
-    options: [
-      "A. Managing physical server hardware",
-      "B. Ensuring visibility into resource performance",
-      "C. Reducing storage costs",
-      "D. Automating application development"
-    ],
-    correctAnswer: "B",
-    explanation: "Ensuring visibility into resource performance is critical for effective monitoring and management in cloud environments.",
-    domain: "Cloud Concepts, Architecture and Design",
-    type: "multiple-choice",
-    difficulty: "medium"
-  },
-  {
-    question: "Which of the following is a primary component of a cloud cost management strategy?",
-    options: [
-      "A. Physical server maintenance",
-      "B. Regular cost analysis and optimization",
-      "C. Network performance monitoring",
-      "D. User access provisioning"
-    ],
-    correctAnswer: "B",
-    explanation: "Regular cost analysis and optimization ensure efficient resource usage and cost control in cloud operations.",
-    domain: "Cloud Concepts, Architecture and Design",
-    type: "multiple-choice",
-    difficulty: "medium"
-  },
-  {
-    question: "What is a primary benefit of using a cloud-native architecture?",
-    options: [
-      "A. Reliance on legacy systems",
-      "B. Enhanced agility and scalability",
-      "C. Simplified physical server maintenance",
-      "D. Reduced compliance requirements"
-    ],
-    correctAnswer: "B",
-    explanation: "Cloud-native architectures leverage microservices and containers to enhance agility and scalability.",
-    domain: "Cloud Concepts, Architecture and Design",
-    type: "multiple-choice",
-    difficulty: "medium"
-  },
-  {
-    question: "Which of the following is a key challenge when designing a cloud architecture for cost optimization?",
-    options: [
-      "A. Managing physical server hardware",
-      "B. Balancing performance and resource usage",
-      "C. Reducing network bandwidth",
-      "D. Automating user provisioning"
-    ],
-    correctAnswer: "B",
-    explanation: "Balancing performance and resource usage is critical for cost optimization but can be challenging in dynamic cloud environments.",
-    domain: "Cloud Concepts, Architecture and Design",
-    type: "multiple-choice",
-    difficulty: "hard"
-  },
-  {
-    question: "What is the primary purpose of a cloud governance framework?",
-    options: [
-      "A. Managing physical data centers",
-      "B. Establishing policies for cloud resource usage",
-      "C. Developing application code",
-      "D. Monitoring network performance"
-    ],
-    correctAnswer: "B",
-    explanation: "A cloud governance framework establishes policies and controls for secure and efficient cloud resource usage.",
-    domain: "Cloud Concepts, Architecture and Design",
-    type: "multiple-choice",
-    difficulty: "medium"
-  },
-  {
-    question: "Which of the following is a key benefit of using a container-based architecture in cloud design?",
-    options: [
-      "A. Full control over the underlying infrastructure",
-      "B. Portability and lightweight deployment",
-      "C. Exclusive use by a single organization",
-      "D. Simplified compliance with all regulations"
-    ],
-    correctAnswer: "B",
-    explanation: "Container-based architectures offer portability and lightweight deployment, enhancing flexibility in cloud environments.",
-    domain: "Cloud Concepts, Architecture and Design",
-    type: "multiple-choice",
-    difficulty: "medium"
-  },
-  {
-    question: "What is a primary security consideration when designing a cloud-based identity and access management (IAM) system?",
-    options: [
-      "A. Optimizing application performance",
-      "B. Implementing least privilege principles",
-      "C. Managing physical server hardware",
-      "D. Reducing storage costs"
-    ],
-    correctAnswer: "B",
-    explanation: "Implementing least privilege principles ensures users have only the access needed, enhancing security in a cloud IAM system.",
-    domain: "Cloud Concepts, Architecture and Design",
-    type: "multiple-choice",
-    difficulty: "medium"
-  },
-  {
-    question: "Which of the following is a key challenge when designing a cloud architecture for global operations?",
-    options: [
-      "A. Managing physical server hardware",
-      "B. Ensuring compliance with regional regulations",
-      "C. Reducing network bandwidth",
-      "D. Automating user provisioning"
-    ],
-    correctAnswer: "B",
-    explanation: "Ensuring compliance with regional regulations, such as data residency laws, is a key challenge for global cloud architectures.",
-    domain: "Cloud Concepts, Architecture and Design",
-    type: "multiple-choice",
-    difficulty: "hard"
-  },
-  {
-    question: "What is a primary benefit of using a microservices architecture in cloud design?",
-    options: [
-      "A. Reliance on monolithic systems",
-      "B. Independent deployment and scalability",
-      "C. Simplified physical server maintenance",
-      "D. Reduced compliance requirements"
-    ],
-    correctAnswer: "B",
-    explanation: "Microservices enable independent deployment and scalability, improving agility and resilience in cloud architectures.",
-    domain: "Cloud Concepts, Architecture and Design",
-    type: "multiple-choice",
-    difficulty: "medium"
-  },
-  {
-    question: "Which cloud service model shares infrastructure among organizations with common compliance needs?",
-    options: [
-      "A. Public cloud",
-      "B. Private cloud",
-      "C. Community cloud",
-      "D. Hybrid cloud"
-    ],
-    correctAnswer: "C",
-    explanation: "A community cloud shares infrastructure among organizations with similar compliance needs, balancing cost and collaboration.",
-    domain: "Cloud Concepts, Architecture and Design",
-    type: "multiple-choice",
-    difficulty: "medium"
-  }
-  ,
   {
     question: "Which cloud deployment model is most suitable for organizations requiring shared infrastructure among similar compliance needs?",
     options: [
@@ -1567,331 +1364,6 @@ const questions = [
     difficulty: "medium"
   },
   {
-    question: "What is a primary security consideration when designing a multi-tenant cloud architecture?",
-    options: [
-      "A. Ensuring physical server isolation",
-      "B. Implementing logical separation of tenant data",
-      "C. Managing customer-owned hardware",
-      "D. Reducing network bandwidth usage"
-    ],
-    correctAnswer: "B",
-    explanation: "Logical separation of tenant data is critical for security in multi-tenant cloud architectures.",
-    domain: "Cloud Concepts, Architecture and Design",
-    type: "multiple-choice",
-    difficulty: "medium"
-  },
-  {
-    question: "Which of the following best describes the role of a cloud architect?",
-    options: [
-      "A. Managing physical data center operations",
-      "B. Designing scalable and secure cloud solutions",
-      "C. Developing application code",
-      "D. Monitoring network performance"
-    ],
-    correctAnswer: "B",
-    explanation: "A cloud architect designs scalable, secure, and cost-effective cloud solutions aligned with business requirements.",
-    domain: "Cloud Concepts, Architecture and Design",
-    type: "multiple-choice",
-    difficulty: "medium"
-  },
-  {
-    question: "What is a key benefit of using a community cloud deployment model?",
-    options: [
-      "A. Cost savings through shared infrastructure among similar organizations",
-      "B. Exclusive use by a single organization",
-      "C. Unlimited public access to resources",
-      "D. Simplified compliance with all regulations"
-    ],
-    correctAnswer: "A",
-    explanation: "Community cloud reduces costs while addressing common security and compliance requirements among similar organizations.",
-    domain: "Cloud Concepts, Architecture and Design",
-    type: "multiple-choice",
-    difficulty: "medium"
-  }
-  ,
-  {
-    question: "Which NIST cloud computing characteristic allows resources to be accessed over various devices and networks?",
-    options: [
-      "A. Measured service",
-      "B. Broad network access",
-      "C. Resource pooling",
-      "D. Rapid elasticity"
-    ],
-    correctAnswer: "B",
-    explanation: "Broad network access enables cloud resources to be accessed over networks using various devices, such as laptops and smartphones.",
-    domain: "Cloud Concepts, Architecture and Design",
-    type: "multiple-choice",
-    difficulty: "easy"
-  },
-  {
-    question: "In a Software as a Service (SaaS) model, who is primarily responsible for securing the underlying infrastructure?",
-    options: [
-      "A. The customer",
-      "B. The cloud provider",
-      "C. A third-party auditor",
-      "D. Both the customer and provider"
-    ],
-    correctAnswer: "B",
-    explanation: "In SaaS, the cloud provider is responsible for securing the underlying infrastructure, while the customer manages user access and data security.",
-    domain: "Cloud Concepts, Architecture and Design",
-    type: "multiple-choice",
-    difficulty: "medium"
-  },
-  {
-    question: "What is a primary benefit of using a multi-cloud strategy?",
-    options: [
-      "A. Exclusive use of a single provider’s services",
-      "B. Increased redundancy and vendor flexibility",
-      "C. Simplified management of resources",
-      "D. Reduced compliance requirements"
-    ],
-    correctAnswer: "B",
-    explanation: "A multi-cloud strategy increases redundancy and flexibility by leveraging multiple providers, reducing vendor lock-in risks.",
-    domain: "Cloud Concepts, Architecture and Design",
-    type: "multiple-choice",
-    difficulty: "medium"
-  },
-  {
-    question: "Which of the following is a key component of a cloud business continuity plan?",
-    options: [
-      "A. Physical server maintenance",
-      "B. Regular backups and recovery testing",
-      "C. Network bandwidth optimization",
-      "D. Application performance monitoring"
-    ],
-    correctAnswer: "B",
-    explanation: "Regular backups and recovery testing are essential for ensuring business continuity in a cloud environment.",
-    domain: "Cloud Concepts, Architecture and Design",
-    type: "multiple-choice",
-    difficulty: "medium"
-  },
-  {
-    question: "What is a primary challenge when designing a cloud architecture for low-latency applications?",
-    options: [
-      "A. Managing physical server hardware",
-      "B. Optimizing resource placement near users",
-      "C. Reducing storage costs",
-      "D. Automating user provisioning"
-    ],
-    correctAnswer: "B",
-    explanation: "Optimizing resource placement, such as using edge locations, is critical for low-latency applications but can be complex.",
-    domain: "Cloud Concepts, Architecture and Design",
-    type: "multiple-choice",
-    difficulty: "hard"
-  },
-  {
-    question: "Which of the following best describes the role of automation in cloud architecture?",
-    options: [
-      "A. Managing physical data centers",
-      "B. Streamlining resource provisioning and management",
-      "C. Developing application code",
-      "D. Monitoring network performance"
-    ],
-    correctAnswer: "B",
-    explanation: "Automation streamlines resource provisioning, scaling, and management, enhancing efficiency in cloud architectures.",
-    domain: "Cloud Concepts, Architecture and Design",
-    type: "multiple-choice",
-    difficulty: "medium"
-  },
-  {
-    question: "What is a key benefit of using a serverless architecture in cloud design?",
-    options: [
-      "A. Full control over the underlying infrastructure",
-      "B. Automatic scaling and reduced operational overhead",
-      "C. Exclusive use by a single organization",
-      "D. Simplified compliance with all regulations"
-    ],
-    correctAnswer: "B",
-    explanation: "Serverless architecture provides automatic scaling and reduces operational overhead by abstracting server management.",
-    domain: "Cloud Concepts, Architecture and Design",
-    type: "multiple-choice",
-    difficulty: "medium"
-  },
-  {
-    question: "Which of the following is a primary security consideration when designing a cloud network architecture?",
-    options: [
-      "A. Optimizing application performance",
-      "B. Implementing network segmentation",
-      "C. Managing physical server hardware",
-      "D. Reducing storage costs"
-    ],
-    correctAnswer: "B",
-    explanation: "Network segmentation enhances security by isolating workloads and limiting lateral movement in a cloud network.",
-    domain: "Cloud Concepts, Architecture and Design",
-    type: "multiple-choice",
-    difficulty: "medium"
-  },
-  {
-    question: "What is a key consideration when designing a cloud architecture for scalability?",
-    options: [
-      "A. Managing physical server hardware",
-      "B. Using auto-scaling and load balancing",
-      "C. Reducing network bandwidth usage",
-      "D. Automating user provisioning"
-    ],
-    correctAnswer: "B",
-    explanation: "Auto-scaling and load balancing enable dynamic resource allocation to handle varying workloads in a scalable cloud architecture.",
-    domain: "Cloud Concepts, Architecture and Design",
-    type: "multiple-choice",
-    difficulty: "medium"
-  },
-  {
-    question: "Which cloud deployment model is best suited for organizations with strict regulatory requirements?",
-    options: [
-      "A. Public cloud",
-      "B. Private cloud",
-      "C. Community cloud",
-      "D. Hybrid cloud"
-    ],
-    correctAnswer: "B",
-    explanation: "A private cloud offers greater control and isolation, making it ideal for organizations with strict regulatory requirements.",
-    domain: "Cloud Concepts, Architecture and Design",
-    type: "multiple-choice",
-    difficulty: "medium"
-  }
-  ,
-  {
-    question: "What is a primary benefit of using a cloud-native architecture?",
-    options: [
-      "A. Reliance on legacy systems",
-      "B. Enhanced agility and scalability",
-      "C. Simplified physical server maintenance",
-      "D. Reduced compliance requirements"
-    ],
-    correctAnswer: "B",
-    explanation: "Cloud-native architectures leverage microservices and containers to enhance agility and scalability.",
-    domain: "Cloud Concepts, Architecture and Design",
-    type: "multiple-choice",
-    difficulty: "medium"
-  },
-  {
-    question: "Which of the following is a key challenge when designing a cloud architecture for cost optimization?",
-    options: [
-      "A. Managing physical server hardware",
-      "B. Balancing performance and resource usage",
-      "C. Reducing network bandwidth",
-      "D. Automating user provisioning"
-    ],
-    correctAnswer: "B",
-    explanation: "Balancing performance and resource usage is critical for cost optimization but can be challenging in dynamic cloud environments.",
-    domain: "Cloud Concepts, Architecture and Design",
-    type: "multiple-choice",
-    difficulty: "hard"
-  },
-  {
-    question: "What is the primary purpose of a cloud governance framework?",
-    options: [
-      "A. Managing physical data centers",
-      "B. Establishing policies for cloud resource usage",
-      "C. Developing application code",
-      "D. Monitoring network performance"
-    ],
-    correctAnswer: "B",
-    explanation: "A cloud governance framework establishes policies and controls for secure and efficient cloud resource usage.",
-    domain: "Cloud Concepts, Architecture and Design",
-    type: "multiple-choice",
-    difficulty: "medium"
-  },
-  {
-    question: "Which of the following is a key benefit of using a container-based architecture in cloud design?",
-    options: [
-      "A. Full control over the underlying infrastructure",
-      "B. Portability and lightweight deployment",
-      "C. Exclusive use by a single organization",
-      "D. Simplified compliance with all regulations"
-    ],
-    correctAnswer: "B",
-    explanation: "Container-based architectures offer portability and lightweight deployment, enhancing flexibility in cloud environments.",
-    domain: "Cloud Concepts, Architecture and Design",
-    type: "multiple-choice",
-    difficulty: "medium"
-  },
-  {
-    question: "What is a primary security consideration when designing a cloud-based identity and access management (IAM) system?",
-    options: [
-      "A. Optimizing application performance",
-      "B. Implementing least privilege principles",
-      "C. Managing physical server hardware",
-      "D. Reducing storage costs"
-    ],
-    correctAnswer: "B",
-    explanation: "Implementing least privilege principles ensures users have only the access needed, enhancing security in a cloud IAM system.",
-    domain: "Cloud Concepts, Architecture and Design",
-    type: "multiple-choice",
-    difficulty: "medium"
-  },
-  {
-    question: "Which of the following is a key challenge when designing a cloud architecture for global operations?",
-    options: [
-      "A. Managing physical server hardware",
-      "B. Ensuring compliance with regional regulations",
-      "C. Reducing network bandwidth",
-      "D. Automating user provisioning"
-    ],
-    correctAnswer: "B",
-    explanation: "Ensuring compliance with regional regulations, such as data residency laws, is a key challenge for global cloud architectures.",
-    domain: "Cloud Concepts, Architecture and Design",
-    type: "multiple-choice",
-    difficulty: "hard"
-  },
-  {
-    question: "What is a primary benefit of using a microservices architecture in cloud design?",
-    options: [
-      "A. Reliance on monolithic systems",
-      "B. Independent deployment and scalability",
-      "C. Simplified physical server maintenance",
-      "D. Reduced compliance requirements"
-    ],
-    correctAnswer: "B",
-    explanation: "Microservices enable independent deployment and scalability, improving agility and resilience in cloud architectures.",
-    domain: "Cloud Concepts, Architecture and Design",
-    type: "multiple-choice",
-    difficulty: "medium"
-  },
-  {
-    question: "Which cloud service model shares infrastructure among organizations with common compliance needs?",
-    options: [
-      "A. Public cloud",
-      "B. Private cloud",
-      "C. Community cloud",
-      "D. Hybrid cloud"
-    ],
-    correctAnswer: "C",
-    explanation: "A community cloud shares infrastructure among organizations with similar compliance needs, balancing cost and collaboration.",
-    domain: "Cloud Concepts, Architecture and Design",
-    type: "multiple-choice",
-    difficulty: "medium"
-  },
-  {
-    question: "What is a key consideration when designing a cloud-based monitoring system?",
-    options: [
-      "A. Managing physical server hardware",
-      "B. Ensuring visibility into resource performance",
-      "C. Reducing storage costs",
-      "D. Automating application development"
-    ],
-    correctAnswer: "B",
-    explanation: "Ensuring visibility into resource performance is critical for effective monitoring and management in cloud environments.",
-    domain: "Cloud Concepts, Architecture and Design",
-    type: "multiple-choice",
-    difficulty: "medium"
-  },
-  {
-    question: "Which of the following is a primary component of a cloud cost management strategy?",
-    options: [
-      "A. Physical server maintenance",
-      "B. Regular cost analysis and optimization",
-      "C. Network performance monitoring",
-      "D. User access provisioning"
-    ],
-    correctAnswer: "B",
-    explanation: "Regular cost analysis and optimization ensure efficient resource usage and cost control in cloud operations.",
-    domain: "Cloud Concepts, Architecture and Design",
-    type: "multiple-choice",
-    difficulty: "medium"
-  }
-  ,
-  {
     question: "Which of the following probably poses the most significant risk to the organization?",
     options: [
       "A. Not having essential BC/DR personnel available during a contingency",
@@ -1901,20 +1373,6 @@ const questions = [
     ],
     correctAnswer: "A",
     explanation: "Not having essential BC/DR personnel available during a contingency is a significant risk.",
-    domain: "Cloud Concepts, Architecture and Design",
-    type: "multiple-choice",
-    difficulty: "medium"
-  },
-  {
-    question: "Which of the following probably poses the most significant risk to the organization?",
-    options: [
-      "A. Lack of data confidentiality during a contingency",
-      "B. Lack of regulatory compliance during a contingency",
-      "C. Returning to normal operations too late",
-      "D. Lack of encrypted communications during a contingency"
-    ],
-    correctAnswer: "B",
-    explanation: "Lack of regulatory compliance during a contingency is a significant risk.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
     difficulty: "medium"
@@ -2046,20 +1504,6 @@ const questions = [
     difficulty: "medium"
   },
   {
-    question: "Which of the following poses a new risk in the cloud, not affecting the traditional, on-premise IT environment?",
-    options: [
-      "A. User carelessness",
-      "B. Inadvertent breach",
-      "C. Device failure",
-      "D. Resource exhaustion"
-    ],
-    correctAnswer: "D",
-    explanation: "Resource exhaustion is a new risk in the cloud environment.",
-    domain: "Cloud Concepts, Architecture and Design",
-    type: "multiple-choice",
-    difficulty: "medium"
-  },
-  {
     question: "Where is isolation failure probably least likely to pose a significant risk?",
     options: [
       "A. Public cloud",
@@ -2143,6 +1587,6 @@ const questions = [
     type: "multiple-choice",
     difficulty: "medium"
   }
-  // ...additional questions from 63–73, 133–143 can be appended in the next batch...
 ];
+
 export default questions;
