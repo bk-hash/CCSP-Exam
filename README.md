@@ -1,8 +1,67 @@
-# Getting Started with Create React App
+# 🛡️ CCSP Quiz Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An interactive quiz and flashcard application for studying CCSP (Certified Cloud Security Professional) certification content.
 
-## Available Scripts
+## ✨ Features
+
+- **🔐 Google OAuth Authentication** - Secure login with Google accounts
+- **📚 Interactive Quizzes** - Multiple choice questions across all 6 CCSP domains
+- **🎯 Flashcard Mode** - Study with interactive flashcards
+- **📊 Progress Tracking** - Monitor your learning progress and performance
+- **🌙 Dark/Light Theme** - Customizable theme for comfortable studying
+- **📱 Responsive Design** - Works on desktop, tablet, and mobile devices
+- **⏱️ Study Timer** - Track your study sessions
+- **📈 Performance Analytics** - Detailed statistics on your quiz performance
+
+## 🚀 Quick Start
+
+### Prerequisites
+- Node.js (v14 or higher)
+- npm or yarn
+- Google Cloud Console account (for OAuth setup)
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/ccsp-quiz-flashcards.git
+   cd ccsp-quiz-flashcards
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Set up Google OAuth Authentication**
+   - Copy `.env.example` to `.env`
+   - Follow the [Google OAuth Setup Guide](./GOOGLE_OAUTH_SETUP.md)
+   - Update `.env` with your Google Client ID
+
+4. **Start the development server**
+   ```bash
+   npm start
+   ```
+
+5. **Open your browser**
+   - Navigate to [http://localhost:3000](http://localhost:3000)
+   - Sign in with your Google account to start studying!
+
+## 🔧 Configuration
+
+### Environment Variables
+
+Create a `.env` file in the root directory:
+
+```env
+REACT_APP_GOOGLE_CLIENT_ID=your_google_client_id_here.apps.googleusercontent.com
+```
+
+### Google OAuth Setup
+
+For detailed OAuth setup instructions, see [GOOGLE_OAUTH_SETUP.md](./GOOGLE_OAUTH_SETUP.md)
+
+## 📖 Available Scripts
 
 In the project directory, you can run:
 

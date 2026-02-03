@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OAuth Client ID Test</title>
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+</head>
+<body>
+    <h1>🔧 OAuth Client ID Test Tool</h1>
+    <p>This tool helps verify if your Google OAuth Client ID is working correctly.</p>
+    
+    <div id="status">Loading...</div>
+    
+    <div id="google-signin-button" style="margin: 20px 0;"></div>
+    
+    <div id="result"></div>
+
+    <script>
+        // Your Client ID from .env file
+        const CLIENT_ID = '640081892183-slnhnidcf46vqm3rodl4cq13qgv7gi0h.apps.googleusercontent.com';
+        
+        function updateStatus(message, isError = false) {
+            const statusEl = document.getElementById('status');
+            statusEl.innerHTML = `<p style="color: ${isError ? 'red' : 'green'};">${message}</p>`;
+        }
+
+        function showResult(message) {
+            document.getElementById('result').innerHTML = `<div style="background: #f0f0f0; padding: 10px; margin: 10px 0; border-radius: 5px;"><pre>${message}</pre></div>`;
+        }
+
+        window.onload = function() {
+            updateStatus('🔄 Testing Google Identity Services...');
+            
+            try {
+                google.accounts.id.initialize({
+                    client_id: CLIENT_ID,
+                    callback: handleCredentialResponse
+                });
+                
+                updateStatus('✅ Google Identity Services loaded successfully!');
+                
+                // Try to render the sign-in button
+                google.accounts.id.renderButton(
+                    document.getElementById("google-signin-button"),
+                    {
+                        theme: "outline",
+                        size: "large",
+                        text: "signin_with"
+                    }
+                );
+                
+                showResult('✅ Sign-in button rendered successfully!\n\nThis means:\n- Your Client ID format is correct\n- Google Identity Services can load\n- The basic configuration is working\n\nIf you still get errors when clicking, check:\n1. Authorized JavaScript origins in Google Cloud Console\n2. OAuth consent screen configuration\n3. Project status and billing');
+                
+            } catch (error) {
+                updateStatus('❌ Error initializing Google Identity Services', true);
+                showResult(`❌ Error details:\n${error.message}\n\nPossible causes:\n1. Invalid Client ID\n2. Project disabled or suspended\n3. Network connectivity issues\n4. Client ID not found in Google Cloud Console`);
+            }
+        };
+
+        function handleCredentialResponse(response) {
+            updateStatus('🎉 OAuth successful!', false);
+            const payload = parseJwt(response.credential);
+            showResult(`🎉 Authentication successful!\n\nUser: ${payload.name}\nEmail: ${payload.email}\n\nYour OAuth configuration is working correctly!`);
+        }
+
+        function parseJwt(token) {
+            const base64Url = token.split('.')[1];
+            const base64 = base64Url.replace(/-/g, '+').replace(/_/g, '/');
+            const jsonPayload = decodeURIComponent(atob(base64).split('').map(function(c) {
+                return '%' + ('00' + c.charCodeAt(0).toString(16)).slice(-2);
+            }).join(''));
+            return JSON.parse(jsonPayload);
+        }
+    </script>
+
+    <hr>
+    <h2>📋 Troubleshooting Checklist</h2>
+    <ul>
+        <li><strong>Google Cloud Console</strong>: Verify project is active</li>
+        <li><strong>OAuth 2.0 Client</strong>: Check if Client ID exists</li>
+        <li><strong>Authorized Origins</strong>: Add http://localhost:3000, http://localhost:3001, https://bk-hash.github.io</li>
+        <li><strong>OAuth Consent Screen</strong>: Configure and publish/add test users</li>
+        <li><strong>APIs</strong>: Enable Google Identity API</li>
+    </ul>
+
+    <h2>🔗 Useful Links</h2>
+    <ul>
+        <li><a href="https://console.cloud.google.com/apis/credentials" target="_blank">Google Cloud Console - Credentials</a></li>
+        <li><a href="https://console.cloud.google.com/apis/consent" target="_blank">OAuth Consent Screen</a></li>
+        <li><a href="https://console.cloud.google.com/apis/library" target="_blank">API Library</a></li>
+    </ul>
+</body>
+</html>

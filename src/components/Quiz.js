@@ -1,5 +1,9 @@
 import React, { useState, useEffect } from "react";
 import { useProgress, useSession } from '../contexts';
+import { useAuth } from '../contexts/AuthContext';
+import { useStats } from '../contexts/StatsContext';
+import UpgradePrompt from './UpgradePrompt';
+import ResultModal from './ResultModal';
 
 function Quiz({ questions, showScore = false, sessionKey = "default-quiz" }) {
   const [current, setCurrent] = useState(0);
@@ -12,9 +16,12 @@ function Quiz({ questions, showScore = false, sessionKey = "default-quiz" }) {
   const [shuffledOptions, setShuffledOptions] = useState([]);
   const [startTime, setStartTime] = useState(Date.now());
   const [sessionLoaded, setSessionLoaded] = useState(false);
+  const [showReviewList, setShowReviewList] = useState(false);
   
   const { updateProgress } = useProgress();
   const { saveQuizSession, getQuizSession, clearQuizSession } = useSession();
+  const { user, getUserLimits, isDemoUser, isLoading } = useAuth();
+  const { updateQuestionStats } = useStats();
 
   // Load session on component mount ONLY
   useEffect(() => {
@@ -51,7 +58,13 @@ function Quiz({ questions, showScore = false, sessionKey = "default-quiz" }) {
       : questions.filter((q) => q.domain === selectedDomain);
     
     if (filtered.length > 0) {
-      const shuffled = shuffleArray(filtered);
+      // Apply content gating for demo users
+      const limits = getUserLimits(user?.tier);
+      const limitedQuestions = limits.questionsPerDomain === -1 
+        ? filtered 
+        : filtered.slice(0, limits.questionsPerDomain);
+      
+      const shuffled = shuffleArray(limitedQuestions);
       setShuffledQuestions(shuffled);
       setCurrent(0);
       setScore(0);
@@ -60,7 +73,7 @@ function Quiz({ questions, showScore = false, sessionKey = "default-quiz" }) {
       setShowResult(false);
       setStartTime(Date.now());
     }
-  }, [selectedDomain, questions, sessionLoaded, shuffledQuestions]);
+  }, [selectedDomain, questions, sessionLoaded, shuffledQuestions, getUserLimits, user?.tier]);
 
   // Update shuffled options when current question changes
   useEffect(() => {
@@ -92,6 +105,14 @@ function Quiz({ questions, showScore = false, sessionKey = "default-quiz" }) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [current, selected, showResult, score, incorrect.length, selectedDomain, sessionLoaded]);
 
+  // clear session shortly after completion (avoid causing render side-effects directly inside render)
+  useEffect(() => {
+    const isCompletedLocal = showScore && shuffledQuestions.length > 0 && current === shuffledQuestions.length - 1 && showResult;
+    if (!isCompletedLocal) return;
+    const tid = setTimeout(() => clearQuizSession(sessionKey), 120);
+    return () => clearTimeout(tid);
+  }, [showScore, shuffledQuestions.length, current, showResult, clearQuizSession, sessionKey]);
+
   if (!shuffledQuestions || shuffledQuestions.length === 0)
     return <div style={{ fontSize: "1.3rem", textAlign: "center" }}>No questions available.</div>;
 
@@ -109,6 +130,9 @@ function Quiz({ questions, showScore = false, sessionKey = "default-quiz" }) {
       // Update progress tracking
       const questionId = `${q.question.substring(0, 50)}-${current}`;
       updateProgress(questionId, q.domain, isCorrect, timeSpent);
+      
+      // Update user statistics
+      updateQuestionStats(q.domain, isCorrect);
       
       if (isCorrect) {
         setScore((s) => s + 1);
@@ -154,82 +178,48 @@ function Quiz({ questions, showScore = false, sessionKey = "default-quiz" }) {
     clearQuizSession(sessionKey);
   };
 
+  
+
   const progressPercent = Math.round(((current + (showResult ? 1 : 0)) / shuffledQuestions.length) * 100);
 
-  if (showScore && current === shuffledQuestions.length - 1 && showResult) {
+  if (showScore && shuffledQuestions.length > 0 && current === shuffledQuestions.length - 1 && showResult) {
     const finalScore = score + (selected === q.correctAnswer ? 1 : 0);
     const percent = Math.round((finalScore / shuffledQuestions.length) * 100);
-    let color = "#ffa726"; // orange
-    if (percent > 80) color = "#43a047"; // green
-    else if (percent < 50) color = "#e53935"; // red
 
     let reviewList = incorrect;
     if (selected !== q.correctAnswer) {
       reviewList = [...incorrect, { ...q, userAnswer: selected }];
     }
 
-    // Clear session on completion
-    handleQuizComplete();
+    if (showReviewList) {
+      return (
+        <div style={{ background: "#23272f", padding: 40, borderRadius: 18, minHeight: 380, width: "100%", maxWidth: 900, margin: "40px auto", boxShadow: "0 8px 32px 0 rgba(33,150,243,0.10)", fontSize: "1.13rem", border: "2px solid #222", color: "#fff", fontFamily: "'Segoe UI', Arial, sans-serif" }}>
+          <h3 style={{ color: "#e53935", marginBottom: 16 }}>Review Incorrect Answers</h3>
+          {reviewList.map((item, idx) => (
+            <div key={idx} style={{ background: "#181c24", borderRadius: 10, padding: 20, marginBottom: 24, border: "2px solid #e53935" }}>
+              <div style={{ fontWeight: 600, marginBottom: 8 }}>{item.question}</div>
+              <div><span style={{ color: "#e53935", fontWeight: 500 }}>Your answer: </span><span>{item.options.find(opt => opt[0] === item.userAnswer) || item.userAnswer}</span></div>
+              <div><span style={{ color: "#43a047", fontWeight: 500 }}>Correct answer: </span><span>{item.options.find(opt => opt[0] === item.correctAnswer)}</span></div>
+              <div style={{ color: "#90caf9", marginTop: 8 }}><strong>Explanation:</strong> {item.explanation}</div>
+            </div>
+          ))}
+          <div style={{ marginTop: 12 }}>
+            <button onClick={() => setShowReviewList(false)} style={{ padding: '10px 16px', borderRadius: 8, background: '#2196f3', color: '#fff', border: 'none' }}>Back</button>
+          </div>
+        </div>
+      );
+    }
 
     return (
-      <div style={{ 
-        background: "#23272f", 
-        padding: 40, 
-        borderRadius: 18, 
-        minHeight: 380, 
-        width: "100%", 
-        maxWidth: 900, 
-        margin: "40px auto", 
-        boxShadow: "0 8px 32px 0 rgba(33,150,243,0.10)", 
-        fontSize: "1.13rem", 
-        border: "2px solid #222", 
-        color: "#fff", 
-        fontFamily: "'Segoe UI', Arial, sans-serif", 
-        display: "flex", 
-        flexDirection: "column", 
-        justifyContent: "center" 
-      }}>
-        <div style={{ marginBottom: 24 }}>
-          <h2>Your Score</h2>
-          <div style={{ fontSize: "2.5rem", fontWeight: 700, color, margin: "24px 0" }}>
-            {percent}%
-          </div>
-          <div style={{ fontSize: "1.2rem", color: "#fff" }}>
-            {finalScore} out of {shuffledQuestions.length} correct
-          </div>
-          <div style={{ marginTop: 20 }}>
-            <button
-              onClick={startNewQuiz}
-              style={{
-                background: "#43a047",
-                color: "#fff",
-                border: "none",
-                padding: "12px 24px",
-                borderRadius: 8,
-                fontSize: "1rem",
-                fontWeight: 600,
-                cursor: "pointer",
-                marginRight: 10
-              }}
-            >
-              Start New Quiz
-            </button>
-          </div>
-          {reviewList.length > 0 && (
-            <div style={{ marginTop: 40, textAlign: "left", maxWidth: 700, marginLeft: "auto", marginRight: "auto" }}>
-              <h3 style={{ color: "#e53935", marginBottom: 16 }}>Review Incorrect Answers</h3>
-              {reviewList.map((item, idx) => (
-                <div key={idx} style={{ background: "#181c24", borderRadius: 10, padding: 20, marginBottom: 24, border: "2px solid #e53935" }}>
-                  <div style={{ fontWeight: 600, marginBottom: 8 }}>{item.question}</div>
-                  <div><span style={{ color: "#e53935", fontWeight: 500 }}>Your answer: </span><span>{item.options.find(opt => opt[0] === item.userAnswer) || item.userAnswer}</span></div>
-                  <div><span style={{ color: "#43a047", fontWeight: 500 }}>Correct answer: </span><span>{item.options.find(opt => opt[0] === item.correctAnswer)}</span></div>
-                  <div style={{ color: "#90caf9", marginTop: 8 }}><strong>Explanation:</strong> {item.explanation}</div>
-                </div>
-              ))}
-            </div>
-          )}
-        </div>
-      </div>
+      <ResultModal
+        percent={percent}
+        finalScore={finalScore}
+        total={shuffledQuestions.length}
+        reviewList={reviewList}
+        onRestart={() => { startNewQuiz(); }}
+        onReview={() => { setShowReviewList(true); }}
+        onClose={() => { startNewQuiz(); }}
+      />
     );
   }
 
@@ -297,6 +287,26 @@ function Quiz({ questions, showScore = false, sessionKey = "default-quiz" }) {
         </div>
         <div style={{ fontSize: "1rem", color: "#90caf9" }}>Score: {score} / {shuffledQuestions.length}</div>
       </div>
+
+      {/* Debug logging for tier issues */}
+      {console.log('🔍 Quiz Debug:', {
+        userEmail: user?.email,
+        userTier: user?.tier,
+        isDemoUserResult: isDemoUser(user),
+        questionsLength: shuffledQuestions.length,
+        isLoading: isLoading
+      })}
+
+      {/* Upgrade Prompt for Demo Users */}
+      {isDemoUser(user) && (
+        <UpgradePrompt
+          title="🚀 Unlock All Questions"
+          subtitle="You're viewing limited questions in demo mode"
+          feature="questions"
+          currentCount={shuffledQuestions.length}
+          maxCount={getUserLimits(user?.tier).questionsPerDomain}
+        />
+      )}
       <div style={{ marginBottom: 32, padding: "24px 20px", background: "#181c24", borderRadius: 12, boxShadow: "0 2px 8px 0 rgba(33,150,243,0.08)", fontSize: "1.18rem", fontWeight: 500, letterSpacing: "0.01em", textAlign: "center" }}>
         {q.question}
       </div>

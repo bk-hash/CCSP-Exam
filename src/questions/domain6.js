@@ -8,7 +8,7 @@ const questions = [
       "D. Outcomes dictated by business requirements"
     ],
     "correctAnswer": "A",
-    "explanation": "The correct answer is Remediating the incident.",
+    "explanation": "Remediating the incident is the primary goal of incident response - to contain, mitigate, and resolve the security incident to restore normal operations.",
     "domain": "Legal, Risk, and Compliance"
   },
   {

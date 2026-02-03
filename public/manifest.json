@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "CSSL",
+  "name": "Cyber Security Study Labs - CCSP Exam Prep",
+  "description": "Interactive CCSP exam preparation with quizzes, flashcards, and practice exams",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +21,10 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "orientation": "portrait-primary",
+  "theme_color": "#4285f4",
+  "background_color": "#1a1a1a",
+  "categories": ["education", "productivity"],
+  "scope": "/",
+  "lang": "en"
 }

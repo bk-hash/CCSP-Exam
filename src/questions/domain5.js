@@ -8,7 +8,7 @@ const questions = [
       "D. Aesthetic intent"
     ],
     "correctAnswer": "A",
-    "explanation": "The correct answer is Geographic location.",
+    "explanation": "Geographic location is the most important factor as it affects compliance, latency, disaster recovery, environmental conditions, and regulatory requirements for cloud data center design.",
     "domain": "Cloud Security Operations"
   },
   {
@@ -20,7 +20,7 @@ const questions = [
       "D. Native language of the majority of customers"
     ],
     "correctAnswer": "D",
-    "explanation": "The correct answer is Native language of the majority of customers.",
+    "explanation": "Native language is not a technical consideration for data center design. Physical environment, external standards like ITIL/ISO 27001, and types of services are all critical design factors.",
     "domain": "Cloud Security Operations"
   },
   {
@@ -32,7 +32,7 @@ const questions = [
       "D. Inherent value"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is Automation of services.",
+    "explanation": "Automation of services maximizes efficiency and reduces operational costs, directly impacting revenue and profit for cloud providers by minimizing manual intervention.",
     "domain": "Cloud Security Operations"
   },
   {
@@ -68,7 +68,7 @@ const questions = [
       "D. Cross-platform functionality"
     ],
     "correctAnswer": "B",
-    "explanation": "The correct answer is Logging.",
+    "explanation": "Logging is essential for security monitoring, incident response, compliance auditing, and troubleshooting in cloud security operations.",
     "domain": "Cloud Security Operations"
   },
   {
@@ -116,7 +116,7 @@ const questions = [
       "D. Sarbanes–Oxley Act (SOX)"
     ],
     "correctAnswer": "C",
-    "explanation": "The correct answer is ISO 27001.",
+    "explanation": "ISO 27001 is the international standard for information security management systems (ISMS), providing a framework for managing and protecting sensitive information.",
     "domain": "Cloud Security Operations"
   },
   {

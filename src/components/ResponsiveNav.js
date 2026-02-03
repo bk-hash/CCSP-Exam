@@ -1,17 +1,39 @@
 import React, { useState } from 'react';
 import { useTheme } from '../contexts/ThemeContext';
+import { useAuth } from '../contexts/AuthContext';
 
 const ResponsiveNav = ({ section, setSection }) => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const { theme } = useTheme();
+  const { user } = useAuth();
 
-  const navItems = [
+  // STRICT ADMIN ACCESS CONTROL - NO PRIVILEGE ESCALATION POSSIBLE
+  const AUTHORIZED_ADMIN_EMAIL = 'billycannine@gmail.com';
+  
+  const isAdmin = (
+    user?.email === AUTHORIZED_ADMIN_EMAIL &&
+    user?.email && // Must have email
+    user.email.toLowerCase() === AUTHORIZED_ADMIN_EMAIL.toLowerCase() && // Case insensitive check  
+    user.email.trim() === AUTHORIZED_ADMIN_EMAIL && // No whitespace tricks
+    user?.id && // Must have proper user ID
+    user?.name && // Must have proper user data
+    typeof user === 'object' // Must be proper user object
+  );
+
+  const allNavItems = [
     { key: "Dashboard", label: "📊 Dashboard", shortLabel: "📊" },
     { key: "Quiz", label: "📝 Quiz", shortLabel: "📝" },
     { key: "PracticeExams", label: "🎯 Practice Exams", shortLabel: "🎯" },
     { key: "Flashcards", label: "📚 Flashcards", shortLabel: "📚" },
-    { key: "AllDomainsQuiz", label: "🌐 All Domains", shortLabel: "🌐" }
+    { key: "AllDomainsQuiz", label: "🌐 All Domains", shortLabel: "🌐" },
+    { key: "Pricing", label: "💎 Pricing", shortLabel: "💎" },
+    { key: "Admin", label: "🛠️ Admin", shortLabel: "🛠️" }
   ];
+
+  // Filter nav items - only show Admin to billycannine@gmail.com
+  const navItems = allNavItems.filter(item => 
+    item.key !== "Admin" || isAdmin
+  );
 
   return (
     <>

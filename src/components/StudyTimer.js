@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useTheme } from '../contexts/ThemeContext';
+import { useTheme } from '../contexts';
 
 const StudyTimer = ({ isActive, onTimeUpdate }) => {
   const [time, setTime] = useState(0);

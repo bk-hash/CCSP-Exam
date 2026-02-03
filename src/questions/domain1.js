@@ -22,7 +22,7 @@ const questions = [
       "C. The consumer has no control over the underlying infrastructure",
       "D. The consumer manages the entire software stack"
     ],
-  correctAnswer: "A",
+  correctAnswer: "B",
     explanation: "In IaaS, the consumer controls the operating systems, server software, and deployed applications, while the provider manages the underlying infrastructure.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
@@ -36,7 +36,7 @@ const questions = [
       "C. Community cloud",
       "D. Hybrid cloud"
     ],
-  correctAnswer: "A",
+  correctAnswer: "B",
     explanation: "A private cloud is dedicated to a single organization, providing greater control and security compared to other models.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
@@ -87,6 +87,7 @@ const questions = [
       "D. On-demand self-service"
     ],
     correctAnswer: "C",
+    explanation: "Rapid elasticity allows cloud resources to be quickly and automatically scaled up or down based on demand, providing the ability to rapidly provision resources with minimal management effort.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
     difficulty: "easy"
@@ -100,6 +101,7 @@ const questions = [
       "D. Reducing network bandwidth usage"
     ],
   correctAnswer: "B",
+    explanation: "Logical separation of tenant data, such as through virtualization and access controls, is critical in multi-tenant cloud architectures to ensure security.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
     difficulty: "medium"
@@ -127,6 +129,7 @@ const questions = [
       "D. Simplified compliance with all regulations"
     ],
     correctAnswer: "A",
+    explanation: "A community cloud provides cost savings through shared infrastructure among organizations with similar needs, reducing costs while addressing common security and compliance requirements.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
     difficulty: "medium"
@@ -547,7 +550,7 @@ const questions = [
       "C. Public endpoints with default rules",
       "D. Local caching without security"
     ],
-    correctAnswer: "B",
+    correctAnswer: "A",
     explanation: "A geo-distributed WAF with input validation prevents SSRF, enhancing architecture and application security.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
@@ -561,8 +564,8 @@ const questions = [
       "C. Single-factor authentication",
       "D. Open API endpoints"
     ],
-    correctAnswer: "D",
-  // removed duplicate correctAnswer
+    correctAnswer: "A",
+    explanation: "Role-based access with SIEM monitoring mitigates APTs by limiting access and providing threat detection.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
     difficulty: "very hard"
@@ -981,7 +984,7 @@ const questions = [
       "C. Public caching with default rules",
       "D. Local caching without security"
     ],
-    correctAnswer: "B",
+    correctAnswer: "A",
     explanation: "Edge caching with X-Frame-Options prevents clickjacking, blending architecture and application security.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",

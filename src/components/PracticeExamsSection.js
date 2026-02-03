@@ -2,9 +2,12 @@ import React, { useState } from "react";
 import practiceExam1Questions from "../questions/practice_exam1";
 import practiceExam2Questions from "../questions/practice_exam2";
 import Quiz from "./Quiz";
+import { useAuth } from '../contexts/AuthContext';
+import UpgradePrompt from './UpgradePrompt';
 
 function PracticeExamsSection() {
   const [selectedExam, setSelectedExam] = useState("Practice Exam 1 (120)");
+  const { user, isDemoUser } = useAuth();
   
   const exams = [
     {
@@ -68,17 +71,27 @@ function PracticeExamsSection() {
         </select>
       </div>
       
-      {currentExam && currentExam.questions && currentExam.questions.length > 0 ? (
-        <Quiz questions={currentExam.questions} showScore={true} sessionKey={`practice-exam-${selectedExam}`} />
+      {isDemoUser(user) ? (
+        <UpgradePrompt
+          title="🎯 Practice Exams - Premium Only"
+          subtitle="Full-length practice exams are available with Premium access"
+          feature="practice exams"
+          currentCount={0}
+          maxCount={2}
+        />
       ) : (
-        <div style={{ 
-          textAlign: "center", 
-          fontSize: "1.3rem", 
-          color: "#e53935",
-          marginTop: 40
-        }}>
-          No questions available for this exam.
-        </div>
+        currentExam && currentExam.questions && currentExam.questions.length > 0 ? (
+          <Quiz questions={currentExam.questions} showScore={true} sessionKey={`practice-exam-${selectedExam}`} />
+        ) : (
+          <div style={{ 
+            textAlign: "center", 
+            fontSize: "1.3rem", 
+            color: "#e53935",
+            marginTop: 40
+          }}>
+            No questions available for this exam.
+          </div>
+        )
       )}
     </div>
   );

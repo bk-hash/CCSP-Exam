@@ -5,9 +5,113 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* Mobile optimizations */
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  /* Prevent zoom on mobile */
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  /* Smooth scrolling */
+  scroll-behavior: smooth;
+  /* Better touch performance */
+  touch-action: manipulation;
+}
+
+/* Allow text selection for content areas */
+.selectable-text,
+.quiz-question,
+.flashcard-content,
+input,
+textarea {
+  -webkit-user-select: text !important;
+  -moz-user-select: text !important;
+  -ms-user-select: text !important;
+  user-select: text !important;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+/* Mobile-specific styles */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px; /* Prevent zoom on iOS */
+    line-height: 1.4;
+  }
+  
+  /* Improve tap targets */
+  button, 
+  .clickable {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Better scrolling on iOS */
+  * {
+    -webkit-overflow-scrolling: touch;
+  }
+  
+  /* Reduce animations on mobile for performance */
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.3s !important;
+    animation-delay: 0s !important;
+    transition-duration: 0.3s !important;
+    transition-delay: 0s !important;
+  }
+}
+
+/* PWA specific styles */
+@media (display-mode: standalone) {
+  body {
+    /* Hide any browser-specific elements when in PWA mode */
+    padding-top: env(safe-area-inset-top);
+    padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+}
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #1a1a1a;
+    color: #ffffff;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  * {
+    border-width: 2px !important;
+  }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Loading spinner animation */
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

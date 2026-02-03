@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Protea Glen 6-Unit Building – Three.js</title>
+  <style>
+    body { margin:0; overflow:hidden; background:#000; }
+    #info { position:absolute; top:10px; left:10px; color:white; font-family:Arial; }
+  </style>
+</head>
+<body>
+  <div id="info">Protea Glen 6-Unit Ensuite Rental – Three.js<br>Drag to rotate • Scroll to zoom • Right-drag to pan</div>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.168.0/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.168.0/examples/js/controls/OrbitControls.js"></script>
+
+  <script>
+    // Scene setup
+    const scene = new THREE.Scene();
+    scene.background = new THREE.Color(0x111122);
+
+    const camera = new THREE.PerspectiveCamera(45, innerWidth / innerHeight, 10, 50000);
+    camera.position.set(18000, -15000, 18000);
+
+    const renderer = new THREE.WebGLRenderer({ antialias:true });
+    renderer.setSize(innerWidth, innerHeight);
+    renderer.setPixelRatio(devicePixelRatio);
+    document.body.appendChild(renderer.domElement);
+
+    const controls = new THREE.OrbitControls(camera, renderer.domElement);
+    controls.enableDamping = true;
+    controls.dampingFactor = 0.05;
+    controls.target.set(6600, 5100, 2400);
+
+    // Lights
+    scene.add(new THREE.AmbientLight(0xffffff, 0.6));
+    const dirLight = new THREE.DirectionalLight(0xffffff, 1);
+    dirLight.position.set(10000, -10000, 15000);
+    scene.add(dirLight);
+
+    // Helper axes (X=red, Y=green, Z=blue)
+    scene.add(new THREE.AxesHelper(5000));
+
+    // MATERIALS (matching your DAE)
+    const matGround   = new THREE.MeshStandardMaterial({ color: 0x333333 });      // dark foundation
+    const matFloor    = new THREE.MeshStandardMaterial({ color: 0xbbbbbb });      // light floor slab
+    const matWalls    = new THREE.MeshStandardMaterial({ color: 0xc8c8dc });      // light grey walls
+    const matRoof     = new THREE.MeshStandardMaterial({ color: 0x1a1a78 });      // blue roof
+    const matUnits    = new THREE.MeshStandardMaterial({ color: 0xfff0c8 });      // warm cream units
+    const matDoor     = new THREE.MeshStandardMaterial({ color: 0x8B4513 });      // brown doors
+
+    // 1. Ground slab (13.2m × 10.2m × 0.3m thick, slightly below Z=0)
+    const groundGeom = new THREE.BoxGeometry(13200, 10200, 300);
+    const ground = new THREE.Mesh(groundGeom, matGround);
+    ground.position.set(6600, 5100, -150);
+    scene.add(ground);
+
+    // 2. First floor slab at 3m
+    const floorGeom = new THREE.BoxGeometry(13200, 10200, 200); // 200mm thick
+    const floor = new THREE.Mesh(floorGeom, matFloor);
+    floor.position.set(6600, 5100, 3000);
+    scene.add(floor);
+
+    // 3. Vertical divider walls (every 2.2m)
+    const wallGeom = new THREE.BoxGeometry(100, 10200, 3000); // 100mm thick
+    for (let i = 1; i < 6; i++) {
+      const wall = new THREE.Mesh(wallGeom, matWalls);
+      wall.position.set(i * 2200, 5100, 1500);
+      scene.add(wall);
+    }
+
+    // 4. Roof at 4.8m
+    const roofGeom = new THREE.BoxGeometry(13200, 10200, 200);
+    const roof = new THREE.Mesh(roofGeom, matRoof);
+    roof.position.set(6600, 5100, 4800);
+    scene.add(roof);
+
+    // 5. The six rental units (2.15m wide × 5m deep × 3m high)
+    const unitGeom = new THREE.BoxGeometry(2150, 5000, 3000);
+    for (let i = 0; i < 6; i++) {
+      const unit = new THREE.Mesh(unitGeom, matUnits);
+      unit.position.set(1100 + i * 2200, 5100, 1500);
+      scene.add(unit);
+
+      // Door on front face (Y = 5100 - 2500 + 150)
+      const doorGeom = new THREE.BoxGeometry(900, 100, 2100); // 0.9m wide door
+      const door = new THREE.Mesh(doorGeom, matDoor);
+      door.position.set(1100 + i * 2200, 2600, 1050);
+      scene.add(door);
+    }
+
+    // Animation loop
+    function animate() {
+      requestAnimationFrame(animate);
+      controls.update();
+      renderer.render(scene, camera);
+    }
+    animate();
+
+    // Responsive
+    window.addEventListener('resize', () => {
+      camera.aspect = innerWidth / innerHeight;
+      camera.updateProjectionMatrix();
+      renderer.setSize(innerWidth, innerHeight);
+    });
+  </script>
+</body>
+</html>

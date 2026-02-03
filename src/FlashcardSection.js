@@ -23,7 +23,7 @@ function FlashcardSection() {
     .find(d => d.value === selectedDomain)
     .data.map(q => ({
       front: q.question,
-      back: q.explanation
+      back: q.explanation || "No explanation available for this question."
     }));
 
   return (
