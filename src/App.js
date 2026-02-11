@@ -11,6 +11,8 @@ import UserProfile from "./components/UserProfile";
 import UserDashboard from "./components/UserDashboard";
 import MobileHeader from "./components/MobileHeader";
 import MobileBottomNav from "./components/MobileBottomNav";
+import AIAssistantWidget from "./features/ai-assistant/components/AIAssistantWidget";
+import { isFeatureEnabled } from "./config/features";
 const PricingSection = lazy(() => import("./components/PricingPage"));
 const AdminPanel = lazy(() => import("./components/AdminPanel"));
 const QuizSection = lazy(() => import("./QuizSection"));
@@ -191,6 +193,9 @@ function AppContent({ section, setSection }) {
           <ThemeToggle />
         </div>
       )}
+
+      {/* AI Assistant Widget (optional feature) */}
+      {isFeatureEnabled('AI_ASSISTANT') && <AIAssistantWidget />}
     </div>
   );
 }

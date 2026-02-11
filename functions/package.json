@@ -1,0 +1,26 @@
+{
+  "name": "ccsp-exam-functions",
+  "version": "1.0.0",
+  "description": "Firebase Cloud Functions for CCSP Exam app",
+  "main": "src/index.js",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "18"
+  },
+  "dependencies": {
+    "firebase-functions": "^4.0.0",
+    "firebase-admin": "^11.0.0",
+    "openai": "^4.0.0",
+    "@azure/openai": "^1.0.0-beta.11"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^3.0.0"
+  },
+  "private": true
+}

@@ -12,6 +12,7 @@ An interactive quiz and flashcard application for studying CCSP (Certified Cloud
 - **📱 Responsive Design** - Works on desktop, tablet, and mobile devices
 - **⏱️ Study Timer** - Track your study sessions
 - **📈 Performance Analytics** - Detailed statistics on your quiz performance
+- **🤖 AI Study Assistant** - Optional AI-powered tutor (requires setup - see below)
 
 ## 🚀 Quick Start
 
@@ -34,9 +35,10 @@ An interactive quiz and flashcard application for studying CCSP (Certified Cloud
    ```
 
 3. **Set up Google OAuth Authentication**
-   - Copy `.env.example` to `.env`
+   - The app will automatically create a `.env` file from `.env.example` on first run
    - Follow the [Google OAuth Setup Guide](./GOOGLE_OAUTH_SETUP.md)
    - Update `.env` with your Google Client ID
+   - **Optional:** Set `REACT_APP_ENABLE_AI=true` to enable the AI Study Assistant widget (enabled by default)
 
 4. **Start the development server**
    ```bash
@@ -123,6 +125,139 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 ### Deployment
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+## 🤖 AI Study Assistant
+
+An optional AI-powered study assistant to help with CCSP exam preparation.
+
+> **ℹ️ Note:** The AI Assistant widget is **enabled by default**. 
+> - The 🤖 widget appears in the bottom-right corner automatically
+> - Works with demo UI even without backend configuration
+> - To disable: Set `REACT_APP_ENABLE_AI=false` in your `.env` file
+> - For full AI functionality: Configure an API endpoint (see setup instructions below)
+
+### Features
+- Real-time chat with AI tutor
+- Ask questions about cloud security concepts
+- Get explanations for quiz answers
+- Generate practice questions
+- Personalized study recommendations
+
+### AI Provider Options
+
+This application supports **two AI providers**:
+
+#### Option 1: Standard OpenAI API (Default)
+- ✅ Easy to set up
+- ✅ Direct access to latest models
+- ✅ No Azure subscription needed
+
+#### Option 2: Azure OpenAI Service
+- ✅ Enterprise-grade security and compliance
+- ✅ Data stays in your Azure tenant
+- ✅ Integrated with Azure billing
+- ✅ **Compatible with Microsoft Copilot infrastructure**
+- ℹ️ Requires Azure subscription and Azure OpenAI access
+
+**📘 For Microsoft Copilot for Office 365 users:** See [AZURE_OPENAI_INTEGRATION.md](./AZURE_OPENAI_INTEGRATION.md) for detailed guidance on using Azure OpenAI Service.
+
+### Setup
+
+1. **Enable the feature in `.env`:**
+   ```env
+   REACT_APP_ENABLE_AI=true
+   REACT_APP_AI_API_ENDPOINT=your-firebase-function-url
+   ```
+
+2. **Set up Firebase Functions:**
+   ```bash
+   cd functions
+   npm install
+   ```
+
+3. **Choose and configure your AI provider:**
+
+   **Option A: Standard OpenAI API**
+   
+   Using Firebase CLI:
+   ```bash
+   firebase functions:config:set \
+     ai.provider="openai" \
+     openai.key="sk-your-openai-api-key"
+   ```
+   
+   Or set environment variables:
+   ```bash
+   export AI_PROVIDER=openai
+   export OPENAI_API_KEY=sk-your-openai-api-key
+   ```
+
+   **Option B: Azure OpenAI Service**
+   
+   Using Firebase CLI:
+   ```bash
+   firebase functions:config:set \
+     ai.provider="azure" \
+     azure.openai.key="your-azure-key" \
+     azure.openai.endpoint="https://your-resource.openai.azure.com" \
+     azure.openai.deployment="your-deployment-name" \
+     azure.openai.version="2024-02-15-preview"
+   ```
+   
+   Or set environment variables:
+   ```bash
+   export AI_PROVIDER=azure
+   export AZURE_OPENAI_API_KEY=your-azure-key
+   export AZURE_OPENAI_ENDPOINT=https://your-resource.openai.azure.com
+   export AZURE_OPENAI_DEPLOYMENT_NAME=your-deployment-name
+   export AZURE_OPENAI_API_VERSION=2024-02-15-preview
+   ```
+
+4. **Deploy Firebase Functions:**
+   ```bash
+   firebase deploy --only functions:ai
+   ```
+
+5. **Update API endpoint in `.env`:**
+   ```env
+   REACT_APP_AI_API_ENDPOINT=https://us-central1-your-project.cloudfunctions.net/ai
+   ```
+
+### Usage
+
+- Click the 🤖 button in the bottom-right corner
+- Ask questions about CCSP concepts
+- Use suggested prompts for quick actions
+- Chat history is saved locally in your browser
+
+### Disable AI
+
+To completely disable the AI feature, set in `.env`:
+```env
+REACT_APP_ENABLE_AI=false
+```
+
+The app will function normally without the AI assistant.
+
+### Cost Considerations
+
+**OpenAI API:**
+- GPT-4 Turbo: ~$0.01 per 1K input tokens, ~$0.03 per 1K output tokens
+- Average conversation: ~$0.02
+
+**Azure OpenAI Service:**
+- Similar pricing to OpenAI Direct
+- Billed through Azure subscription
+- Enterprise discounts may apply
+
+Monitor your usage in your provider's dashboard and set appropriate rate limits.
+
+### Switching Between Providers
+
+You can switch between OpenAI and Azure OpenAI at any time by:
+1. Updating the `AI_PROVIDER` environment variable
+2. Redeploying Firebase Functions
+3. No code changes required!
 
 ### `npm run build` fails to minify
 
