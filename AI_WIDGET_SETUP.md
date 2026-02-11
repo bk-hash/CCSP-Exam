@@ -1,31 +1,25 @@
 # Enabling the AI Study Assistant Widget
 
-## Quick Enable (Development/Testing)
+## Quick Enable (Automatic - Default Behavior)
 
-If you want to see and test the AI Assistant widget locally:
+**Good news!** The AI Assistant widget is **enabled by default** as of the latest update.
 
-### Step 1: Create .env file
+### What Happens Automatically
+
+When you run `npm start` for the first time:
+1. The setup script automatically creates `.env` from `.env.example`
+2. The AI widget is enabled by default (`REACT_APP_ENABLE_AI=true`)
+3. You should see the **🤖 floating button** in the bottom-right corner immediately!
+
+### No Setup Required! ✨
+
+Just run:
 ```bash
-cp .env.example .env
-```
-
-### Step 2: Edit .env file
-Set these variables:
-```env
-# Enable AI Assistant
-REACT_APP_ENABLE_AI=true
-
-# Set a demo endpoint (for UI testing without backend)
-REACT_APP_AI_API_ENDPOINT=https://demo-endpoint.example.com/ai
-```
-
-### Step 3: Start the application
-```bash
+npm install
 npm start
 ```
 
-### Step 4: Look for the widget
-You should now see a **🤖 floating button** in the bottom-right corner of the screen!
+The widget will appear automatically!
 
 ## What You'll See
 
@@ -117,19 +111,24 @@ If the widget appears but doesn't respond to AI queries:
 
 ## Disabling the Widget
 
-To hide the widget again:
+If you don't want to see the AI widget:
 
+### Option 1: Edit .env file
 ```env
 # In .env file
 REACT_APP_ENABLE_AI=false
 ```
 
-Or simply remove/comment out the line:
-```env
+### Option 2: Delete the line
+```bash
+# Simply remove or comment out the line in .env
 # REACT_APP_ENABLE_AI=true
 ```
 
-Then restart the dev server.
+Then restart the dev server:
+```bash
+npm start
+```
 
 ## Production Deployment
 

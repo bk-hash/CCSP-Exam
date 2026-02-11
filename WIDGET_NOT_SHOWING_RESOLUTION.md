@@ -21,27 +21,36 @@ The AI Assistant widget **DOES EXIST** and is **FULLY IMPLEMENTED**, but it's **
 
 ## Solution
 
-### Quick Fix: Enable the Widget
+### ✅ FIXED: Widget Now Enabled by Default!
 
-1. **Create `.env` file** (copy from `.env.example`):
-   ```bash
-   cp .env.example .env
-   ```
+As of the latest update, the AI widget is **automatically enabled** when you start the application.
 
-2. **Edit `.env` and enable AI**:
-   ```env
-   REACT_APP_ENABLE_AI=true
-   REACT_APP_AI_API_ENDPOINT=https://your-endpoint.com/ai
-   ```
+### What Changed
 
-3. **Restart the development server**:
-   ```bash
-   npm start
-   ```
+1. **Automatic .env Creation**: When you run `npm start`, the setup script automatically creates `.env` from `.env.example`
+2. **Enabled by Default**: `.env.example` now has `REACT_APP_ENABLE_AI=true` by default
+3. **No Manual Setup Required**: The widget appears immediately after installation
 
-4. **See the widget!**
-   - Look for the 🤖 floating button in the bottom-right corner
-   - Click it to open the chat window
+### Quick Start (New Behavior)
+
+```bash
+# Clone and start - that's it!
+git clone <repo-url>
+cd CCSP-Exam
+npm install
+npm start
+
+# Widget appears automatically! 🤖
+```
+
+### Old Behavior (Before Fix)
+
+Previously, users had to:
+1. Manually copy `.env.example` to `.env`
+2. Edit `.env` to set `REACT_APP_ENABLE_AI=true`
+3. Restart the dev server
+
+This caused the "widget not showing" issue.
 
 ## What You'll See When Enabled
 

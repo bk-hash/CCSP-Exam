@@ -35,10 +35,10 @@ An interactive quiz and flashcard application for studying CCSP (Certified Cloud
    ```
 
 3. **Set up Google OAuth Authentication**
-   - Copy `.env.example` to `.env`
+   - The app will automatically create a `.env` file from `.env.example` on first run
    - Follow the [Google OAuth Setup Guide](./GOOGLE_OAUTH_SETUP.md)
    - Update `.env` with your Google Client ID
-   - **Optional:** Set `REACT_APP_ENABLE_AI=true` to enable the AI Study Assistant widget
+   - **Optional:** Set `REACT_APP_ENABLE_AI=true` to enable the AI Study Assistant widget (enabled by default)
 
 4. **Start the development server**
    ```bash
@@ -130,10 +130,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 An optional AI-powered study assistant to help with CCSP exam preparation.
 
-> **⚠️ Important:** The AI Assistant widget is **disabled by default**. To enable it, you must:
-> 1. Copy `.env.example` to `.env`
-> 2. Set `REACT_APP_ENABLE_AI=true` in your `.env` file
-> 3. Configure an API endpoint (see setup instructions below)
+> **ℹ️ Note:** The AI Assistant widget is **enabled by default**. 
+> - The 🤖 widget appears in the bottom-right corner automatically
+> - Works with demo UI even without backend configuration
+> - To disable: Set `REACT_APP_ENABLE_AI=false` in your `.env` file
+> - For full AI functionality: Configure an API endpoint (see setup instructions below)
 
 ### Features
 - Real-time chat with AI tutor
