@@ -124,6 +124,73 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/a
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
+## 🤖 AI Study Assistant
+
+An optional AI-powered study assistant to help with CCSP exam preparation.
+
+### Features
+- Real-time chat with AI tutor
+- Ask questions about cloud security concepts
+- Get explanations for quiz answers
+- Generate practice questions
+- Personalized study recommendations
+
+### Setup
+
+1. **Enable the feature in `.env`:**
+   ```env
+   REACT_APP_ENABLE_AI=true
+   REACT_APP_AI_API_ENDPOINT=your-firebase-function-url
+   ```
+
+2. **Set up Firebase Functions:**
+   ```bash
+   cd functions
+   npm install
+   ```
+
+3. **Configure OpenAI API Key:**
+   
+   Using Firebase CLI:
+   ```bash
+   firebase functions:config:set openai.key="sk-your-openai-api-key"
+   ```
+   
+   Or set environment variable:
+   ```bash
+   export OPENAI_API_KEY=sk-your-openai-api-key
+   ```
+
+4. **Deploy Firebase Functions:**
+   ```bash
+   firebase deploy --only functions:ai
+   ```
+
+5. **Update API endpoint in `.env`:**
+   ```env
+   REACT_APP_AI_API_ENDPOINT=https://us-central1-your-project.cloudfunctions.net/ai
+   ```
+
+### Usage
+
+- Click the 🤖 button in the bottom-right corner
+- Ask questions about CCSP concepts
+- Use suggested prompts for quick actions
+- Chat history is saved locally in your browser
+
+### Disable AI
+
+To completely disable the AI feature, set in `.env`:
+```env
+REACT_APP_ENABLE_AI=false
+```
+
+The app will function normally without the AI assistant.
+
+### Cost Considerations
+
+The AI assistant uses OpenAI's GPT-4 API, which incurs costs based on token usage. Monitor your usage in the OpenAI dashboard and set appropriate rate limits.
+
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
