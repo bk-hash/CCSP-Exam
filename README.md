@@ -135,6 +135,24 @@ An optional AI-powered study assistant to help with CCSP exam preparation.
 - Generate practice questions
 - Personalized study recommendations
 
+### AI Provider Options
+
+This application supports **two AI providers**:
+
+#### Option 1: Standard OpenAI API (Default)
+- ✅ Easy to set up
+- ✅ Direct access to latest models
+- ✅ No Azure subscription needed
+
+#### Option 2: Azure OpenAI Service
+- ✅ Enterprise-grade security and compliance
+- ✅ Data stays in your Azure tenant
+- ✅ Integrated with Azure billing
+- ✅ **Compatible with Microsoft Copilot infrastructure**
+- ℹ️ Requires Azure subscription and Azure OpenAI access
+
+**📘 For Microsoft Copilot for Office 365 users:** See [AZURE_OPENAI_INTEGRATION.md](./AZURE_OPENAI_INTEGRATION.md) for detailed guidance on using Azure OpenAI Service.
+
 ### Setup
 
 1. **Enable the feature in `.env`:**
@@ -149,16 +167,42 @@ An optional AI-powered study assistant to help with CCSP exam preparation.
    npm install
    ```
 
-3. **Configure OpenAI API Key:**
+3. **Choose and configure your AI provider:**
+
+   **Option A: Standard OpenAI API**
    
    Using Firebase CLI:
    ```bash
-   firebase functions:config:set openai.key="sk-your-openai-api-key"
+   firebase functions:config:set \
+     ai.provider="openai" \
+     openai.key="sk-your-openai-api-key"
    ```
    
-   Or set environment variable:
+   Or set environment variables:
    ```bash
+   export AI_PROVIDER=openai
    export OPENAI_API_KEY=sk-your-openai-api-key
+   ```
+
+   **Option B: Azure OpenAI Service**
+   
+   Using Firebase CLI:
+   ```bash
+   firebase functions:config:set \
+     ai.provider="azure" \
+     azure.openai.key="your-azure-key" \
+     azure.openai.endpoint="https://your-resource.openai.azure.com" \
+     azure.openai.deployment="your-deployment-name" \
+     azure.openai.version="2024-02-15-preview"
+   ```
+   
+   Or set environment variables:
+   ```bash
+   export AI_PROVIDER=azure
+   export AZURE_OPENAI_API_KEY=your-azure-key
+   export AZURE_OPENAI_ENDPOINT=https://your-resource.openai.azure.com
+   export AZURE_OPENAI_DEPLOYMENT_NAME=your-deployment-name
+   export AZURE_OPENAI_API_VERSION=2024-02-15-preview
    ```
 
 4. **Deploy Firebase Functions:**
@@ -189,7 +233,23 @@ The app will function normally without the AI assistant.
 
 ### Cost Considerations
 
-The AI assistant uses OpenAI's GPT-4 API, which incurs costs based on token usage. Monitor your usage in the OpenAI dashboard and set appropriate rate limits.
+**OpenAI API:**
+- GPT-4 Turbo: ~$0.01 per 1K input tokens, ~$0.03 per 1K output tokens
+- Average conversation: ~$0.02
+
+**Azure OpenAI Service:**
+- Similar pricing to OpenAI Direct
+- Billed through Azure subscription
+- Enterprise discounts may apply
+
+Monitor your usage in your provider's dashboard and set appropriate rate limits.
+
+### Switching Between Providers
+
+You can switch between OpenAI and Azure OpenAI at any time by:
+1. Updating the `AI_PROVIDER` environment variable
+2. Redeploying Firebase Functions
+3. No code changes required!
 
 ### `npm run build` fails to minify
 

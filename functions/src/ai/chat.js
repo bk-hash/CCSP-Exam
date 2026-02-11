@@ -1,9 +1,11 @@
 /**
  * AI Chat Function
  * Firebase Cloud Function for AI chat endpoint
+ * Supports both OpenAI and Azure OpenAI providers
  */
 
-const { initializeOpenAI, generateChatCompletion } = require('./openai');
+const openaiModule = require('./openai');
+const azureOpenaiModule = require('./azureOpenai');
 const { extractRelevantContext } = require('./contextBuilder');
 
 const SYSTEM_PROMPT = `You are an expert CCSP (Certified Cloud Security Professional) tutor.
@@ -92,12 +94,35 @@ const handleChatRequest = async (req, res) => {
     // Sanitize and validate message length
     const sanitizedMessage = message.trim().substring(0, 1000);
     
-    // Initialize OpenAI if not already done
-    const apiKey = process.env.OPENAI_API_KEY;
-    if (!apiKey) {
-      throw new Error('OpenAI API key not configured');
+    // Determine AI provider (openai or azure)
+    const aiProvider = (process.env.AI_PROVIDER || 'openai').toLowerCase();
+    
+    // Initialize the appropriate AI provider
+    let generateChatCompletion;
+    
+    if (aiProvider === 'azure') {
+      // Azure OpenAI configuration
+      const azureApiKey = process.env.AZURE_OPENAI_API_KEY;
+      const azureEndpoint = process.env.AZURE_OPENAI_ENDPOINT;
+      const azureDeployment = process.env.AZURE_OPENAI_DEPLOYMENT_NAME;
+      
+      if (!azureApiKey || !azureEndpoint || !azureDeployment) {
+        throw new Error('Azure OpenAI configuration incomplete. Required: AZURE_OPENAI_API_KEY, AZURE_OPENAI_ENDPOINT, AZURE_OPENAI_DEPLOYMENT_NAME');
+      }
+      
+      azureOpenaiModule.initializeAzureOpenAI(azureApiKey, azureEndpoint, azureDeployment);
+      generateChatCompletion = azureOpenaiModule.generateChatCompletion;
+    } else {
+      // Standard OpenAI configuration
+      const openaiApiKey = process.env.OPENAI_API_KEY;
+      
+      if (!openaiApiKey) {
+        throw new Error('OpenAI API key not configured. Set OPENAI_API_KEY environment variable.');
+      }
+      
+      openaiModule.initializeOpenAI(openaiApiKey);
+      generateChatCompletion = openaiModule.generateChatCompletion;
     }
-    initializeOpenAI(apiKey);
     
     // Build context
     const context = extractRelevantContext(sanitizedMessage);
