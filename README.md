@@ -12,6 +12,7 @@ An interactive quiz and flashcard application for studying CCSP (Certified Cloud
 - **📱 Responsive Design** - Works on desktop, tablet, and mobile devices
 - **⏱️ Study Timer** - Track your study sessions
 - **📈 Performance Analytics** - Detailed statistics on your quiz performance
+- **🤖 AI Study Assistant** - Optional AI-powered tutor (requires setup - see below)
 
 ## 🚀 Quick Start
 
@@ -37,6 +38,7 @@ An interactive quiz and flashcard application for studying CCSP (Certified Cloud
    - Copy `.env.example` to `.env`
    - Follow the [Google OAuth Setup Guide](./GOOGLE_OAUTH_SETUP.md)
    - Update `.env` with your Google Client ID
+   - **Optional:** Set `REACT_APP_ENABLE_AI=true` to enable the AI Study Assistant widget
 
 4. **Start the development server**
    ```bash
@@ -127,6 +129,11 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ## 🤖 AI Study Assistant
 
 An optional AI-powered study assistant to help with CCSP exam preparation.
+
+> **⚠️ Important:** The AI Assistant widget is **disabled by default**. To enable it, you must:
+> 1. Copy `.env.example` to `.env`
+> 2. Set `REACT_APP_ENABLE_AI=true` in your `.env` file
+> 3. Configure an API endpoint (see setup instructions below)
 
 ### Features
 - Real-time chat with AI tutor
