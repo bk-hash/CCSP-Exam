@@ -3,6 +3,45 @@ import { useAuth } from './AuthContext';
 
 const StatsContext = createContext();
 
+const createDefaultStats = () => ({
+  totalQuestions: 0,
+  correctAnswers: 0,
+  studyStreak: 0,
+  weeklyProgress: [],
+  domainStrengths: {
+    domain1: { correct: 0, total: 0, percentage: 0 },
+    domain2: { correct: 0, total: 0, percentage: 0 },
+    domain3: { correct: 0, total: 0, percentage: 0 },
+    domain4: { correct: 0, total: 0, percentage: 0 },
+    domain5: { correct: 0, total: 0, percentage: 0 },
+    domain6: { correct: 0, total: 0, percentage: 0 }
+  },
+  examSeriesStats: {},
+  lastStudyDate: null,
+  dailyGoal: 10,
+  weeklyGoal: 50,
+  monthlyGoal: 200
+});
+
+const mergeStatsState = (savedStats) => ({
+  ...createDefaultStats(),
+  ...savedStats,
+  domainStrengths: {
+    ...createDefaultStats().domainStrengths,
+    ...(savedStats?.domainStrengths || {})
+  },
+  examSeriesStats: savedStats?.examSeriesStats || {}
+});
+
+const getDomainKey = (domain) => {
+  if (typeof domain !== 'string') {
+    return null;
+  }
+
+  const match = domain.match(/Domain\s+(\d+)/i);
+  return match ? `domain${match[1]}` : null;
+};
+
 export const useStats = () => {
   const context = useContext(StatsContext);
   if (!context) {
@@ -13,31 +52,14 @@ export const useStats = () => {
 
 export const StatsProvider = ({ children }) => {
   const { user } = useAuth();
-  const [userStats, setUserStats] = useState({
-    totalQuestions: 0,
-    correctAnswers: 0,
-    studyStreak: 0,
-    weeklyProgress: [],
-    domainStrengths: {
-      domain1: { correct: 0, total: 0, percentage: 0 },
-      domain2: { correct: 0, total: 0, percentage: 0 },
-      domain3: { correct: 0, total: 0, percentage: 0 },
-      domain4: { correct: 0, total: 0, percentage: 0 },
-      domain5: { correct: 0, total: 0, percentage: 0 },
-      domain6: { correct: 0, total: 0, percentage: 0 }
-    },
-    lastStudyDate: null,
-    dailyGoal: 10,
-    weeklyGoal: 50,
-    monthlyGoal: 200
-  });
+  const [userStats, setUserStats] = useState(createDefaultStats());
 
   // Load user stats when user changes
   useEffect(() => {
     if (user?.email) {
       const savedStats = localStorage.getItem(`userStats_${user.email}`);
       if (savedStats) {
-        setUserStats(JSON.parse(savedStats));
+        setUserStats(mergeStatsState(JSON.parse(savedStats)));
       }
     }
   }, [user]);
@@ -49,7 +71,7 @@ export const StatsProvider = ({ children }) => {
     }
   }, [userStats, user]);
 
-  const updateQuestionStats = (domain, isCorrect) => {
+  const updateQuestionStats = (domain, isCorrect, metadata = {}) => {
     const today = new Date().toDateString();
     
     setUserStats(prev => {
@@ -62,18 +84,46 @@ export const StatsProvider = ({ children }) => {
       }
 
       // Update domain strength
-      const domainKey = `domain${domain}`;
-      const domainStats = prev.domainStrengths[domainKey] || { correct: 0, total: 0 };
-      domainStats.total += 1;
-      if (isCorrect) {
-        domainStats.correct += 1;
+      const domainKey = getDomainKey(domain);
+      if (domainKey) {
+        const domainStats = prev.domainStrengths[domainKey] || { correct: 0, total: 0, percentage: 0 };
+        const nextDomainStats = {
+          correct: domainStats.correct + (isCorrect ? 1 : 0),
+          total: domainStats.total + 1
+        };
+
+        newStats.domainStrengths[domainKey] = {
+          ...nextDomainStats,
+          percentage: Math.round((nextDomainStats.correct / nextDomainStats.total) * 100)
+        };
       }
-      // Store the full object, not just the percentage
-      newStats.domainStrengths[domainKey] = {
-        correct: domainStats.correct,
-        total: domainStats.total,
-        percentage: Math.round((domainStats.correct / domainStats.total) * 100)
-      };
+
+      if (metadata.examSeriesKey) {
+        const currentSeries = prev.examSeriesStats?.[metadata.examSeriesKey] || {
+          title: metadata.examSeriesTitle || metadata.examSeriesKey,
+          attempts: 0,
+          correct: 0,
+          total: 0,
+          lastStudiedAt: null
+        };
+
+        const nextSeries = {
+          ...currentSeries,
+          title: metadata.examSeriesTitle || currentSeries.title,
+          attempts: currentSeries.attempts + 1,
+          correct: currentSeries.correct + (isCorrect ? 1 : 0),
+          total: currentSeries.total + 1,
+          lastStudiedAt: new Date().toISOString()
+        };
+
+        newStats.examSeriesStats = {
+          ...prev.examSeriesStats,
+          [metadata.examSeriesKey]: {
+            ...nextSeries,
+            accuracy: Math.round((nextSeries.correct / nextSeries.total) * 100)
+          }
+        };
+      }
 
       // Update study streak
       if (prev.lastStudyDate !== today) {
@@ -154,6 +204,14 @@ export const StatsProvider = ({ children }) => {
       : 0;
   };
 
+  const getExamSeriesStats = (examSeriesKey) => {
+    if (!examSeriesKey) {
+      return userStats.examSeriesStats || {};
+    }
+
+    return userStats.examSeriesStats?.[examSeriesKey] || null;
+  };
+
   const getWeakestDomains = () => {
     return Object.entries(userStats.domainStrengths)
       .map(([domain, data]) => ({ 
@@ -179,24 +237,7 @@ export const StatsProvider = ({ children }) => {
   };
 
   const resetStats = () => {
-    setUserStats({
-      totalQuestions: 0,
-      correctAnswers: 0,
-      studyStreak: 0,
-      weeklyProgress: [],
-      domainStrengths: {
-        domain1: { correct: 0, total: 0, percentage: 0 },
-        domain2: { correct: 0, total: 0, percentage: 0 },
-        domain3: { correct: 0, total: 0, percentage: 0 },
-        domain4: { correct: 0, total: 0, percentage: 0 },
-        domain5: { correct: 0, total: 0, percentage: 0 },
-        domain6: { correct: 0, total: 0, percentage: 0 }
-      },
-      lastStudyDate: null,
-      dailyGoal: 10,
-      weeklyGoal: 50,
-      monthlyGoal: 200
-    });
+    setUserStats(createDefaultStats());
   };
 
   const value = {
@@ -206,6 +247,7 @@ export const StatsProvider = ({ children }) => {
     getWeeklyProgress,
     getDailyProgress,
     getOverallAccuracy,
+    getExamSeriesStats,
     getWeakestDomains,
     getStrongestDomains,
     resetStats

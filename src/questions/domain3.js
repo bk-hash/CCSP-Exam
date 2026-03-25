@@ -11,7 +11,7 @@ const questions = [
     explanation: "Ensuring isolation between virtual machines is a primary security consideration.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "In a public cloud services arrangement, who creates governance that will determine which controls are selected for the data center and how they are deployed?",
@@ -25,7 +25,7 @@ const questions = [
     explanation: "The cloud provider creates governance for controls in a public cloud arrangement.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What is the term that describes the situation when a malicious user or attacker can exit the restrictions of a single host and access other nodes on the network?",
@@ -39,7 +39,7 @@ const questions = [
     explanation: "Host escape is when an attacker exits a host and accesses other nodes.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What is the term that describes the situation when a malicious user or attacker can exit the restrictions of a virtual machine (VM) and access another VM residing on the same host?",
@@ -53,7 +53,7 @@ const questions = [
     explanation: "Guest escape is when an attacker exits a VM and accesses another VM on the same host.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "_____ is/are probably the main cause of virtualization sprawl.",
@@ -67,7 +67,7 @@ const questions = [
     explanation: "Ease of use is the main cause of virtualization sprawl.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Sprawl is mainly a(n) _____ problem.",
@@ -81,7 +81,7 @@ const questions = [
     explanation: "Sprawl is mainly a management problem.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of the following risks exists in the traditional environment but is dramatically increased by moving into the cloud?",
@@ -95,7 +95,7 @@ const questions = [
     explanation: "Man-in-the-middle attacks are dramatically increased in the cloud.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "A fundamental aspect of security principles, _____ should be implemented in the cloud as well as in traditional environments.",
@@ -109,7 +109,7 @@ const questions = [
     explanation: "Defense in depth should be implemented in both cloud and traditional environments.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "From a security perspective, automation of configuration aids in .",
@@ -123,7 +123,7 @@ const questions = [
     explanation: "Automation of configuration reduces potential attack vectors.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "_____ is the most prevalent protocol used in identity federation.",
@@ -133,11 +133,11 @@ const questions = [
       "C. File Transfer Protocol (FTP)",
       "D. WS-Federation"
     ],
-    correctAnswer: "B",
+    correctAnswer: "D",
     explanation: "SAML is the most prevalent protocol used in identity federation.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "A user signs on to a cloud-based social media platform. In another browser tab, the user finds an article worth posting to the social media platform. The user clicks on the platform’s icon listed on the article’s website, and the article is automatically posted to the user’s account on the social media platform. This is an example of what?",
@@ -151,7 +151,7 @@ const questions = [
     explanation: "This is an example of identity federation.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "A group of clinics decides to create an identification federation for their users (medical providers and clinicians). If they opt to review each other, for compliance with security governance and standards they all find acceptable, what is this federation model called?",
@@ -165,7 +165,7 @@ const questions = [
     explanation: "Cross-certification is when organizations review each other for compliance.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "A group of clinics decides to create an identification federation for their users (medical providers and clinicians). If they opt to hire a third party to review each organization, for compliance with security governance and standards they all find acceptable, what is this federation model called?",
@@ -179,7 +179,7 @@ const questions = [
     explanation: "Proxy model uses a third party to review organizations for compliance.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "A group of clinics decides to create an identification federation for their users (medical providers and clinicians). If they opt to use the web of trust model for federation, who is/are the identity provider(s)?",
@@ -193,7 +193,7 @@ const questions = [
     explanation: "Each organization is the identity provider in the web of trust model.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "A group of clinics decides to create an identification federation for their users (medical providers and clinicians). If they opt to use the web of trust model for federation, who is/are the service providers?",
@@ -207,7 +207,7 @@ const questions = [
     explanation: "Each organization is the service provider in the web of trust model.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "A group of clinics decides to create an identification federation for their users (medical providers and clinicians). In this federation, all of the participating organizations would need to be in compliance with what U.S. federal regulation?",
@@ -221,7 +221,7 @@ const questions = [
     explanation: "HIPAA compliance is required for medical provider federations.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What is the process of granting access to resources?",
@@ -235,7 +235,7 @@ const questions = [
     explanation: "Authorization is the process of granting access to resources.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "The process of identity management includes all the following elements except .",
@@ -249,7 +249,7 @@ const questions = [
     explanation: "Redaction is not part of identity management.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which organizational entity usually performs the verification part of the provisioning element of the identification process?",
@@ -263,7 +263,7 @@ const questions = [
     explanation: "Human resources (HR) usually performs verification in provisioning.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Of the following options, which is a reason cloud data center audits are often less easy to verify than traditional audits?",
@@ -277,7 +277,7 @@ const questions = [
     explanation: "Getting physical access is a challenge for cloud data center audits.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Of the following options, which is a reason cloud data center audits are often less easy to verify than audits in standard data centers?",
@@ -291,7 +291,7 @@ const questions = [
     explanation: "Cloud audits frequently rely on third parties.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "The cloud customer will usually not have physical access to the cloud data center. This enhances security by .",
@@ -305,7 +305,7 @@ const questions = [
     explanation: "Limiting access to sensitive information enhances security.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of the following controls would be useful to build into a virtual machine baseline image for a cloud environment?",
@@ -319,7 +319,7 @@ const questions = [
     explanation: "Automated vulnerability scan on startup is useful for VM baseline images.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Virtual machine (VM) configuration management (CM) tools should probably include .",
@@ -333,7 +333,7 @@ const questions = [
     explanation: "Anti-tampering mechanisms are important for VM CM tools.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Using a virtual machine baseline image could be very useful for which of the following options?",
@@ -347,7 +347,7 @@ const questions = [
     explanation: "VM baseline images are very useful for auditing.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What can be revealed by an audit of a baseline virtual image, used in a cloud environment?",
@@ -361,7 +361,7 @@ const questions = [
     explanation: "Audits of baseline virtual images reveal if security controls are in place and functioning.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Using one cloud provider for your operational environment and another for your BC/DR backup will also give you the additional benefit of .",
@@ -375,7 +375,7 @@ const questions = [
     explanation: "Using different providers for BC/DR helps avoid vendor lock-in/lock-out.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Having your BC/DR backup stored with the same cloud provider as your production environment can help you .",
@@ -389,7 +389,7 @@ const questions = [
     explanation: "Storing BC/DR backup with the same provider helps maintain regulatory compliance.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "If you use the cloud for BC/DR purposes, even if you don’t operate your production environment in the cloud, you can cut costs by eliminating your .",
@@ -403,7 +403,7 @@ const questions = [
     explanation: "Cloud BC/DR eliminates the need for a physical hot site/warm site.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "If the cloud is used for BC/DR purposes, the loss of _____ could gravely affect your organization’s RTO.",
@@ -417,7 +417,7 @@ const questions = [
     explanation: "Loss of ISP connectivity can gravely affect RTO in cloud BC/DR.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What is the most important asset to protect in cloud BC/DR activities?",
@@ -431,7 +431,7 @@ const questions = [
     explanation: "Intellectual property is the most important asset to protect in cloud BC/DR.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "When considering cloud data replication strategies (i.e., whether you are making backups at the block, file, or database level), which element of your organization’s BC/DR plan will be most affected by your choice?",
@@ -445,7 +445,7 @@ const questions = [
     explanation: "Recovery point objective is most affected by replication strategy.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "In addition to BC/DR, what other benefit can your data archive/backup provide?",
@@ -459,7 +459,7 @@ const questions = [
     explanation: "Data archive/backup provides availability for data lost accidentally.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of the following risks is probably most significant when choosing to use one cloud provider for your operational environment and another for BC/DR backup/archive?",
@@ -473,7 +473,7 @@ const questions = [
     explanation: "Vendor lock-in/lock-out is a significant risk when using different providers.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Return to normal operations is a phase in BC/DR activity when the emergency is over and regular production can resume. Which of the following can sometimes be the result when the organization uses two different cloud providers for the production and BC/DR environments?",
@@ -487,7 +487,7 @@ const questions = [
     explanation: "Both providers affected by emergency can delay return to normal operations.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of these determines the critical assets, recovery time objective (RTO), and recovery point objective (RPO) for BC/DR purposes?",
@@ -501,7 +501,7 @@ const questions = [
     explanation: "Business drivers determine critical assets, RTO, and RPO for BC/DR.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What artifact—which should already exist within the organization—can be used to determine the critical assets necessary to protect in the BC/DR activity?",
@@ -515,7 +515,7 @@ const questions = [
     explanation: "Business impact analysis determines critical assets for BC/DR.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is probably the most important element to address if your organization is using two different cloud providers for the production and BC/DR environments?",
@@ -529,7 +529,7 @@ const questions = [
     explanation: "Backup provider meeting the same SLA is most important.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "In a managed cloud services arrangement, who invokes a BC/DR action?",
@@ -543,7 +543,7 @@ const questions = [
     explanation: "Who invokes BC/DR depends on the contract in managed cloud services.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What do you need to do in order to fully ensure that a BC/DR action will function during a contingency?",
@@ -557,7 +557,7 @@ const questions = [
     explanation: "Performing a full-scale test ensures BC/DR action will function.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is probably the most important activity, of those listed?",
@@ -571,7 +571,7 @@ const questions = [
     explanation: "Regularly updating the BC/DR plan/process is most important.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "The BC/DR plan/policy should include all of the following except .",
@@ -585,7 +585,7 @@ const questions = [
     explanation: "Checklists for BC/DR personnel are not required in the plan/policy.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "The BC/DR plan/process should be written and documented in such a way that it can be used by .",
@@ -599,7 +599,7 @@ const questions = [
     explanation: "The BC/DR plan/process should be usable by someone with the requisite skills.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of the following best describes the role of a hypervisor in cloud infrastructure security?",
@@ -613,7 +613,7 @@ const questions = [
     explanation: "A hypervisor provides isolation between virtual machines, ensuring secure separation of workloads in a cloud environment.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What is a key benefit of implementing network segmentation in a cloud environment?",
@@ -627,7 +627,7 @@ const questions = [
     explanation: "Network segmentation limits the scope of a security breach by isolating workloads and restricting lateral movement in a cloud environment.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is a primary challenge when securing a cloud-based containerized environment?",
@@ -655,7 +655,7 @@ const questions = [
     explanation: "A cloud-based IAM system controls access to cloud resources, ensuring only authorized users and services can interact with them.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of the following best mitigates Distributed Denial of Service (DDoS) attacks in a cloud environment?",
@@ -669,7 +669,7 @@ const questions = [
     explanation: "A cloud-based DDoS protection service mitigates DDoS attacks by filtering malicious traffic and ensuring service availability.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What is a key consideration when securing a cloud-based network infrastructure?",
@@ -683,7 +683,7 @@ const questions = [
     explanation: "Implementing encryption for data in transit (e.g., TLS) is critical to secure cloud-based network infrastructure.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is a primary benefit of using a cloud-based security group?",
@@ -697,7 +697,7 @@ const questions = [
     explanation: "Security groups act as virtual firewalls, controlling network traffic to and from cloud resources to enhance security.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What is a primary challenge when securing a serverless cloud infrastructure?",
@@ -725,7 +725,7 @@ const questions = [
     explanation: "A cloud-based firewall filters network traffic based on predefined rules to protect cloud infrastructure from unauthorized access.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What is a key benefit of using a cloud-based intrusion detection system (IDS)?",
@@ -739,7 +739,7 @@ const questions = [
     explanation: "A cloud-based IDS detects unauthorized access attempts, enhancing infrastructure security by identifying potential threats.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is a primary consideration when securing a cloud-based load balancer?",
@@ -753,7 +753,7 @@ const questions = [
     explanation: "Implementing TLS for secure traffic is critical to protect data passing through a cloud-based load balancer.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What is a primary purpose of implementing a cloud-based virtual private cloud (VPC)?",
@@ -767,7 +767,7 @@ const questions = [
     explanation: "A VPC provides logically isolated network environments within a cloud provider’s infrastructure, enhancing security.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is a key challenge when securing a multi-cloud infrastructure?",
@@ -795,7 +795,7 @@ const questions = [
     explanation: "A cloud-based SIEM system provides centralized monitoring and analysis of security events, improving threat detection.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of the following best mitigates risks associated with misconfigured cloud infrastructure?",
@@ -809,7 +809,7 @@ const questions = [
     explanation: "Automated configuration management tools detect and remediate misconfigurations, reducing risks in cloud infrastructure.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What is a primary purpose of implementing a cloud-based network access control (NAC) system?",
@@ -823,7 +823,7 @@ const questions = [
     explanation: "A NAC system restricts unauthorized devices from accessing the cloud network, enhancing infrastructure security.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is a key benefit of using a cloud-based endpoint protection platform?",
@@ -837,7 +837,7 @@ const questions = [
     explanation: "A cloud-based endpoint protection platform protects cloud workloads from malware and other threats.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What is a primary challenge when securing a cloud-based hybrid infrastructure?",
@@ -865,7 +865,7 @@ const questions = [
     explanation: "A cloud-based security policy defines rules and controls for securing cloud infrastructure, ensuring compliance and protection.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What is a key consideration when implementing a cloud-based disaster recovery plan?",
@@ -879,7 +879,7 @@ const questions = [
     explanation: "Ensuring rapid recovery of infrastructure is critical for a cloud-based disaster recovery plan to minimize downtime.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is a primary benefit of using a cloud-based web application firewall (WAF)?",
@@ -893,7 +893,7 @@ const questions = [
     explanation: "A cloud-based WAF protects web applications from attacks like SQL injection and XSS, enhancing infrastructure security.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What is a primary purpose of implementing a cloud-based patch management system?",
@@ -907,7 +907,7 @@ const questions = [
     explanation: "A patch management system ensures timely updates to cloud infrastructure components, reducing vulnerabilities.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is a key challenge when securing a cloud-based storage system?",
@@ -935,7 +935,7 @@ const questions = [
     explanation: "Vulnerability scanning tools identify weaknesses in cloud infrastructure, enabling proactive remediation.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of the following best mitigates risks associated with cloud-based API access?",
@@ -949,7 +949,7 @@ const questions = [
     explanation: "API gateways with authentication controls (e.g., OAuth, API keys) mitigate risks by securing cloud-based API access.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What is a primary purpose of implementing a cloud-based network monitoring system?",
@@ -963,7 +963,7 @@ const questions = [
     explanation: "A network monitoring system detects suspicious activity, enhancing the security of cloud infrastructure.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is a key benefit of using a cloud-based configuration management system?",
@@ -977,7 +977,7 @@ const questions = [
     explanation: "A configuration management system ensures consistent and secure infrastructure configurations in the cloud.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What is a primary challenge when securing a cloud-based microservices architecture?",
@@ -1005,7 +1005,7 @@ const questions = [
     explanation: "A security orchestration tool automates response workflows, improving efficiency in handling cloud security incidents.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What is a key consideration when implementing a cloud-based backup and recovery system?",
@@ -1019,7 +1019,7 @@ const questions = [
     explanation: "Ensuring data integrity and availability is critical for a cloud-based backup and recovery system.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is a primary benefit of using a cloud-based threat intelligence platform?",
@@ -1033,7 +1033,7 @@ const questions = [
     explanation: "A threat intelligence platform provides real-time insights into threats, enhancing cloud infrastructure security.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What is a primary purpose of implementing a cloud-based access control list (ACL)?",
@@ -1047,7 +1047,7 @@ const questions = [
     explanation: "An ACL restricts access to cloud resources based on defined rules, enhancing infrastructure security.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is a key challenge when securing a cloud-based SDN (Software-Defined Networking)?",
@@ -1075,7 +1075,7 @@ const questions = [
     explanation: "A cloud-based encryption management system simplifies key management and ensures compliance with security standards.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of the following best mitigates risks associated with cloud-based storage misconfigurations?",
@@ -1089,7 +1089,7 @@ const questions = [
     explanation: "Automated compliance scanning tools detect and remediate storage misconfigurations, reducing risks in the cloud.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What is a primary purpose of implementing a cloud-based incident response plan?",
@@ -1103,7 +1103,7 @@ const questions = [
     explanation: "An incident response plan mitigates and recovers from security incidents, ensuring rapid response in a cloud environment.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is a key benefit of using a cloud-based penetration testing service?",
@@ -1117,7 +1117,7 @@ const questions = [
     explanation: "Penetration testing services identify vulnerabilities in cloud infrastructure, enabling proactive remediation.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What is a primary challenge when securing a cloud-based IaaS environment?",
@@ -1145,7 +1145,7 @@ const questions = [
     explanation: "A security audit assesses compliance with security policies and identifies gaps in cloud infrastructure security.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What is a key consideration when implementing a cloud-based logging system for infrastructure security?",
@@ -1159,7 +1159,7 @@ const questions = [
     explanation: "Ensuring log integrity and retention is critical for a cloud-based logging system to support security and compliance.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is a primary benefit of using a cloud-based security posture management tool?",
@@ -1173,7 +1173,7 @@ const questions = [
     explanation: "Security posture management tools continuously assess cloud infrastructure security, identifying and mitigating risks.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What is a primary purpose of implementing a cloud-based network encryption protocol?",
@@ -1187,7 +1187,7 @@ const questions = [
     explanation: "Network encryption protocols (e.g., TLS, IPSec) secure data in transit across cloud networks, protecting it from interception.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is a key challenge when securing a cloud-based PaaS environment?",
@@ -1215,7 +1215,7 @@ const questions = [
     explanation: "A network IPS blocks malicious traffic, enhancing cloud infrastructure security by preventing attacks.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of the following best mitigates risks associated with cloud-based infrastructure vulnerabilities?",
@@ -1229,7 +1229,7 @@ const questions = [
     explanation: "Regularly scanning and patching systems mitigates vulnerabilities in cloud infrastructure, reducing the risk of exploitation.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What is a primary purpose of implementing a cloud-based security governance framework?",
@@ -1243,7 +1243,7 @@ const questions = [
     explanation: "A security governance framework establishes policies and controls for securing cloud infrastructure.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is a key benefit of using a cloud-based compliance monitoring tool?",
@@ -1257,7 +1257,7 @@ const questions = [
     explanation: "Compliance monitoring tools ensure cloud infrastructure adheres to regulatory requirements, such as GDPR or HIPAA.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What is a key consideration when securing a cloud-based API gateway?",
@@ -1271,7 +1271,7 @@ const questions = [
     explanation: "Implementing rate limiting and authentication (e.g., OAuth, API keys) is critical to secure a cloud-based API gateway.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is a primary challenge when securing a cloud-based virtual network?",
@@ -1299,7 +1299,7 @@ const questions = [
     explanation: "Not having essential BC/DR personnel available during a contingency is a significant risk.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Why does the physical location of your data backup and/or BC/DR failover environment matter?",
@@ -1313,7 +1313,7 @@ const questions = [
     explanation: "Physical location may affect regulatory compliance.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "According to ENISA, a cloud risk assessment should provide a means for customers to accomplish all these assurance tasks except:",
@@ -1327,7 +1327,7 @@ const questions = [
     explanation: "Reducing the assurance burden on cloud providers is not a customer assurance task.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "ENISA’s definition of cloud computing differs from (ISC)2/NIST. What is one characteristic listed by ENISA but not included in the (ISC)2 definition?",
@@ -1341,7 +1341,7 @@ const questions = [
     explanation: "Programmatic management is listed by ENISA but not by (ISC)2/NIST.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Risk should always be considered from a business perspective. Risk is often balanced by corresponding:",
@@ -1355,7 +1355,7 @@ const questions = [
     explanation: "Risk is often balanced by opportunity.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "When considering migration from on-premise to hosted cloud, an organization should weigh the risks of allowing external entities to access cloud data for collaboration against:",
@@ -1369,7 +1369,7 @@ const questions = [
     explanation: "Sending data outside the traditional environment for collaboration is a risk to weigh.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "There are many ways to handle risk. However, the usual methods for addressing risk are not all possible in the cloud because:",
@@ -1383,7 +1383,7 @@ const questions = [
     explanation: "Some risks cannot be transferred to a cloud provider.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "In which cloud service model does the customer lose the most control over governance?",
@@ -1397,7 +1397,7 @@ const questions = [
     explanation: "SaaS model results in the least customer control over governance.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of the following poses a new risk in the cloud, not affecting the traditional, on-premise IT environment?",
@@ -1411,7 +1411,7 @@ const questions = [
     explanation: "Multitenancy is a new risk in the cloud environment.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "In addition to the security offered by the cloud provider, a cloud customer must consider the security offered by:",
@@ -1425,7 +1425,7 @@ const questions = [
     explanation: "Cloud customers must consider security offered by third parties the provider depends on.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Where is isolation failure probably least likely to pose a significant risk?",
@@ -1439,7 +1439,7 @@ const questions = [
     explanation: "Isolation failure is least likely in a private cloud.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of the following poses a new risk in the cloud, not affecting the traditional, on-premise environment?",
@@ -1453,7 +1453,7 @@ const questions = [
     explanation: "Legal seizure of another firm's assets is a new risk in the cloud.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of these does the cloud customer need to ensure protection of intellectual property created in the cloud?",
@@ -1467,7 +1467,7 @@ const questions = [
     explanation: "Strong contractual clauses help protect intellectual property in the cloud.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What could be the result of failure of the cloud provider to secure the hypervisor so that one user on a VM can see the resource calls of another user's VM?",
@@ -1481,7 +1481,7 @@ const questions = [
     explanation: "Unauthorized data disclosure can result from insecure hypervisor.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Key generation in a cloud environment might have less entropy than the traditional environment for all the following reasons except:",
@@ -1495,7 +1495,7 @@ const questions = [
     explanation: "Virtualization does not reduce entropy for key generation.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Lack of industry-wide standards for cloud computing creates a potential for:",
@@ -1509,7 +1509,7 @@ const questions = [
     explanation: "Vendor lock-in is a potential risk due to lack of standards.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "The BC/DR plan/policy should include all of the following except:",
@@ -1523,7 +1523,7 @@ const questions = [
     explanation: "Checklists for BC/DR personnel are not required in the plan/policy.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "The BC/DR plan/process should be written and documented in such a way that it can be used by:",
@@ -1537,7 +1537,7 @@ const questions = [
     explanation: "The BC/DR plan/process should be usable by someone with the requisite skills.",
     domain: "Cloud Platform and Infrastructure Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Of the following, which is probably the most significant risk in a managed cloud environment?",

@@ -11,7 +11,7 @@ const questions = [
     explanation: "NIST SP 800-145 defines cloud computing as a model for enabling on-demand network access to a shared pool of configurable resources, such as networks, servers, storage, applications, and services.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "easy"
+    difficulty: "hard"
   },
   {
     question: "What is a key characteristic of the Infrastructure as a Service (IaaS) cloud service model?",
@@ -25,7 +25,7 @@ const questions = [
     explanation: "In IaaS, the consumer controls the operating systems, server software, and deployed applications, while the provider manages the underlying infrastructure.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which cloud deployment model is characterized by exclusive use by a single organization?",
@@ -39,7 +39,7 @@ const questions = [
     explanation: "A private cloud is dedicated to a single organization, providing greater control and security compared to other models.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "easy"
+    difficulty: "hard"
   },
   {
     question: "What is the primary benefit of a hybrid cloud deployment model?",
@@ -52,7 +52,7 @@ const questions = [
     correctAnswer: "C",
     domain: "",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is a key component of the shared responsibility model in cloud computing?",
@@ -65,7 +65,7 @@ const questions = [
     correctAnswer: "C",
     domain: "",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "In the Platform as a Service (PaaS) model, who is responsible for securing the application code?",
@@ -78,7 +78,7 @@ const questions = [
     correctAnswer: "B",
     domain: "",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which essential characteristic of cloud computing enables resources to be rapidly provisioned with minimal management effort?",
@@ -92,7 +92,7 @@ const questions = [
     explanation: "Rapid elasticity allows cloud resources to be quickly and automatically scaled up or down based on demand, providing the ability to rapidly provision resources with minimal management effort.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "easy"
+    difficulty: "hard"
   },
   {
     question: "What is a primary security consideration when designing a multi-tenant cloud architecture?",
@@ -106,7 +106,7 @@ const questions = [
     explanation: "Logical separation of tenant data, such as through virtualization and access controls, is critical in multi-tenant cloud architectures to ensure security.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of the following best describes the role of a cloud architect?",
@@ -120,7 +120,7 @@ const questions = [
     explanation: "A cloud architect designs scalable, secure, and cost-effective cloud solutions aligned with business requirements.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What is a key benefit of using a community cloud deployment model?",
@@ -134,7 +134,7 @@ const questions = [
     explanation: "A community cloud provides cost savings through shared infrastructure among organizations with similar needs, reducing costs while addressing common security and compliance requirements.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which NIST cloud computing characteristic allows resources to be accessed over various devices and networks?",
@@ -147,7 +147,7 @@ const questions = [
     correctAnswer: "B",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "easy"
+    difficulty: "hard"
   },
   {
     question: "In a Software as a Service (SaaS) model, who is primarily responsible for securing the underlying infrastructure?",
@@ -157,11 +157,11 @@ const questions = [
       "C. A third-party auditor",
       "D. Both the customer and provider"
     ],
-    correctAnswer: "B",
+    correctAnswer: "A",
     explanation: "In SaaS, the cloud provider is responsible for securing the underlying infrastructure, while the customer manages user access and data security.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What is a primary benefit of using a multi-cloud strategy?",
@@ -175,7 +175,7 @@ const questions = [
     explanation: "A multi-cloud strategy increases redundancy and flexibility by leveraging multiple providers, reducing vendor lock-in risks.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is a key component of a cloud business continuity plan?",
@@ -189,7 +189,7 @@ const questions = [
     explanation: "Regular backups and recovery testing are essential for ensuring business continuity in a cloud environment.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What is a primary challenge when designing a cloud architecture for low-latency applications?",
@@ -217,7 +217,7 @@ const questions = [
     explanation: "Automation streamlines resource provisioning, scaling, and management, enhancing efficiency in cloud architectures.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What is a key benefit of using a serverless architecture in cloud design?",
@@ -231,7 +231,7 @@ const questions = [
     explanation: "Serverless architecture provides automatic scaling and reduces operational overhead by abstracting server management.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is a primary security consideration when designing a cloud network architecture?",
@@ -245,7 +245,7 @@ const questions = [
     explanation: "Network segmentation enhances security by isolating workloads and limiting lateral movement in a cloud network.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What is a key consideration when designing a cloud architecture for scalability?",
@@ -259,7 +259,7 @@ const questions = [
     explanation: "Auto-scaling and load balancing enable dynamic resource allocation to handle varying workloads in a scalable cloud architecture.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which cloud deployment model is best suited for organizations with strict regulatory requirements?",
@@ -273,7 +273,7 @@ const questions = [
     explanation: "A private cloud offers greater control and isolation, making it ideal for organizations with strict regulatory requirements.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What is a primary benefit of using a cloud-native architecture?",
@@ -287,7 +287,7 @@ const questions = [
     explanation: "Cloud-native architectures leverage microservices and containers to enhance agility and scalability.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is a key challenge when designing a cloud architecture for cost optimization?",
@@ -315,7 +315,7 @@ const questions = [
     explanation: "A cloud governance framework establishes policies and controls for secure and efficient cloud resource usage.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is a key benefit of using a container-based architecture in cloud design?",
@@ -329,7 +329,7 @@ const questions = [
     explanation: "Container-based architectures offer portability and lightweight deployment, enhancing flexibility in cloud environments.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What is a primary security consideration when designing a cloud-based identity and access management (IAM) system?",
@@ -343,7 +343,7 @@ const questions = [
     explanation: "Implementing least privilege principles ensures users have only the access needed, enhancing security in a cloud IAM system.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is a key challenge when designing a cloud architecture for global operations?",
@@ -371,7 +371,7 @@ const questions = [
     explanation: "Microservices enable independent deployment and scalability, improving agility and resilience in cloud architectures.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which cloud service model shares infrastructure among organizations with common compliance needs?",
@@ -384,7 +384,7 @@ const questions = [
     correctAnswer: "C",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What is a key consideration when designing a cloud-based monitoring system?",
@@ -398,7 +398,7 @@ const questions = [
     explanation: "Ensuring visibility into resource performance is critical for effective monitoring and management in cloud environments.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is a primary component of a cloud cost management strategy?",
@@ -412,7 +412,7 @@ const questions = [
     explanation: "Regular cost analysis and optimization ensure efficient resource usage and cost control in cloud operations.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What is a primary benefit of using a cloud-based API-first design approach?",
@@ -426,7 +426,7 @@ const questions = [
     explanation: "An API-first design approach enhances interoperability and developer agility, facilitating integration in cloud architectures.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is a key consideration when designing a cloud-based backup strategy?",
@@ -440,7 +440,7 @@ const questions = [
     explanation: "Ensuring data integrity and recovery is critical for a reliable backup strategy in cloud environments.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What is a primary challenge when designing a serverless cloud architecture?",
@@ -468,7 +468,7 @@ const questions = [
     explanation: "SLOs define measurable performance targets, such as uptime or latency, to ensure service quality in cloud environments.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What is a key benefit of using a cloud-based content delivery network (CDN)?",
@@ -482,7 +482,7 @@ const questions = [
     explanation: "A CDN reduces latency by caching content closer to users, improving performance in cloud-based applications.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is a primary consideration when designing a cloud architecture for fault tolerance?",
@@ -496,7 +496,7 @@ const questions = [
     explanation: "Deploying redundant components ensures fault tolerance by minimizing the impact of failures in cloud architectures.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "A global retailer designs a multi-cloud architecture with AWS and Azure to achieve 99.999% uptime, integrating data encryption from Cloud Data Security. What advanced design mitigates a quantum computing threat during peak sales? (D1.1, D3.1)",
@@ -509,7 +509,7 @@ const questions = [
     correctAnswer: "A",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "very hard"
+    difficulty: "hard"
   },
   {
     question: "A telecom operator secures a hybrid cloud IAM system with Azure AD, incorporating Cloud Platform Security controls. What configuration prevents a zero-day exploit across 50,000 users? (D1.2, D4.2)",
@@ -522,7 +522,7 @@ const questions = [
     correctAnswer: "C",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "very hard"
+    difficulty: "hard"
   },
   {
     question: "A financial institution designs a multi-region disaster recovery plan with GCP, ensuring GDPR compliance. What strategy balances cost and data residency? (D1.3, D7.1)",
@@ -535,7 +535,7 @@ const questions = [
     correctAnswer: "A",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "very hard"
+    difficulty: "hard"
   },
   {
     question: "An e-commerce platform on AWS optimizes latency with a CDN, integrating Cloud Application Security. What design prevents SSRF attacks for 1M users? (D1.4, D5.3)",
@@ -549,7 +549,7 @@ const questions = [
     explanation: "A geo-distributed WAF with input validation prevents SSRF, enhancing architecture and application security.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "very hard"
+    difficulty: "hard"
   },
   {
     question: "A defense contractor secures a multi-cloud API with AWS and Azure, incorporating Cloud Security Operations. What policy mitigates APTs? (D1.5, D6.1)",
@@ -563,7 +563,7 @@ const questions = [
     explanation: "Role-based access with SIEM monitoring mitigates APTs by limiting access and providing threat detection.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "very hard"
+    difficulty: "hard"
   },
   {
     question: "A healthcare provider designs a high-availability architecture on Azure, ensuring HIPAA compliance with data encryption. What multi-region strategy supports 99.999% uptime? (D1.6, D3.1)",
@@ -577,7 +577,7 @@ const questions = [
     explanation: "Active-active replication with AES-256 ensures 99.999% uptime and HIPAA compliance across regions.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "very hard"
+    difficulty: "hard"
   },
   {
     question: "A global bank designs a microservices architecture on AWS, integrating Cloud Data Security. What load balancing strategy mitigates encrypted data breaches? (D1.7, D3.2)",
@@ -587,11 +587,11 @@ const questions = [
       "C. Public IP routing without security",
       "D. Static load distribution with no checks"
     ],
-    correctAnswer: "C",
+    correctAnswer: "A",
     explanation: "Anycast routing with TLS inspection mitigates encrypted data breaches, blending architecture and data security.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "very hard"
+    difficulty: "hard"
   },
   {
     question: "A telecom provider secures a hybrid cloud network with GCP, incorporating Cloud Platform Security. What design prevents DDoS amplification? (D1.8, D4.1)",
@@ -601,11 +601,11 @@ const questions = [
       "C. Single-region traffic routing",
       "D. Unencrypted traffic with public IPs"
     ],
-    correctAnswer: "B",
+    correctAnswer: "A",
     explanation: "Rate limiting with geo-fencing and IAM prevents DDoS amplification, combining architecture and platform security.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "very hard"
+    difficulty: "hard"
   },
   {
     question: "An e-commerce platform secures its AWS VPC with a zero-trust model, integrating Cloud Security Operations. What policy enforces least privilege? (D1.9, D6.2)",
@@ -615,11 +615,11 @@ const questions = [
       "C. Wildcard permissions with no audits",
       "D. Static IP whitelisting without checks"
     ],
-    correctAnswer: "D",
+    correctAnswer: "A",
     explanation: "Role-based access with continuous validation enforces least privilege, blending architecture and security operations.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "very hard"
+    difficulty: "hard"
   },
   {
     question: "A pharmaceutical firm designs a global architecture on Azure, ensuring POPIA compliance with data residency. What strategy optimizes latency? (D1.10, D7.2)",
@@ -633,7 +633,7 @@ const questions = [
     explanation: "Edge caching with geo-restricted storage optimizes latency while meeting POPIA data residency requirements.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "very hard"
+    difficulty: "hard"
   },
   {
     question: "A retail chain secures a multi-cloud data pipeline with AWS and GCP, integrating Cloud Application Security. What governance model ensures PCI DSS compliance? (D1.11, D5.1)",
@@ -643,11 +643,11 @@ const questions = [
       "C. Public data sharing with default rules",
       "D. Single-provider governance without checks"
     ],
-    correctAnswer: "B",
+    correctAnswer: "A",
     explanation: "Centralized policy with WAF and audits ensures PCI DSS compliance, blending architecture and application security.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "very hard"
+    difficulty: "hard"
   },
   {
     question: "A defense contractor designs a fault-tolerant architecture on AWS, integrating Cloud Data Security. What strategy mitigates quantum key compromise? (D1.12, D3.3)",
@@ -657,11 +657,11 @@ const questions = [
       "C. Unencrypted backups with no rotation",
       "D. Passive redundancy without security"
     ],
-    correctAnswer: "D",
+    correctAnswer: "A",
     explanation: "Redundant HSMs with post-quantum keys mitigate quantum key compromise, combining architecture and data security.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "very hard"
+    difficulty: "hard"
   },
   {
     question: "A telecom operator optimizes a serverless architecture on GCP, integrating Cloud Platform Security. What configuration reduces cold start latency? (D1.13, D4.3)",
@@ -675,7 +675,7 @@ const questions = [
     explanation: "Pre-warmed functions with IAM validation reduce cold start latency, blending architecture and platform security.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "very hard"
+    difficulty: "hard"
   },
   {
     question: "A financial institution secures a hybrid cloud with AWS, integrating Cloud Security Operations. What monitoring strategy detects insider threats? (D1.14, D6.3)",
@@ -685,11 +685,11 @@ const questions = [
       "C. Network monitoring without alerts",
       "D. Static access reviews without tools"
     ],
-    correctAnswer: "C",
+    correctAnswer: "A",
     explanation: "Real-time SIEM with anomaly detection detects insider threats, combining architecture and security operations.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "very hard"
+    difficulty: "hard"
   },
   {
     question: "An e-commerce platform designs a scalable architecture on Azure, integrating Cloud Application Security. What load balancing prevents SQL injection? (D1.15, D5.2)",
@@ -703,7 +703,7 @@ const questions = [
     explanation: "Layer 7 balancing with input sanitization prevents SQL injection, blending architecture and application security.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "very hard"
+    difficulty: "hard"
   },
   {
     question: "A healthcare provider secures a multi-region architecture on GCP, ensuring HIPAA compliance. What strategy balances redundancy and encryption? (D1.16, D3.4)",
@@ -717,7 +717,7 @@ const questions = [
     explanation: "Active-passive with AES-256 replication balances redundancy and HIPAA-compliant encryption.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "very hard"
+    difficulty: "hard"
   },
   {
     question: "A global bank designs a cost-optimized architecture with AWS, integrating Cloud Data Security. What strategy mitigates tokenization overhead? (D1.17, D3.5)",
@@ -727,11 +727,11 @@ const questions = [
       "C. Public token storage with default keys",
       "D. Single-use tokens without optimization"
     ],
-    correctAnswer: "D",
+    correctAnswer: "A",
     explanation: "Dynamic token vault with auto-scaling mitigates tokenization overhead, blending architecture and data security.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "very hard"
+    difficulty: "hard"
   },
   {
     question: "A telecom provider secures a containerized architecture on Azure, integrating Cloud Platform Security. What policy prevents privilege escalation? (D1.18, D4.4)",
@@ -745,7 +745,7 @@ const questions = [
     explanation: "Least privilege with container isolation prevents privilege escalation, combining architecture and platform security.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "very hard"
+    difficulty: "hard"
   },
   {
     question: "An e-commerce platform optimizes a global CDN on AWS, integrating Cloud Security Operations. What configuration detects DDoS anomalies? (D1.19, D6.4)",
@@ -755,11 +755,11 @@ const questions = [
       "C. Public endpoints with default rules",
       "D. Local caching without alerts"
     ],
-    correctAnswer: "C",
+    correctAnswer: "A",
     explanation: "Real-time analytics with geo-fencing detects DDoS anomalies, blending architecture and security operations.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "very hard"
+    difficulty: "hard"
   },
   {
     question: "A pharmaceutical firm designs a fault-tolerant architecture on GCP, ensuring ISO 27001 compliance. What redundancy strategy mitigates outages? (D1.20, D7.3)",
@@ -773,7 +773,7 @@ const questions = [
     explanation: "Multi-region active-active with audits mitigates outages and ensures ISO 27001 compliance.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "very hard"
+    difficulty: "hard"
   },
   {
     question: "A retail chain secures a multi-cloud API gateway with AWS and Azure, integrating Cloud Application Security. What authentication prevents brute force? (D1.21, D5.4)",
@@ -783,11 +783,11 @@ const questions = [
       "C. Single-factor authentication with no checks",
       "D. Public endpoints with default rules"
     ],
-    correctAnswer: "B",
+    correctAnswer: "A",
     explanation: "Adaptive MFA with rate limiting prevents brute force, blending architecture and application security.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "very hard"
+    difficulty: "hard"
   },
   {
     question: "A defense contractor designs a high-availability architecture on AWS, integrating Cloud Data Security. What encryption strategy supports 99.99% uptime? (D1.22, D3.6)",
@@ -797,11 +797,11 @@ const questions = [
       "C. Unencrypted backups with public access",
       "D. Static keys with no rotation"
     ],
-    correctAnswer: "D",
+    correctAnswer: "A",
     explanation: "End-to-end AES-256 with failover supports 99.99% uptime, combining architecture and data security.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "very hard"
+    difficulty: "hard"
   },
   {
     question: "A telecom operator optimizes a serverless architecture on Azure, integrating Cloud Platform Security. What policy reduces latency spikes? (D1.23, D4.5)",
@@ -815,7 +815,7 @@ const questions = [
     explanation: "Pre-provisioned functions with IAM reduce latency spikes, blending architecture and platform security.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "very hard"
+    difficulty: "hard"
   },
   {
     question: "A financial institution secures a hybrid cloud with GCP, integrating Cloud Security Operations. What monitoring detects ransomware? (D1.24, D6.5)",
@@ -825,11 +825,11 @@ const questions = [
       "C. Network monitoring without tools",
       "D. Static reviews with no detection"
     ],
-    correctAnswer: "C",
+    correctAnswer: "A",
     explanation: "Behavioral analysis with SIEM detects ransomware, combining architecture and security operations.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "very hard"
+    difficulty: "hard"
   },
   {
     question: "An e-commerce platform designs a scalable architecture on AWS, integrating Cloud Application Security. What caching prevents XSS? (D1.25, D5.5)",
@@ -839,11 +839,11 @@ const questions = [
       "C. Public caching with default rules",
       "D. Local caching without security"
     ],
-    correctAnswer: "B",
+    correctAnswer: "A",
     explanation: "Edge caching with content security policy prevents XSS, blending architecture and application security.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "very hard"
+    difficulty: "hard"
   },
   {
     question: "A healthcare provider secures a multi-region architecture on GCP, ensuring HIPAA compliance. What strategy balances redundancy and masking? (D1.36, D3.10)",
@@ -857,7 +857,7 @@ const questions = [
     explanation: "Active-passive with data masking balances redundancy and HIPAA-compliant masking.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "very hard"
+    difficulty: "hard"
   },
   {
     question: "A global bank designs a cost-optimized architecture with GCP, integrating Cloud Data Security. What strategy mitigates DLP overhead? (D1.37, D3.11)",
@@ -867,11 +867,11 @@ const questions = [
       "C. Public data sharing with default settings",
       "D. Single-use policies without optimization"
     ],
-    correctAnswer: "D",
+    correctAnswer: "A",
     explanation: "Automated DLP with auto-scaling mitigates DLP overhead, blending architecture and data security.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "very hard"
+    difficulty: "hard"
   },
   {
     question: "A telecom provider secures a containerized architecture on Azure, integrating Cloud Platform Security. What policy prevents runtime attacks? (D1.38, D4.8)",
@@ -885,7 +885,7 @@ const questions = [
     explanation: "Runtime monitoring with least privilege prevents runtime attacks, combining architecture and platform security.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "very hard"
+    difficulty: "hard"
   },
   {
     question: "An e-commerce platform optimizes a global CDN on GCP, integrating Cloud Security Operations. What configuration detects malware? (D1.39, D6.8)",
@@ -895,11 +895,11 @@ const questions = [
       "C. Public endpoints with default rules",
       "D. Local caching without alerts"
     ],
-    correctAnswer: "C",
+    correctAnswer: "A",
     explanation: "File integrity monitoring with SIEM detects malware, blending architecture and security operations.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "very hard"
+    difficulty: "hard"
   },
   {
     question: "A pharmaceutical firm designs a fault-tolerant architecture on AWS, ensuring CCPA compliance. What redundancy strategy mitigates breaches? (D1.40, D7.5)",
@@ -913,7 +913,7 @@ const questions = [
     explanation: "Multi-region active-active with encryption mitigates breaches and ensures CCPA compliance.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "very hard"
+    difficulty: "hard"
   },
   {
     question: "A retail chain secures a multi-cloud API gateway with AWS and Azure, integrating Cloud Application Security. What authentication prevents credential stuffing? (D1.41, D5.8)",
@@ -927,7 +927,7 @@ const questions = [
     explanation: "Rate-limited MFA with CAPTCHA prevents credential stuffing, blending architecture and application security.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "very hard"
+    difficulty: "hard"
   },
   {
     question: "A defense contractor designs a high-availability architecture on Azure, integrating Cloud Data Security. What encryption supports 99.99% uptime? (D1.42, D3.12)",
@@ -937,11 +937,11 @@ const questions = [
       "C. Unencrypted backups with public access",
       "D. Static keys with no rotation"
     ],
-    correctAnswer: "D",
+    correctAnswer: "A",
     explanation: "End-to-end AES-256 with failover supports 99.99% uptime, combining architecture and data security.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "very hard"
+    difficulty: "hard"
   },
   {
     question: "A telecom operator optimizes a serverless architecture on AWS, integrating Cloud Platform Security. What policy reduces memory leaks? (D1.43, D4.9)",
@@ -955,7 +955,7 @@ const questions = [
     explanation: "Memory profiling with IAM reduces memory leaks, blending architecture and platform security.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "very hard"
+    difficulty: "hard"
   },
   {
     question: "A financial institution secures a hybrid cloud with AWS, integrating Cloud Security Operations. What monitoring detects data exfiltration? (D1.44, D6.9)",
@@ -965,11 +965,11 @@ const questions = [
       "C. Network monitoring without tools",
       "D. Static reviews with no detection"
     ],
-    correctAnswer: "C",
+    correctAnswer: "A",
     explanation: "Traffic analysis with DLP detects data exfiltration, combining architecture and security operations.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "very hard"
+    difficulty: "hard"
   },
   {
     question: "An e-commerce platform designs a scalable architecture on Azure, integrating Cloud Application Security. What caching prevents clickjacking? (D1.45, D5.9)",
@@ -983,7 +983,7 @@ const questions = [
     explanation: "Edge caching with X-Frame-Options prevents clickjacking, blending architecture and application security.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "very hard"
+    difficulty: "hard"
   },
   {
     question: "A healthcare provider secures a multi-region architecture on GCP, ensuring PCI DSS compliance. What strategy balances redundancy and anonymization? (D1.46, D3.13)",
@@ -997,7 +997,7 @@ const questions = [
     explanation: "Active-passive with data anonymization balances redundancy and PCI DSS-compliant anonymization.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "very hard"
+    difficulty: "hard"
   },
   {
     question: "A global bank designs a cost-optimized architecture with Azure, integrating Cloud Data Security. What strategy mitigates encryption overhead? (D1.47, D3.14)",
@@ -1007,11 +1007,11 @@ const questions = [
       "C. Public key storage with default settings",
       "D. Single-use keys without optimization"
     ],
-    correctAnswer: "D",
+    correctAnswer: "A",
     explanation: "Optimized KMS with auto-scaling mitigates encryption overhead, blending architecture and data security.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "very hard"
+    difficulty: "hard"
   },
   {
     question: "A telecom provider secures a containerized architecture on AWS, integrating Cloud Platform Security. What policy prevents container hijacking? (D1.48, D4.10)",
@@ -1025,7 +1025,7 @@ const questions = [
     explanation: "Runtime hardening with least privilege prevents container hijacking, combining architecture and platform security.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "very hard"
+    difficulty: "hard"
   },
   {
     question: "An e-commerce platform optimizes a global CDN on Azure, integrating Cloud Security Operations. What configuration detects API abuse? (D1.49, D6.10)",
@@ -1035,11 +1035,11 @@ const questions = [
       "C. Public endpoints with default rules",
       "D. Local caching without alerts"
     ],
-    correctAnswer: "C",
+    correctAnswer: "A",
     explanation: "API gateway with rate limiting detects API abuse, blending architecture and security operations.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "very hard"
+    difficulty: "hard"
   },
   {
     question: "A pharmaceutical firm designs a fault-tolerant architecture on GCP, ensuring ISO 27001 compliance. What redundancy strategy mitigates ransomware? (D1.50, D7.6)",
@@ -1053,7 +1053,7 @@ const questions = [
     explanation: "Multi-region active-active with immutable backups mitigates ransomware and ensures ISO 27001 compliance.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "very hard"
+    difficulty: "hard"
   },
   {
     question: "According to (ISC)2, the lack/ambiguity of physical endpoints as individual network components in the cloud environment creates what kind of threat/concern?",
@@ -1067,7 +1067,7 @@ const questions = [
     explanation: "Without defined endpoints, it is difficult to uniformly define, manage, and protect IT assets in the cloud.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What are the two general delivery modes for the software as a service (SaaS) model?",
@@ -1081,7 +1081,7 @@ const questions = [
     explanation: "SaaS is delivered as hosted application management and software on demand.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is a management risk that organizations migrating to the cloud will have to address?",
@@ -1095,7 +1095,7 @@ const questions = [
     explanation: "Virtual sprawl is a management risk for organizations migrating to the cloud.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which cloud service model should a software company CEO most likely consider for migration from on-premises?",
@@ -1109,7 +1109,7 @@ const questions = [
     explanation: "SaaS is often the most suitable model for companies migrating from traditional environments.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What aspect of cloud computing should a CEO be most concerned about when migrating to the cloud?",
@@ -1123,7 +1123,7 @@ const questions = [
     explanation: "Multitenancy is a key concern due to shared resources and security implications.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "According to PCI DSS, what can you never store for any length of time?",
@@ -1137,7 +1137,7 @@ const questions = [
     explanation: "PCI DSS prohibits storing the CCV number for any length of time.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What is usually considered the difference between business continuity (BC) and disaster recovery (DR) efforts?",
@@ -1151,7 +1151,7 @@ const questions = [
     explanation: "BC maintains critical functions during disruption; DR recovers to normal operations after disruption.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which cloud deployment model provides the highest level of control and customization for an organization?",
@@ -1165,7 +1165,7 @@ const questions = [
     explanation: "Private cloud offers the highest level of control and customization, as resources are dedicated to a single organization.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What is the primary advantage of using cloud-native applications?",
@@ -1179,7 +1179,7 @@ const questions = [
     explanation: "Cloud-native applications are designed for scalability and agility, leveraging microservices and containers.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which essential cloud characteristic allows users to access resources from anywhere over the internet?",
@@ -1193,7 +1193,7 @@ const questions = [
     explanation: "Broad network access enables users to access cloud resources from various locations and devices.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "easy"
+    difficulty: "hard"
   },
   {
     question: "What is a key benefit of using a multi-cloud approach?",
@@ -1207,7 +1207,7 @@ const questions = [
     explanation: "A multi-cloud approach enhances redundancy and flexibility by leveraging multiple providers.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which cloud service model provides the most granular control over infrastructure components?",
@@ -1221,7 +1221,7 @@ const questions = [
     explanation: "IaaS provides granular control over infrastructure components such as servers, storage, and networking.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What is the main purpose of cloud governance?",
@@ -1235,7 +1235,7 @@ const questions = [
     explanation: "Cloud governance establishes policies and controls for secure and efficient cloud resource usage.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which cloud deployment model is most suitable for organizations requiring shared infrastructure among similar compliance needs?",
@@ -1249,7 +1249,7 @@ const questions = [
     explanation: "Community cloud is designed for organizations with similar compliance needs to share infrastructure.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What is a primary benefit of using cloud-based disaster recovery solutions?",
@@ -1263,7 +1263,7 @@ const questions = [
     explanation: "Cloud-based disaster recovery solutions offer rapid recovery and scalability compared to traditional methods.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which essential characteristic of cloud computing allows for dynamic allocation of resources based on demand?",
@@ -1277,7 +1277,7 @@ const questions = [
     explanation: "Rapid elasticity enables dynamic allocation and scaling of resources in response to demand.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "easy"
+    difficulty: "hard"
   },
   {
     question: "What is a key challenge when implementing cloud-based identity and access management (IAM) systems?",
@@ -1291,7 +1291,7 @@ const questions = [
     explanation: "Ensuring least privilege and secure authentication is a key challenge in cloud IAM systems.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which cloud service model is best for organizations seeking to outsource application hosting and management?",
@@ -1305,7 +1305,7 @@ const questions = [
     explanation: "SaaS allows organizations to outsource application hosting and management to the provider.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What is the main advantage of using auto-scaling in cloud architectures?",
@@ -1319,7 +1319,7 @@ const questions = [
     explanation: "Auto-scaling enables dynamic resource allocation, improving efficiency and cost-effectiveness.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is a primary consideration when designing a cloud-based backup strategy?",
@@ -1333,7 +1333,7 @@ const questions = [
     explanation: "Ensuring data integrity and recovery is critical for a reliable backup strategy in cloud environments.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What is a key benefit of using a cloud-based monitoring system?",
@@ -1347,7 +1347,7 @@ const questions = [
     explanation: "Cloud-based monitoring systems provide real-time visibility into resource performance and health.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which cloud deployment model offers the greatest flexibility for combining on-premises and cloud resources?",
@@ -1361,7 +1361,7 @@ const questions = [
     explanation: "Hybrid cloud offers flexibility by combining on-premises and cloud resources to meet diverse needs.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of the following probably poses the most significant risk to the organization?",
@@ -1375,7 +1375,7 @@ const questions = [
     explanation: "Not having essential BC/DR personnel available during a contingency is a significant risk.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Why does the physical location of your data backup and/or BC/DR failover environment matter?",
@@ -1389,7 +1389,7 @@ const questions = [
     explanation: "Physical location may affect regulatory compliance.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "According to ENISA, a cloud risk assessment should provide a means for customers to accomplish all these assurance tasks except:",
@@ -1403,7 +1403,7 @@ const questions = [
     explanation: "Reducing the assurance burden on cloud providers is not a customer assurance task.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "ENISA’s definition of cloud computing differs from (ISC)2/NIST. What is one characteristic listed by ENISA but not included in the (ISC)2 definition?",
@@ -1417,7 +1417,7 @@ const questions = [
     explanation: "Programmatic management is listed by ENISA but not by (ISC)2/NIST.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Risk should always be considered from a business perspective. Risk is often balanced by corresponding:",
@@ -1431,7 +1431,7 @@ const questions = [
     explanation: "Risk is often balanced by opportunity.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "When considering migration from on-premise to hosted cloud, an organization should weigh the risks of allowing external entities to access cloud data for collaboration against:",
@@ -1445,7 +1445,7 @@ const questions = [
     explanation: "Sending data outside the traditional environment for collaboration is a risk to weigh.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "There are many ways to handle risk. However, the usual methods for addressing risk are not all possible in the cloud because:",
@@ -1459,7 +1459,7 @@ const questions = [
     explanation: "Some risks cannot be transferred to a cloud provider.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "In which cloud service model does the customer lose the most control over governance?",
@@ -1473,7 +1473,7 @@ const questions = [
     explanation: "SaaS model results in the least customer control over governance.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of the following poses a new risk in the cloud, not affecting the traditional, on-premise IT environment?",
@@ -1487,7 +1487,7 @@ const questions = [
     explanation: "Multitenancy is a new risk in the cloud environment.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "In addition to the security offered by the cloud provider, a cloud customer must consider the security offered by:",
@@ -1501,7 +1501,7 @@ const questions = [
     explanation: "Cloud customers must consider security offered by third parties the provider depends on.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Where is isolation failure probably least likely to pose a significant risk?",
@@ -1515,7 +1515,7 @@ const questions = [
     explanation: "Isolation failure is least likely in a private cloud.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of the following poses a new risk in the cloud, not affecting the traditional, on-premise environment?",
@@ -1529,7 +1529,7 @@ const questions = [
     explanation: "Legal seizure of another firm's assets is a new risk in the cloud.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of these does the cloud customer need to ensure protection of intellectual property created in the cloud?",
@@ -1543,7 +1543,7 @@ const questions = [
     explanation: "Strong contractual clauses help protect intellectual property in the cloud.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What could be the result of failure of the cloud provider to secure the hypervisor so that one user on a VM can see the resource calls of another user's VM?",
@@ -1557,7 +1557,7 @@ const questions = [
     explanation: "Unauthorized data disclosure can result from insecure hypervisor.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Key generation in a cloud environment might have less entropy than the traditional environment for all the following reasons except:",
@@ -1571,7 +1571,7 @@ const questions = [
     explanation: "Virtualization does not reduce entropy for key generation.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Lack of industry-wide standards for cloud computing creates a potential for:",
@@ -1585,7 +1585,7 @@ const questions = [
     explanation: "Vendor lock-in is a potential risk due to lack of standards.",
     domain: "Cloud Concepts, Architecture and Design",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   }
 ];
 

@@ -2,6 +2,36 @@ import React, { createContext, useContext, useState, useEffect } from 'react';
 
 const ProgressContext = createContext();
 
+const createDefaultProgress = () => ({
+  questionsAnswered: {},
+  correctAnswers: {},
+  incorrectAnswers: {},
+  studySessions: [],
+  bookmarkedQuestions: [],
+  totalStudyTime: 0,
+  streakDays: 0,
+  lastStudyDate: null,
+  domainProgress: {
+    'Domain 1': { answered: 0, correct: 0, total: 153 },
+    'Domain 2': { answered: 0, correct: 0, total: 131 },
+    'Domain 3': { answered: 0, correct: 0, total: 134 },
+    'Domain 4': { answered: 0, correct: 0, total: 128 },
+    'Domain 5': { answered: 0, correct: 0, total: 103 },
+    'Domain 6': { answered: 0, correct: 0, total: 81 }
+  },
+  examSeriesProgress: {}
+});
+
+const mergeProgressState = (savedProgress) => ({
+  ...createDefaultProgress(),
+  ...savedProgress,
+  domainProgress: {
+    ...createDefaultProgress().domainProgress,
+    ...(savedProgress?.domainProgress || {})
+  },
+  examSeriesProgress: savedProgress?.examSeriesProgress || {}
+});
+
 export const useProgress = () => {
   const context = useContext(ProgressContext);
   if (!context) {
@@ -13,33 +43,18 @@ export const useProgress = () => {
 export const ProgressProvider = ({ children }) => {
   const [progress, setProgress] = useState(() => {
     const saved = localStorage.getItem('ccsp-progress');
-    return saved ? JSON.parse(saved) : {
-      questionsAnswered: {},
-      correctAnswers: {},
-      incorrectAnswers: {},
-      studySessions: [],
-      bookmarkedQuestions: [],
-      totalStudyTime: 0,
-      streakDays: 0,
-      lastStudyDate: null,
-      domainProgress: {
-        'Domain 1': { answered: 0, correct: 0, total: 153 },
-        'Domain 2': { answered: 0, correct: 0, total: 131 },
-        'Domain 3': { answered: 0, correct: 0, total: 134 },
-        'Domain 4': { answered: 0, correct: 0, total: 128 },
-        'Domain 5': { answered: 0, correct: 0, total: 103 },
-        'Domain 6': { answered: 0, correct: 0, total: 81 }
-      }
-    };
+    return saved ? mergeProgressState(JSON.parse(saved)) : createDefaultProgress();
   });
 
   useEffect(() => {
     localStorage.setItem('ccsp-progress', JSON.stringify(progress));
   }, [progress]);
 
-  const updateProgress = (questionId, domain, isCorrect, timeSpent = 0) => {
+  const updateProgress = (questionId, domain, isCorrect, timeSpent = 0, metadata = {}) => {
     setProgress(prev => {
       const newProgress = { ...prev };
+      const wasAnswered = Boolean(prev.questionsAnswered[questionId]);
+      const wasCorrect = Boolean(prev.correctAnswers[questionId]);
       
       // Update question tracking
       newProgress.questionsAnswered[questionId] = true;
@@ -53,12 +68,41 @@ export const ProgressProvider = ({ children }) => {
 
       // Update domain progress
       if (domain && newProgress.domainProgress[domain]) {
-        if (!newProgress.questionsAnswered[questionId]) {
+        if (!wasAnswered) {
           newProgress.domainProgress[domain].answered += 1;
         }
-        if (isCorrect) {
+        if (isCorrect && !wasCorrect) {
           newProgress.domainProgress[domain].correct += 1;
         }
+      }
+
+      if (metadata.examSeriesKey) {
+        const existingSeries = newProgress.examSeriesProgress[metadata.examSeriesKey] || {
+          title: metadata.examSeriesTitle || metadata.examSeriesKey,
+          answered: 0,
+          correct: 0,
+          total: metadata.totalQuestions || 0,
+          lastAttemptedAt: null
+        };
+
+        const nextSeries = {
+          ...existingSeries,
+          title: metadata.examSeriesTitle || existingSeries.title,
+          total: metadata.totalQuestions || existingSeries.total,
+          lastAttemptedAt: new Date().toISOString()
+        };
+
+        if (!wasAnswered) {
+          nextSeries.answered += 1;
+        }
+        if (isCorrect && !wasCorrect) {
+          nextSeries.correct += 1;
+        }
+
+        newProgress.examSeriesProgress = {
+          ...newProgress.examSeriesProgress,
+          [metadata.examSeriesKey]: nextSeries
+        };
       }
 
       // Update study time
@@ -117,25 +161,16 @@ export const ProgressProvider = ({ children }) => {
       .sort((a, b) => a.accuracy - b.accuracy);
   };
 
+  const getExamSeriesProgress = (examSeriesKey) => {
+    if (!examSeriesKey) {
+      return progress.examSeriesProgress || {};
+    }
+
+    return progress.examSeriesProgress?.[examSeriesKey] || null;
+  };
+
   const resetProgress = () => {
-    setProgress({
-      questionsAnswered: {},
-      correctAnswers: {},
-      incorrectAnswers: {},
-      studySessions: [],
-      bookmarkedQuestions: [],
-      totalStudyTime: 0,
-      streakDays: 0,
-      lastStudyDate: null,
-      domainProgress: {
-        'Domain 1': { answered: 0, correct: 0, total: 153 },
-        'Domain 2': { answered: 0, correct: 0, total: 131 },
-        'Domain 3': { answered: 0, correct: 0, total: 134 },
-        'Domain 4': { answered: 0, correct: 0, total: 128 },
-        'Domain 5': { answered: 0, correct: 0, total: 103 },
-        'Domain 6': { answered: 0, correct: 0, total: 81 }
-      }
-    });
+    setProgress(createDefaultProgress());
   };
 
   return (
@@ -144,6 +179,7 @@ export const ProgressProvider = ({ children }) => {
       updateProgress,
       bookmarkQuestion,
       getOverallProgress,
+      getExamSeriesProgress,
       getWeakAreas,
       resetProgress
     }}>

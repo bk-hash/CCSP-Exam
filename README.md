@@ -5,6 +5,7 @@ An interactive quiz and flashcard application for studying CCSP (Certified Cloud
 ## ✨ Features
 
 - **🔐 Google OAuth Authentication** - Secure login with Google accounts
+- **🤖 AI Learning Assistant** - Get instant help with CCSP concepts powered by GPT-4, Claude, or Gemini
 - **📚 Interactive Quizzes** - Multiple choice questions across all 6 CCSP domains
 - **🎯 Flashcard Mode** - Study with interactive flashcards
 - **📊 Progress Tracking** - Monitor your learning progress and performance
@@ -12,6 +13,7 @@ An interactive quiz and flashcard application for studying CCSP (Certified Cloud
 - **📱 Responsive Design** - Works on desktop, tablet, and mobile devices
 - **⏱️ Study Timer** - Track your study sessions
 - **📈 Performance Analytics** - Detailed statistics on your quiz performance
+- **💡 Context-Aware Help** - AI understands which questions you're studying for better assistance
 
 ## 🚀 Quick Start
 
@@ -38,22 +40,47 @@ An interactive quiz and flashcard application for studying CCSP (Certified Cloud
    - Follow the [Google OAuth Setup Guide](./GOOGLE_OAUTH_SETUP.md)
    - Update `.env` with your Google Client ID
 
-4. **Start the development server**
+4. **[Optional] Set up AI Learning Assistant**
+   - Get an API key from OpenAI, Google AI, or Anthropic
+   - Add to `.env`: `REACT_APP_AI_API_KEY=your_key_here`
+   - See [AI Assistant Setup Guide](./AI_ASSISTANT_SETUP.md) for details
+
+5. **Start the development server**
    ```bash
    npm start
    ```
 
-5. **Open your browser**
+6. **Open your browser**
    - Navigate to [http://localhost:3000](http://localhost:3000)
    - Sign in with your Google account to start studying!
+   - Click the 🤖 button to chat with the AI assistant!
 
 ## 🔧 Configuration
+# Required - Google OAuth
+REACT_APP_GOOGLE_CLIENT_ID=your_google_client_id_here.apps.googleusercontent.com
 
-### Environment Variables
+# Optional - AI Assistant
+REACT_APP_AI_PROVIDER=openai
+REACT_APP_AI_API_KEY=your_ai_api_key_here
+```
 
-Create a `.env` file in the root directory:
+### Google OAuth Setup
 
-```env
+For detailed OAuth setup instructions, see [GOOGLE_OAUTH_SETUP.md](./GOOGLE_OAUTH_SETUP.md)
+
+### AI Learning Assistant Setup (Optional)
+
+The AI assistant enhances your learning experience by providing instant explanations and answering questions about CCSP concepts.
+
+**Quick Setup:**
+1. Choose a provider: OpenAI, Google AI, or Anthropic
+2. Get an API key from your chosen provider
+3. Add to `.env`: `REACT_APP_AI_API_KEY=your_key_here`
+4. Restart the dev server
+
+**Full documentation:** [AI_ASSISTANT_SETUP.md](./AI_ASSISTANT_SETUP.md)
+
+**Note:** The app works perfectly without AI - it's an optional enhancement!
 REACT_APP_GOOGLE_CLIENT_ID=your_google_client_id_here.apps.googleusercontent.com
 ```
 

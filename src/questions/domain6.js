@@ -11,7 +11,7 @@ const questions = [
     explanation: "Remediating the incident is the primary goal of incident response - to contain, mitigate, and resolve the security incident to restore normal operations.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "You are in charge of building a cloud data center. Which raised floor level is sufficient to meet standard requirements?",
@@ -25,7 +25,7 @@ const questions = [
     explanation: "The correct answer is 10 inches.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "You are in charge of building a cloud data center. What purposes does the raised floor serve?",
@@ -39,7 +39,7 @@ const questions = [
     explanation: "The correct answer is Allows airflow and increases structural soundness for holding large components.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "You are in charge of building a cloud data center. Which of the following is a useful rack configuration for regulating airflow?",
@@ -53,7 +53,7 @@ const questions = [
     explanation: "The correct answer is Exhaust fans on racks facing the inlet vents of other racks.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "An event is something that can be measured within the environment. An incident is a(n) event.",
@@ -67,7 +67,7 @@ const questions = [
     explanation: "The correct answer is Deleterious.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Which of the following factors would probably most affect the design of a cloud data center?",
@@ -81,7 +81,7 @@ const questions = [
     explanation: "The correct answer is Geographic location.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "All of the following elements must be considered in the design of a cloud data center except .",
@@ -95,7 +95,7 @@ const questions = [
     explanation: "The correct answer is Native language of the majority of customers.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "In designing a data center to meet their own needs and provide optimum revenue/profit, the cloud provider will most likely aim to enhance .",
@@ -109,7 +109,7 @@ const questions = [
     explanation: "The correct answer is Functionality.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "You are the security officer for a small cloud provider offering public cloud infrastructure as a service (IaaS); your clients are predominantly from the education sector, located in North America. Of the following technology architecture traits, which is probably the one your organization would most likely want to focus on?",
@@ -123,7 +123,7 @@ const questions = [
     explanation: "The correct answer is Reducing mean time to repair (MTTR).",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "What is perhaps the main way in which software-defined networking (SDN) solutions facilitate security in the cloud environment?",
@@ -137,7 +137,7 @@ const questions = [
     explanation: "The correct answer is Segmenting networks.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "The logical design of a cloud environment can enhance the security offered in that environment. For instance, in a software as a service (SaaS) cloud, the provider can incorporate  capabilities into the application itself.",
@@ -151,7 +151,7 @@ const questions = [
     explanation: "The correct answer is Logging.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "You are tasked with managing a cloud data center in Los Angeles; your customers are mostly from the entertainment industry, and you are offering both platform as a service (PaaS) and software as a service (SaaS) capabilities. From a physical design standpoint, you are probably going to be most concerned with .",
@@ -165,7 +165,7 @@ const questions = [
     explanation: "The correct answer is Ensuring that the racks and utilities can endure an earthquake.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "You are the security manager for a small retail business involved mainly in direct e-commerce transactions with individual customers (members of the public). The bulk of your market is in Asia, but you do fulfill orders globally. Your company has its own data center located within its headquarters building in Hong Kong, but it also uses a public cloud environment for contingency backup and archiving purposes. Your cloud provider is changing its business model at the end of your contract term, and you have to find a new provider. In choosing providers, which tier of the Uptime Institute rating system should you be looking for, if minimizing cost is your ultimate goal?",
@@ -179,7 +179,7 @@ const questions = [
     explanation: "The correct answer is 1.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "You are the security manager for a small retail business involved mainly in direct e-commerce transactions with individual customers (members of the public). The bulk of your market is in Asia, but you do fulfill orders globally. Your company has its own data center located within its headquarters building in Hong Kong, but it also uses a public cloud environment for contingency backup and archiving purposes. In choosing providers, which of the following functionalities will you consider absolutely essential?",
@@ -193,7 +193,7 @@ const questions = [
     explanation: "The correct answer is Distributed denial of service (DDoS) protections.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "You are the security manager for a small retail business involved mainly in direct e-commerce transactions with individual customers (members of the public). The bulk of your market is in Asia, but you do fulfill orders globally. Your company has its own data center located within its headquarters building in Hong Kong, but it also uses a public cloud environment for contingency backup and archiving purposes. Which of the following standards are you most likely to adopt?",
@@ -207,7 +207,7 @@ const questions = [
     explanation: "The correct answer is ISO 27001.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "You are the security manager for a small retail business involved mainly in direct e-commerce transactions with individual customers (members of the public). The bulk of your market is in Asia, but you do fulfill orders globally. Your company has its own data center located within its headquarters building in Hong Kong, but it also uses a public cloud environment for contingency backup and archiving purposes. Your company has decided to expand its business to include selling and monitoring life-support equipment for medical providers. What characteristic do you need to ensure is offered by your cloud provider?",
@@ -221,7 +221,7 @@ const questions = [
     explanation: "The correct answer is Full automation of security controls within the cloud data center.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "When designing a cloud data center, which of the following aspects is not necessary to ensure continuity of operations during contingency operations?",
@@ -235,7 +235,7 @@ const questions = [
     explanation: "The correct answer is Access to clean water.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "You are the security manager for a small surgical center. Your organization is reviewing upgrade options for its current, on-premises data center. In order to best meet your needs, which one of the following options would you recommend to senior management?",
@@ -249,7 +249,7 @@ const questions = [
     explanation: "The correct answer is Renting private cloud space in a Tier 2 data center.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "When building a new data center within an urban environment, which of the following is probably the most restrictive aspect?",
@@ -263,7 +263,7 @@ const questions = [
     explanation: "The correct answer is Municipal codes.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "When you are building a new data center in a rural setting, which of the following is probably the most restrictive aspect?",
@@ -277,7 +277,7 @@ const questions = [
     explanation: "The correct answer is Staffing.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "All tiers of the Uptime Institute standards for data centers require hours of on-site generator fuel.",
@@ -291,7 +291,7 @@ const questions = [
     explanation: "The correct answer is 12.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "The American Society of Heating, Refrigeration, and Air Conditioning Engineers (ASHRAE) guidelines for internal environmental conditions within a data center suggest that a temperature setting of  degrees (F) would be too high.",
@@ -305,7 +305,7 @@ const questions = [
     explanation: "The correct answer is 93.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Internal data center conditions that exceed the American Society of Heating, Refrigeration, and Air Conditioning Engineers (ASHRAE) guidelines for humidity could lead to an increase of the potential for all of the following except .",
@@ -319,7 +319,7 @@ const questions = [
     explanation: "The correct answer is Social engineering.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Setting thermostat controls by measuring the  temperature will result in the highest energy costs.",
@@ -333,7 +333,7 @@ const questions = [
     explanation: "The correct answer is Return air.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Heating, ventilation, and air conditioning (HVAC) systems cool the data center by pushing warm air into .",
@@ -347,7 +347,7 @@ const questions = [
     explanation: "The correct answer is Underfloor plenums.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "It is important to include  in the design of underfloor plenums if they are also used for wiring.",
@@ -361,7 +361,7 @@ const questions = [
     explanation: "The correct answer is Sequestered channels.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Cable management includes all of the following except .",
@@ -375,7 +375,7 @@ const questions = [
     explanation: "The correct answer is Removing unused machines.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "How often should cable management efforts take place?",
@@ -389,7 +389,7 @@ const questions = [
     explanation: "The correct answer is Continually.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "You are designing a private cloud data center for an insurance underwriter, to be located in a major metropolitan area. Which of the following airflow management schemes is preferable?",
@@ -403,7 +403,7 @@ const questions = [
     explanation: "The correct answer is Either hot aisle or cold aisle.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Which of the following factors will probably have the most impact on the cost of running your heating, ventilation, and air conditioning (HVAC) systems?",
@@ -417,7 +417,7 @@ const questions = [
     explanation: "The correct answer is The external ambient environment.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "You are designing a Tier 4 data center for a large hospital. In order to plan for the possibility of losing utility power, in addition to having sufficient generators, you should plan to locate the data center .",
@@ -431,7 +431,7 @@ const questions = [
     explanation: "The correct answer is In a rural environment.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Because most cloud environments rely heavily on virtualization, it is important to lock down or harden the virtualization software, or any software involved in virtualization. Which of the following is not an element of hardening software?",
@@ -445,7 +445,7 @@ const questions = [
     explanation: "The correct answer is Maintaining a strict license catalog.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is not an aspect of host hardening?",
@@ -459,7 +459,7 @@ const questions = [
     explanation: "The correct answer is Performing more frequent and thorough audits on the host.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is not an element of ongoing configuration maintenance?",
@@ -473,7 +473,7 @@ const questions = [
     explanation: "The correct answer is Social engineering tests of all users.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Storage controllers will be used in conjunction with all the following protocols except .",
@@ -487,7 +487,7 @@ const questions = [
     explanation: "The correct answer is HTTPS.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Which of these characteristics of a virtualized network adds risks to the cloud environment?",
@@ -501,7 +501,7 @@ const questions = [
     explanation: "The correct answer is Self-service.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Security best practices in a virtualized network environment would include which of the following?",
@@ -515,7 +515,7 @@ const questions = [
     explanation: "The correct answer is Using distinct ports and port groups for various virtual local area networks (VLANs) on a virtual switch rather than running them through the same port.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "In order to enhance virtual environment isolation and security, a best practice is to .",
@@ -529,7 +529,7 @@ const questions = [
     explanation: "The correct answer is Ensure that management systems are connected to a different physical network than the production systems.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is a risk that stems from a virtualized environment?",
@@ -543,7 +543,7 @@ const questions = [
     explanation: "The correct answer is Live virtual machines in the production environment are moved from one host to another in the clear..",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is a risk that stems from a pooled-resources environment?",
@@ -557,7 +557,7 @@ const questions = [
     explanation: "The correct answer is Loss of data to law enforcement seizure of neighboring assets.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Modern managed cloud service providers will often use secure keyboard/video/mouse (KVM) devices within their data centers. These devices are extremely expensive compared to their non-secured counterparts. Which of the following is one of the reasons cloud service providers do this?",
@@ -571,7 +571,7 @@ const questions = [
     explanation: "The correct answer is Cloud data centers need very few of these devices..",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is not a goal of a site survey?",
@@ -585,7 +585,7 @@ const questions = [
     explanation: "The correct answer is Penetration testing.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Designing system redundancy into a cloud data center allows all the following capabilities except .",
@@ -599,7 +599,7 @@ const questions = [
     explanation: "The correct answer is Preventing any chance of service interruption.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Gaseous fire suppression systems that function by displacing oxygen need to be installed in conjunction with .",
@@ -613,7 +613,7 @@ const questions = [
     explanation: "The correct answer is Failsafe or 'last person out' switches.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "What aspect of data center planning occurs first?",
@@ -627,7 +627,7 @@ const questions = [
     explanation: "The correct answer is Logical design.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Which of the following are not examples of personnel controls?",
@@ -641,7 +641,7 @@ const questions = [
     explanation: "The correct answer is Strict access control mechanisms.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Updating virtual machine management tools will require .",
@@ -655,7 +655,7 @@ const questions = [
     explanation: "The correct answer is Sufficient redundancy.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Access control to virtualization management tools should be .",
@@ -669,7 +669,7 @@ const questions = [
     explanation: "The correct answer is Role-based.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Before deploying a specific brand of virtualization toolset, it is important to configure it according to .",
@@ -683,7 +683,7 @@ const questions = [
     explanation: "The correct answer is Vendor guidance.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is essential for getting full security value from your system baseline?",
@@ -697,7 +697,7 @@ const questions = [
     explanation: "The correct answer is Documentation.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Patching can be viewed as a configuration modification and therefore subject to the organization’s configuration management program and methods. What may also be an aspect of patching in terms of configuration management?",
@@ -711,7 +711,7 @@ const questions = [
     explanation: "The correct answer is The configuration or change management committee or board may grant blanket approval for patches (at a certain impact level) without the need to go through the formal change process..",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Clustering hosts allows you to do all the following except .",
@@ -725,7 +725,7 @@ const questions = [
     explanation: "The correct answer is Apply updates, patches, or configuration modifications instantly.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is not a way to apportion resources in a pooled environment?",
@@ -739,7 +739,7 @@ const questions = [
     explanation: "The correct answer is Tokens.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "A loosely coupled storage cluster will have performance and capacity limitations based on the .",
@@ -753,7 +753,7 @@ const questions = [
     explanation: "The correct answer is Physical backplane connecting it.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "When putting a system into maintenance mode, it’s important to do all of the following except .",
@@ -767,7 +767,7 @@ const questions = [
     explanation: "The correct answer is Turn off logging.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Typically, a cloud customer seeking stand-alone hosting will expect all of the following except .",
@@ -781,7 +781,7 @@ const questions = [
     explanation: "The correct answer is Lower costs for the environment.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Methods for achieving 'high availability' cloud environments include all of the following except .",
@@ -795,7 +795,7 @@ const questions = [
     explanation: "The correct answer is Failover capability back to the customer’s on-premises environment.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "You are in charge of a cloud migration for your organization. You anticipate attack traffic from various sources, each using a variety of both automated and manual intrusion techniques. In order to deter novel attacks used only against your organization, you would be wise to employ firewalls that use  to detect threats.",
@@ -809,7 +809,7 @@ const questions = [
     explanation: "The correct answer is Behavioral outliers.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Firewalls can be included in all the following aspects of a cloud environment except .",
@@ -823,7 +823,7 @@ const questions = [
     explanation: "The correct answer is Bandwidth providers used to connect to the cloud.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "A honeypot can be used for all the following purposes except .",
@@ -837,7 +837,7 @@ const questions = [
     explanation: "The correct answer is Delaying attackers.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Which of the following should honeypots contain?",
@@ -851,7 +851,7 @@ const questions = [
     explanation: "The correct answer is Detection systems.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Because all cloud access is remote access, contact between users and the environment should include all of the following except .",
@@ -865,7 +865,7 @@ const questions = [
     explanation: "The correct answer is Once in-all in.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Most attacks that overcome encryption protections exploit .",
@@ -879,7 +879,7 @@ const questions = [
     explanation: "The correct answer is Misconfigurations.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Administrators and engineers who work for cloud service providers will have a significant amount of control over multiple customer environments and therefore pose a severe risk. Which of the following is not a technique used to mitigate this level of increased risk from privileged users in the cloud data center?",
@@ -893,7 +893,7 @@ const questions = [
     explanation: "The correct answer is Assigning permanent administrators to select customer accounts.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Which of these is a vital action to determine whether the business continuity and disaster recovery (BC/DR) effort has a chance of being successful?",
@@ -907,7 +907,7 @@ const questions = [
     explanation: "The correct answer is Periodically restore from backups..",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Patches do all the following except .",
@@ -921,7 +921,7 @@ const questions = [
     explanation: "The correct answer is Solve cloud interoperability problems.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "When applying patches, it is necessary to do all of the following except .",
@@ -935,7 +935,7 @@ const questions = [
     explanation: "The correct answer is Put the patch through the formal change management process.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is a risk associated with automated patching?",
@@ -949,7 +949,7 @@ const questions = [
     explanation: "The correct answer is Patches can come loaded with malware, in a Trojan horse attack..",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is a risk associated with automated patching, especially in the cloud?",
@@ -963,7 +963,7 @@ const questions = [
     explanation: "The correct answer is Snapshot/saved virtual machine (VM) images won’t take a patch..",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is a risk associated with manual patching, especially in the cloud?",
@@ -977,7 +977,7 @@ const questions = [
     explanation: "The correct answer is It’s not scalable..",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is a risk associated with manual patching especially in the cloud?",
@@ -991,7 +991,7 @@ const questions = [
     explanation: "The correct answer is The possibility for human error exists..",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "You are the security manager for an organization that uses the cloud for its production environment. According to your contract with the cloud provider, your organization is responsible for patching. A new patch is issued by one of your vendors. You decide not to apply it immediately for fear of interoperability problems. What additional risk are you accepting?",
@@ -1005,7 +1005,7 @@ const questions = [
     explanation: "The correct answer is Your organization is subject to the vulnerability the patch addresses..",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "You are the security manager for an organization that uses the cloud for its production environment. According to your contract with the cloud provider, your organization is responsible for patching. A new patch is issued by one of your vendors. You decide not to apply it immediately for fear of interoperability problems. Who may impose penalties on your organization for this decision if the vulnerability is exploited?",
@@ -1019,7 +1019,7 @@ const questions = [
     explanation: "The correct answer is Regulators.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Which of the following aspects of a cloud environment is most likely to add risk to the patch management process?",
@@ -1033,7 +1033,7 @@ const questions = [
     explanation: "The correct answer is Variations in user training and familiarity with the cloud.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Which type of web application monitoring most closely measures actual activity?",
@@ -1047,7 +1047,7 @@ const questions = [
     explanation: "The correct answer is Real-user monitoring (RUM).",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "When using real-user monitoring (RUM) for web application activity analysis, which of the following do you need to take into account?",
@@ -1061,7 +1061,7 @@ const questions = [
     explanation: "The correct answer is Privacy concerns.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Synthetic performance monitoring may be preferable to real-user monitoring (RUM) because .",
@@ -1075,7 +1075,7 @@ const questions = [
     explanation: "The correct answer is It can take place in the cloud.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "You are the security manager for an organization with a cloud-based production environment. You are tasked with setting up the event monitoring and logging systems. In your jurisdiction, private entities are allowed to monitor all activity involving their systems, without exception. Which of the following best describes a logging scheme you would recommend?",
@@ -1089,7 +1089,7 @@ const questions = [
     explanation: "The correct answer is Sufficient logging to reconstruct a narrative of events at some later date.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Who should be performing log review?",
@@ -1103,7 +1103,7 @@ const questions = [
     explanation: "The correct answer is Someone with knowledge of the operation and a security background.",
     domain: "Legal, Risk, and Compliance",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   }
 ];
 

@@ -7,7 +7,6 @@ import ResultModal from './ResultModal';
 function Flashcards({ flashcards }) {
   const [index, setIndex] = useState(0);
   const [showBack, setShowBack] = useState(false);
-  const [viewedSet, setViewedSet] = useState(new Set());
   const [knownSet, setKnownSet] = useState(new Set());
   const [showModal, setShowModal] = useState(false);
   const [showReviewList, setShowReviewList] = useState(false);
@@ -41,11 +40,7 @@ function Flashcards({ flashcards }) {
 
   const next = () => {
     setShowBack(false);
-    setIndex((i) => {
-      const nextIndex = (i + 1) % limitedFlashcards.length;
-      return nextIndex;
-    });
-    setViewedSet((s) => new Set([...s, index]));
+    setIndex((i) => (i + 1) % limitedFlashcards.length);
   };
 
   const prev = () => {
@@ -60,15 +55,12 @@ function Flashcards({ flashcards }) {
   };
 
   const finishSession = () => {
-    // ensure current card counted as viewed
-    setViewedSet((s) => new Set([...s, index]));
     setShowModal(true);
   };
 
   const handleRestart = () => {
     setIndex(0);
     setShowBack(false);
-    setViewedSet(new Set());
     setKnownSet(new Set());
     setShowModal(false);
     setShowReviewList(false);

@@ -11,7 +11,7 @@ const questions = [
     explanation: "REST APIs rely on HTTP for communication, supporting various data formats. SSH, SAML, and XML serve different purposes unrelated to REST's core protocol.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "easy"
+    difficulty: "hard"
   },
   {
     question: "What is a primary goal of integrating security into the Software Development Lifecycle (SDLC) in a cloud environment?",
@@ -25,7 +25,7 @@ const questions = [
     explanation: "Integrating security into the SDLC identifies and mitigates vulnerabilities early, reducing risks in cloud applications.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of the following best describes the role of a secure CI/CD pipeline in cloud application development?",
@@ -39,7 +39,7 @@ const questions = [
     explanation: "A secure CI/CD pipeline automates the integration, testing, and deployment of code, ensuring security throughout the process.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What is a key benefit of implementing DevSecOps in a cloud application environment?",
@@ -53,7 +53,7 @@ const questions = [
     explanation: "DevSecOps embeds security practices into development and operations, ensuring secure cloud application delivery.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is a primary challenge when securing cloud-native applications?",
@@ -81,7 +81,7 @@ const questions = [
     explanation: "API security protects data exchanged between services by implementing authentication, encryption, and rate limiting.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of the following best mitigates risks associated with insecure APIs in a cloud application?",
@@ -95,7 +95,7 @@ const questions = [
     explanation: "Using OAuth for API authentication mitigates risks by ensuring secure access control for cloud APIs.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What is a key consideration when securing a cloud-based microservices architecture?",
@@ -109,7 +109,7 @@ const questions = [
     explanation: "Implementing service-to-service authentication, such as mutual TLS, is critical to secure microservices in a cloud environment.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is a primary benefit of using a cloud-based application security testing tool?",
@@ -123,7 +123,7 @@ const questions = [
     explanation: "Application security testing tools identify vulnerabilities in code, improving the security of cloud applications.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What is a primary challenge when securing a serverless cloud application?",
@@ -151,7 +151,7 @@ const questions = [
     explanation: "A cloud-based WAF protects applications from common attacks, such as SQL injection and XSS, by filtering malicious traffic.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What is a key benefit of using a cloud-based static application security testing (SAST) tool?",
@@ -165,7 +165,7 @@ const questions = [
     explanation: "SAST tools detect vulnerabilities in source code during development, improving cloud application security.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is a primary consideration when securing a cloud-based SaaS application?",
@@ -179,7 +179,7 @@ const questions = [
     explanation: "Managing customer data access controls is critical to secure SaaS applications, ensuring data protection and compliance.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What is a primary purpose of implementing secure coding practices in a cloud environment?",
@@ -193,7 +193,7 @@ const questions = [
     explanation: "Secure coding practices reduce vulnerabilities in application code, enhancing the security of cloud applications.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is a key challenge when securing a cloud-based PaaS application?",
@@ -221,7 +221,7 @@ const questions = [
     explanation: "RASP tools detect and block attacks in real time by monitoring application behavior, enhancing cloud application security.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of the following best mitigates risks associated with insecure dependencies in a cloud application?",
@@ -235,7 +235,7 @@ const questions = [
     explanation: "Software composition analysis tools identify and mitigate risks from insecure dependencies in cloud applications.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What is a primary purpose of implementing a cloud-based application logging system?",
@@ -249,7 +249,7 @@ const questions = [
     explanation: "An application logging system tracks activity for security, enabling detection and investigation of incidents in the cloud.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is a key benefit of using a cloud-based dynamic application security testing (DAST) tool?",
@@ -263,7 +263,7 @@ const questions = [
     explanation: "DAST tools identify vulnerabilities during runtime, improving the security of cloud applications.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What is a primary challenge when securing a cloud-based containerized application?",
@@ -291,7 +291,7 @@ const questions = [
     explanation: "An application security policy defines rules for secure development and deployment of cloud applications.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What is a key consideration when implementing a cloud-based application authentication system?",
@@ -305,7 +305,7 @@ const questions = [
     explanation: "Implementing multifactor authentication enhances the security of cloud-based application authentication systems.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is a primary benefit of using a cloud-based API gateway for application security?",
@@ -319,7 +319,7 @@ const questions = [
     explanation: "An API gateway centralizes security controls, such as authentication and rate limiting, for cloud APIs.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What is a primary purpose of implementing a cloud-based application vulnerability management program?",
@@ -333,7 +333,7 @@ const questions = [
     explanation: "A vulnerability management program identifies and remediates weaknesses in cloud applications, enhancing security.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is a key challenge when securing a cloud-based hybrid application?",
@@ -361,7 +361,7 @@ const questions = [
     explanation: "APM tools detect anomalous behavior, which can indicate security issues in cloud applications.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of the following best mitigates risks associated with cloud-based application misconfigurations?",
@@ -375,7 +375,7 @@ const questions = [
     explanation: "Automated configuration scanning tools detect and remediate misconfigurations in cloud applications.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What is a primary purpose of implementing a cloud-based application encryption strategy?",
@@ -389,7 +389,7 @@ const questions = [
     explanation: "An application encryption strategy protects sensitive data in cloud applications, ensuring confidentiality and integrity.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is a key benefit of using a cloud-based secure software supply chain?",
@@ -403,7 +403,7 @@ const questions = [
     explanation: "A secure software supply chain ensures the integrity of application components, reducing risks from compromised dependencies.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What is a primary challenge when securing a cloud-based multi-tenant application?",
@@ -431,7 +431,7 @@ const questions = [
     explanation: "An application security training program educates developers on secure coding practices, improving cloud application security.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What is a key consideration when implementing a cloud-based application access control system?",
@@ -445,7 +445,7 @@ const questions = [
     explanation: "Applying least privilege principles ensures secure access control in cloud-based applications.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is a primary benefit of using a cloud-based application security orchestration tool?",
@@ -459,7 +459,7 @@ const questions = [
     explanation: "Security orchestration tools automate response workflows, improving efficiency in handling cloud application security incidents.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What is a primary purpose of implementing a cloud-based application penetration testing program?",
@@ -473,7 +473,7 @@ const questions = [
     explanation: "A penetration testing program identifies vulnerabilities in cloud applications, enabling proactive remediation.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is a key challenge when securing a cloud-based IaaS application?",
@@ -501,7 +501,7 @@ const questions = [
     explanation: "Dependency scanning tools identify vulnerabilities in third-party libraries used in cloud applications.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of the following best mitigates risks associated with cloud-based application data exposure?",
@@ -515,7 +515,7 @@ const questions = [
     explanation: "Encrypting sensitive application data mitigates risks of data exposure in cloud applications.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What is a primary purpose of implementing a cloud-based application security monitoring system?",
@@ -529,7 +529,7 @@ const questions = [
     explanation: "An application security monitoring system detects and responds to security incidents in cloud applications.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is a key benefit of using a cloud-based application threat modeling tool?",
@@ -543,7 +543,7 @@ const questions = [
     explanation: "Threat modeling tools identify potential security threats early in the development of cloud applications.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What is a primary challenge when securing a cloud-based application in a multi-cloud environment?",
@@ -571,7 +571,7 @@ const questions = [
     explanation: "A security governance framework establishes policies for secure application development in the cloud.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What is a key consideration when implementing a cloud-based application backup strategy?",
@@ -585,7 +585,7 @@ const questions = [
     explanation: "Ensuring application data recovery is critical for a cloud-based application backup strategy.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is a primary benefit of using a cloud-based application compliance monitoring tool?",
@@ -599,7 +599,7 @@ const questions = [
     explanation: "Compliance monitoring tools ensure cloud applications adhere to regulatory requirements, such as GDPR or HIPAA.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What is a primary purpose of implementing a cloud-based application secure configuration management system?",
@@ -613,7 +613,7 @@ const questions = [
     explanation: "A secure configuration management system maintains secure settings for cloud applications, reducing misconfiguration risks.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is a key challenge when securing a cloud-based application API?",
@@ -641,7 +641,7 @@ const questions = [
     explanation: "An incident response plan enables rapid mitigation of security incidents in cloud applications.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of the following best mitigates risks associated with cloud-based application session management?",
@@ -655,7 +655,7 @@ const questions = [
     explanation: "Using secure session tokens and timeouts mitigates risks in cloud-based application session management.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What is a primary purpose of implementing a cloud-based application security audit program?",
@@ -669,7 +669,7 @@ const questions = [
     explanation: "A security audit program assesses compliance with security policies for cloud applications.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is a key benefit of using a cloud-based application encryption key management system?",
@@ -683,7 +683,7 @@ const questions = [
     explanation: "An encryption key management system simplifies secure key management for cloud applications.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What is a key consideration when securing a cloud-based application in a global environment?",
@@ -697,7 +697,7 @@ const questions = [
     explanation: "Complying with regional data regulations, such as GDPR, is critical when securing global cloud applications.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "The Open Web Application Security Project (OWASP) Top Ten is a list of web application security threats created by a member-driven committee. Which is a good way to protect against using components with known vulnerabilities?",
@@ -711,7 +711,7 @@ const questions = [
     explanation: "Reviewing updates and notifications for components helps protect against known vulnerabilities.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "The OWASP Top Ten list sometimes includes 'unvalidated redirects and forwards.' Which is a good way to protect against this problem?",
@@ -725,7 +725,7 @@ const questions = [
     explanation: "Implementing SIEM/SIM/SEM solutions helps protect against unvalidated redirects and forwards.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What is a challenge when transitioning applications from on-premises to a hosted cloud provider’s data center?",
@@ -739,7 +739,7 @@ const questions = [
     explanation: "Portability is a challenge when transitioning applications to a cloud provider’s data center.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "ISO 27034 mandates a framework for application security within an organization. According to the standard, each organization should have a(n) ___, and each application within the organization should have its own ___.",
@@ -753,7 +753,7 @@ const questions = [
     explanation: "ISO 27034 requires an ONF for the organization and an ANF for each application.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "According to ISO 27034, there is one Organizational Normative Framework (ONF) in the organization, and ___ Application Normative Framework (ANF[s]) for each application within that organization.",
@@ -763,11 +763,11 @@ const questions = [
       "C. No",
       "D. One"
     ],
-    correctAnswer: "A",
+    correctAnswer: "D",
     explanation: "Each application has its own ANF, but there is only one ONF per organization.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What language is used in the Simple Object Access Protocol (SOAP) application design protocol?",
@@ -781,7 +781,7 @@ const questions = [
     explanation: "SOAP uses XML for its message format.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "easy"
+    difficulty: "hard"
   },
   {
     question: "Typically, representational state transfer (REST) interactions do not require ___.",
@@ -795,7 +795,7 @@ const questions = [
     explanation: "REST is stateless and does not require sessions.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "easy"
+    difficulty: "hard"
   },
   {
     question: "Representational state transfer (REST) application programming interfaces (APIs) use ___ protocol verbs.",
@@ -809,7 +809,7 @@ const questions = [
     explanation: "REST APIs use HTTP protocol verbs (GET, POST, etc.).",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "easy"
+    difficulty: "hard"
   },
   {
     question: "The architecture of the World Wide Web, as it works today, is ___.",
@@ -823,7 +823,7 @@ const questions = [
     explanation: "The World Wide Web is based on REST architecture.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "easy"
+    difficulty: "hard"
   },
   {
     question: "RESTful responses can come from the server in ___ or ___ formats.",
@@ -837,7 +837,7 @@ const questions = [
     explanation: "RESTful responses are commonly in XML or JSON format.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "easy"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is an informal industry term for moving applications from a traditional environment into the cloud?",
@@ -851,7 +851,7 @@ const questions = [
     explanation: "'Forklifting' is the informal term for moving applications to the cloud.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Developers creating software for the cloud environment should bear in mind cloud-specific risks such as ___ and ___.",
@@ -865,7 +865,7 @@ const questions = [
     explanation: "Cloud-specific risks include DoS and DDoS attacks.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "When an organization considers cloud migrations, the organization’s software developers will need to know which ___ and which ___ the organization will be using, in order to properly and securely create suitable applications.",
@@ -879,7 +879,7 @@ const questions = [
     explanation: "Service model and deployment model are key for secure cloud migrations.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is perhaps the best method for reducing the risk of a specific application not delivering the proper level of functionality and performance when it is moved from the traditional environment into the cloud?",
@@ -893,7 +893,7 @@ const questions = [
     explanation: "Trial runs in the cloud help reduce migration risks.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Software developers designing applications for the cloud should expect to include options to ensure all of the following capabilities except ___.",
@@ -907,7 +907,7 @@ const questions = [
     explanation: "Hashing database fields is not a typical cloud capability option.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "In a platform as a service (PaaS) model, who should most likely be responsible for the security of the applications in the production environment?",
@@ -921,7 +921,7 @@ const questions = [
     explanation: "The cloud customer is responsible for application security in PaaS.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "In the testing phase of the software development lifecycle (SDLC), software performance and ___ should both be reviewed.",
@@ -935,7 +935,7 @@ const questions = [
     explanation: "Security and performance are both reviewed in SDLC testing phase.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "easy"
+    difficulty: "hard"
   },
   {
     question: "Regardless of which model the organization uses for system development, in which phase of the software development lifecycle (SDLC) will user input be requested and considered?",
@@ -949,7 +949,7 @@ const questions = [
     explanation: "User input is requested in the Define phase of SDLC.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "easy"
+    difficulty: "hard"
   },
   {
     question: "Which phase of the software development lifecycle (SDLC) is most likely to involve crypto-shredding?",
@@ -963,7 +963,7 @@ const questions = [
     explanation: "Crypto-shredding is most likely in the Disposal phase.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Where are business requirements most likely to be mapped to software construction?",
@@ -977,7 +977,7 @@ const questions = [
     explanation: "Business requirements are mapped in the Design phase.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "All of the following are usually nonfunctional requirements except ___.",
@@ -991,7 +991,7 @@ const questions = [
     explanation: "Function is a functional requirement, not nonfunctional.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "easy"
+    difficulty: "hard"
   },
   {
     question: "Designers making applications for the cloud have to take into consideration risks and operational constraints that did not exist or were not as pronounced in the traditional environment. Which of the following is an element cloud app designers may have to consider incorporating in software for the cloud that may not have been as important in the traditional environment?",
@@ -1005,7 +1005,7 @@ const questions = [
     explanation: "IAM capability is more important in cloud applications.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Designers making applications for the cloud have to take into consideration risks and operational constraints that did not exist or were not as pronounced in the traditional environment. Which of the following is an element cloud app designers may have to consider incorporating in software for the cloud that might not have been as important in the traditional environment?",
@@ -1019,7 +1019,7 @@ const questions = [
     explanation: "Application isolation is more critical in cloud environments.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Designers making applications for the cloud have to take into consideration risks and operational constraints that did not exist or were not as pronounced in the traditional environment. Which of the following is an element cloud app designers may not be able to use as readily in the cloud environment as it was deployed in the traditional environment?",
@@ -1033,7 +1033,7 @@ const questions = [
     explanation: "Cryptography may be less readily used in cloud environments.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "All of these can affect the quality of service expected from an application except ___.",
@@ -1047,7 +1047,7 @@ const questions = [
     explanation: "Use of known secure libraries/components does not affect quality of service.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "easy"
+    difficulty: "hard"
   },
   {
     question: "The possibility that a user could gain access or control of an application so as to take on administrator or management capabilities is called ___.",
@@ -1061,7 +1061,7 @@ const questions = [
     explanation: "Escalation of privilege refers to unauthorized access to admin capabilities.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is not checked when using the STRIDE threat model?",
@@ -1075,7 +1075,7 @@ const questions = [
     explanation: "Business continuity/disaster recovery is not part of STRIDE.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "It is very likely that your organization’s users will use unapproved application programming interfaces (APIs), especially in a bring your own device (BYOD) environment, because ___.",
@@ -1089,7 +1089,7 @@ const questions = [
     explanation: "Users seek productivity, often using unapproved APIs.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "easy"
+    difficulty: "hard"
   },
   {
     question: "Some current software developers are not aware of security problems within the programs they’re creating because ___.",
@@ -1103,7 +1103,7 @@ const questions = [
     explanation: "Component libraries can obscure security issues for developers.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What is the most secure form of code testing and review?",
@@ -1117,7 +1117,7 @@ const questions = [
     explanation: "Combination leverages strengths of both open and proprietary review.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "What is the major difference between authentication and authorization?",
@@ -1131,7 +1131,7 @@ const questions = [
     explanation: "Authentication validates identity; authorization grants access.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "easy"
+    difficulty: "hard"
   },
   {
     question: "Access should be based on ___.",
@@ -1145,7 +1145,7 @@ const questions = [
     explanation: "Business needs and risk drive access decisions.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "easy"
+    difficulty: "hard"
   },
   {
     question: "Who should determine which users have access to which specific objects?",
@@ -1159,7 +1159,7 @@ const questions = [
     explanation: "Data owners are responsible for access decisions.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "easy"
+    difficulty: "hard"
   },
   {
     question: "All of the following are identity federation standards commonly found in use today except ___.",
@@ -1173,7 +1173,7 @@ const questions = [
     explanation: "PGP is not an identity federation standard.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is a federation standard/protocol that does not rely on Simple Object Access Protocol (SOAP), Security Assertion Markup Language (SAML), or Extensible Markup Language (XML)?",
@@ -1187,7 +1187,7 @@ const questions = [
     explanation: "OpenID Connect does not rely on SOAP, SAML, or XML.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Authentication mechanisms typically include any or all of the following except ___.",
@@ -1201,7 +1201,7 @@ const questions = [
     explanation: "Authentication does not typically include 'someone you know'.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "easy"
+    difficulty: "hard"
   },
   {
     question: "Which of the following constitutes a multifactor authentication process or procedure?",
@@ -1215,7 +1215,7 @@ const questions = [
     explanation: "Voice sample and fingerprint are two factors for authentication.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Typically, multifactor authentication should be used ___.",
@@ -1229,7 +1229,7 @@ const questions = [
     explanation: "Multifactor authentication is best for high-risk and sensitive operations.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "A web application firewall (WAF) usually operates at Layer ___ of the Open Systems Interconnection (OSI) model.",
@@ -1243,7 +1243,7 @@ const questions = [
     explanation: "WAFs operate at Layer 7 (application layer) of the OSI model.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "easy"
+    difficulty: "hard"
   },
   {
     question: "A web application firewall (WAF) can understand and act on ___ traffic.",
@@ -1257,7 +1257,7 @@ const questions = [
     explanation: "WAFs are designed to understand HTTP traffic.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "easy"
+    difficulty: "hard"
   },
   {
     question: "WAFs can be used to reduce the likelihood that ___ attacks will be successful.",
@@ -1271,7 +1271,7 @@ const questions = [
     explanation: "WAFs help prevent cross-site scripting attacks.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "A database activity monitor (DAM) tool usually operates at Layer ___ of the Open Systems Interconnection (OSI) model.",
@@ -1285,7 +1285,7 @@ const questions = [
     explanation: "DAMs operate at Layer 7 (application layer) of the OSI model.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "easy"
+    difficulty: "hard"
   },
   {
     question: "Database activity monitors (DAMs) can be used to reduce the potential success of ___ attacks.",
@@ -1299,7 +1299,7 @@ const questions = [
     explanation: "DAMs help prevent SQL injection attacks.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Which security tool can perform content inspection of Secure File Transfer Protocol (SFTP) communications?",
@@ -1313,7 +1313,7 @@ const questions = [
     explanation: "XML gateways can inspect SFTP communications.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "To deploy a set of microservices to clients instead of building one monolithic application, it is best to use a(n) ___ to coordinate client requests.",
@@ -1327,7 +1327,7 @@ const questions = [
     explanation: "API gateways coordinate client requests for microservices.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Firewalls can detect attack traffic by using all these methods except ___.",
@@ -1341,7 +1341,7 @@ const questions = [
     explanation: "Firewalls do not detect attacks by user identity.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Transport Layer Security (TLS) provides ___ and ___ for communications.",
@@ -1355,7 +1355,7 @@ const questions = [
     explanation: "TLS provides privacy and integrity for communications.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Transport Layer Security (TLS) uses a new ___ for each secure connection.",
@@ -1369,7 +1369,7 @@ const questions = [
     explanation: "TLS uses a new symmetric key for each connection.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "A virtual private network (VPN) is used to protect data in transit by ___.",
@@ -1383,7 +1383,7 @@ const questions = [
     explanation: "VPNs create encrypted tunnels for data in transit.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "The employment of users in dynamic software testing should best be augmented by ___.",
@@ -1397,7 +1397,7 @@ const questions = [
     explanation: "Automated agents improve dynamic software testing.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Why do developers have an inherent conflict of interest in testing software they’ve created?",
@@ -1411,7 +1411,7 @@ const questions = [
     explanation: "Developers have a vested interest in their software performing well.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Sandboxing can often be used for ___.",
@@ -1425,7 +1425,7 @@ const questions = [
     explanation: "Sandboxing is used for malware analysis.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   },
   {
     question: "Application virtualization can typically be used for ___.",
@@ -1439,7 +1439,7 @@ const questions = [
     explanation: "Application virtualization allows running in non-native environments.",
     domain: "Cloud Application Security",
     type: "multiple-choice",
-    difficulty: "medium"
+    difficulty: "hard"
   }
 ];
 

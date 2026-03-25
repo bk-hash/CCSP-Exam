@@ -11,7 +11,7 @@ const questions = [
     explanation: "Geographic location is the most important factor as it affects compliance, latency, disaster recovery, environmental conditions, and regulatory requirements for cloud data center design.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "All of the following elements must be considered in the design of a cloud data center except ______.",
@@ -21,11 +21,11 @@ const questions = [
       "C. Types of services offered",
       "D. Native language of the majority of customers"
     ],
-    correctAnswer: "D",
+    correctAnswer: "B",
     explanation: "Native language is not a technical consideration for data center design. Physical environment, external standards like ITIL/ISO 27001, and types of services are all critical design factors.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "In designing a data center to meet their own needs and provide optimum revenue/profit, the cloud provider will most likely aim to enhance ______.",
@@ -39,7 +39,7 @@ const questions = [
     explanation: "Automation of services maximizes efficiency and reduces operational costs, directly impacting revenue and profit for cloud providers by minimizing manual intervention.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "You are the security officer for a small cloud provider offering public cloud infrastructure as a service (IaaS); your clients are predominantly from the education sector, located in North America. Of the following technology architecture traits, which is probably the one your organization would most likely want to focus on?",
@@ -53,7 +53,7 @@ const questions = [
     explanation: "The correct answer is Reducing mean time to repair (MTTR).",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "What is perhaps the main way in which software-defined networking (SDN) solutions facilitate security in the cloud environment?",
@@ -67,7 +67,7 @@ const questions = [
     explanation: "The correct answer is Segmenting networks.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "The logical design of a cloud environment can enhance the security offered in that environment. For instance, in a software as a service (SaaS) cloud, the provider can incorporate ______ capabilities into the application itself.",
@@ -81,7 +81,7 @@ const questions = [
     explanation: "Logging is essential for security monitoring, incident response, compliance auditing, and troubleshooting in cloud security operations.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "You are tasked with managing a cloud data center in Los Angeles; your customers are mostly from the entertainment industry, and you are offering both platform as a service (PaaS) and software as a service (SaaS) capabilities. From a physical design standpoint, you are probably going to be most concerned with ______.",
@@ -95,7 +95,7 @@ const questions = [
     explanation: "The correct answer is Ensuring that the racks and utilities can endure an earthquake.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "You are the security manager for a small retail business involved mainly in direct e-commerce transactions with individual customers (members of the public). The bulk of your market is in Asia, but you do fulfill orders globally. Your company has its own data center located within its headquarters building in Hong Kong, but it also uses a public cloud environment for contingency backup and archiving purposes. Your cloud provider is changing its business model at the end of your contract term, and you have to find a new provider. In choosing providers, which tier of the Uptime Institute rating system should you be looking for, if minimizing cost is your ultimate goal?",
@@ -109,7 +109,7 @@ const questions = [
     explanation: "The correct answer is 1.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "You are the security manager for a small retail business involved mainly in direct e-commerce transactions with individual customers (members of the public). The bulk of your market is in Asia, but you do fulfill orders globally. Your company has its own data center located within its headquarters building in Hong Kong, but it also uses a public cloud environment for contingency backup and archiving purposes. Your cloud provider is changing its business model at the end of your contract term, and you have to find a new provider. In choosing providers, which of the following functionalities will you consider absolutely essential?",
@@ -123,7 +123,7 @@ const questions = [
     explanation: "The correct answer is Distributed denial of service (DDoS) protections.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "You are the security manager for a small retail business involved mainly in direct e-commerce transactions with individual customers (members of the public). The bulk of your market is in Asia, but you do fulfill orders globally. Your company has its own data center located within its headquarters building in Hong Kong, but it also uses a public cloud environment for contingency backup and archiving purposes. Which of the following standards are you most likely to adopt?",
@@ -137,7 +137,7 @@ const questions = [
     explanation: "ISO 27001 is the international standard for information security management systems (ISMS), providing a framework for managing and protecting sensitive information.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "You are the security manager for a small retail business involved mainly in direct e-commerce transactions with individual customers (members of the public). The bulk of your market is in Asia, but you do fulfill orders globally. Your company has its own data center located within its headquarters building in Hong Kong, but it also uses a public cloud environment for contingency backup and archiving purposes. Your company has decided to expand its business to include selling and monitoring life-support equipment for medical providers. What characteristic do you need to ensure is offered by your cloud provider?",
@@ -151,7 +151,7 @@ const questions = [
     explanation: "The correct answer is Tier 4 of the Uptime Institute certifications.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "When designing a cloud data center, which of the following aspects is not necessary to ensure continuity of operations during contingency operations?",
@@ -165,7 +165,7 @@ const questions = [
     explanation: "The correct answer is Access to clean water.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "You are the security manager for a small surgical center. Your organization is reviewing upgrade options for its current, on-premises data center. In order to best meet your needs, which one of the following options would you recommend to senior management?",
@@ -179,7 +179,7 @@ const questions = [
     explanation: "The correct answer is Renting private cloud space in a Tier 2 data center.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "When building a new data center within an urban environment, which of the following is probably the most restrictive aspect?",
@@ -193,7 +193,7 @@ const questions = [
     explanation: "The correct answer is Municipal codes.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "When you are building a new data center in a rural setting, which of the following is probably the most restrictive aspect?",
@@ -207,7 +207,7 @@ const questions = [
     explanation: "The correct answer is Availability of emergency services.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "All tiers of the Uptime Institute standards for data centers require ______ hours of on-site generator fuel.",
@@ -221,7 +221,7 @@ const questions = [
     explanation: "The correct answer is 12.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "The American Society of Heating, Refrigeration, and Air Conditioning Engineers (ASHRAE) guidelines for internal environmental conditions within a data center suggest that a temperature setting of ______ degrees (F) would be too high.",
@@ -235,7 +235,7 @@ const questions = [
     explanation: "The correct answer is 93.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Internal data center conditions that exceed the American Society of Heating, Refrigeration, and Air Conditioning Engineers (ASHRAE) guidelines for humidity could lead to an increase of the potential for all of the following except ______.",
@@ -249,7 +249,7 @@ const questions = [
     explanation: "The correct answer is Social engineering.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Setting thermostat controls by measuring the ______ temperature will result in the highest energy costs.",
@@ -263,7 +263,7 @@ const questions = [
     explanation: "The correct answer is Return air.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Heating, ventilation, and air conditioning (HVAC) systems cool the data center by pushing warm air into ______.",
@@ -277,7 +277,7 @@ const questions = [
     explanation: "The correct answer is Underfloor plenums.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "It is important to include ______ in the design of underfloor plenums if they are also used for wiring.",
@@ -291,7 +291,7 @@ const questions = [
     explanation: "The correct answer is Sequestered channels.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Cable management includes all of the following except ______.",
@@ -305,7 +305,7 @@ const questions = [
     explanation: "The correct answer is Removing unused machines.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "How often should cable management efforts take place?",
@@ -319,7 +319,7 @@ const questions = [
     explanation: "The correct answer is Continually.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "You are designing a private cloud data center for an insurance underwriter, to be located in a major metropolitan area. Which of the following airflow management schemes is preferable?",
@@ -333,7 +333,7 @@ const questions = [
     explanation: "The correct answer is Cold aisle.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Which of the following factors will probably have the most impact on the cost of running your heating, ventilation, and air conditioning (HVAC) systems?",
@@ -347,7 +347,7 @@ const questions = [
     explanation: "The correct answer is The external ambient environment.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "You are designing a Tier 4 data center for a large hospital. In order to plan for the possibility of losing utility power, in addition to having sufficient generators, you should plan to locate the data center ______.",
@@ -361,7 +361,7 @@ const questions = [
     explanation: "The correct answer is In a rural environment.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Because most cloud environments rely heavily on virtualization, it is important to lock down or harden the virtualization software, or any software involved in virtualization. Which of the following is not an element of hardening software?",
@@ -375,7 +375,7 @@ const questions = [
     explanation: "The correct answer is Maintaining a strict license catalog.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is not an aspect of host hardening?",
@@ -389,7 +389,7 @@ const questions = [
     explanation: "The correct answer is Performing more frequent and thorough audits on the host.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is not an element of ongoing configuration maintenance?",
@@ -403,7 +403,7 @@ const questions = [
     explanation: "The correct answer is Social engineering tests of all users.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Storage controllers will be used in conjunction with all the following protocols except ______.",
@@ -417,7 +417,7 @@ const questions = [
     explanation: "The correct answer is HTTPS.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Which of these characteristics of a virtualized network adds risks to the cloud environment?",
@@ -431,7 +431,7 @@ const questions = [
     explanation: "The correct answer is Self-service.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Security best practices in a virtualized network environment would include which of the following?",
@@ -445,7 +445,7 @@ const questions = [
     explanation: "The correct answer is Using distinct ports and port groups for various virtual local area networks (VLANs) on a virtual switch rather than running them through the same port.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "In order to enhance virtual environment isolation and security, a best practice is to ______.",
@@ -459,7 +459,7 @@ const questions = [
     explanation: "The correct answer is Ensure that management systems are connected to a different physical network than the production systems.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is a risk that stems from a virtualized environment?",
@@ -473,7 +473,7 @@ const questions = [
     explanation: "The correct answer is Live virtual machines in the production environment are moved from one host to another in the clear..",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is a risk that stems from a pooled-resources environment?",
@@ -487,7 +487,7 @@ const questions = [
     explanation: "The correct answer is Loss of data to law enforcement seizure of neighboring assets.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Modern managed cloud service providers will often use secure keyboard/video/mouse (KVM) devices within their data centers. These devices are extremely expensive compared to their non-secured counterparts. Which of the following is one of the reasons cloud service providers do this?",
@@ -501,7 +501,7 @@ const questions = [
     explanation: "The correct answer is Cloud data centers need very few of these devices..",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "The American Society of Heating, Refrigeration, and Air Conditioning Engineers (ASHRAE) guidelines for internal environmental conditions within a data center suggest that a temperature setting of ______ degrees (F) would be too low.",
@@ -515,7 +515,7 @@ const questions = [
     explanation: "The correct answer is 32.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "A truly air-gapped machine selector will ______.",
@@ -529,7 +529,7 @@ const questions = [
     explanation: "The correct answer is Terminate a connection before creating a new connection.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Which of the following cloud data center functions do not have to be performed on isolated networks?",
@@ -543,7 +543,7 @@ const questions = [
     explanation: "The correct answer is Customer access provision.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is not a characteristic of a virtual local area network (VLAN)?",
@@ -553,11 +553,11 @@ const questions = [
       "C. Broadcast packets sent from a machine outside the VLAN will not reach machines inside the VLAN.",
       "D. Broadcast packets sent by a machine inside the VLAN will not reach machines outside the VLAN."
     ],
-    correctAnswer: "B",
+    correctAnswer: "A",
     explanation: "Option B is not a characteristic of VLANs. Broadcast packets sent from outside the VLAN cannot reach other machines outside the VLAN through the VLAN - this statement is confusing and incorrect as written.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "In order for communications from inside a virtual local area network (VLAN) to reach endpoints outside the VLAN, ______.",
@@ -571,7 +571,7 @@ const questions = [
     explanation: "The correct answer is The communications must go through a gateway.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Transport Layer Security (TLS) uses ______ to authenticate a connection and create a shared secret for the duration of the session.",
@@ -585,7 +585,7 @@ const questions = [
     explanation: "The correct answer is X.509 certificates.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Halon is now illegal to use for data center fire suppression. What is the reason it was outlawed?",
@@ -599,7 +599,7 @@ const questions = [
     explanation: "The correct answer is It can harm the environment..",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "When cloud computing professionals use the term ping, power, pipe, which of the following characteristics is not being described?",
@@ -613,7 +613,7 @@ const questions = [
     explanation: "The correct answer is Human interaction.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is not a goal of a site survey?",
@@ -627,7 +627,7 @@ const questions = [
     explanation: "The correct answer is Penetration testing.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Designing system redundancy into a cloud data center allows all the following capabilities except ______.",
@@ -641,7 +641,7 @@ const questions = [
     explanation: "The correct answer is Preventing any chance of service interruption.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Gaseous fire suppression systems that function by displacing oxygen need to be installed in conjunction with ______.",
@@ -655,7 +655,7 @@ const questions = [
     explanation: "The correct answer is Failsafe or 'last person out' switches.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "What aspect of data center planning occurs first?",
@@ -669,7 +669,7 @@ const questions = [
     explanation: "The correct answer is Policy revision.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Which of the following are not examples of personnel controls?",
@@ -683,7 +683,7 @@ const questions = [
     explanation: "The correct answer is Strict access control mechanisms.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Updating virtual machine management tools will require ______.",
@@ -697,7 +697,7 @@ const questions = [
     explanation: "The correct answer is Sufficient redundancy.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Access control to virtualization management tools should be ______.",
@@ -711,7 +711,7 @@ const questions = [
     explanation: "The correct answer is Role-based.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Before deploying a specific brand of virtualization toolset, it is important to configure it according to ______.",
@@ -725,7 +725,7 @@ const questions = [
     explanation: "The correct answer is Vendor guidance.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is essential for getting full security value from your system baseline?",
@@ -739,7 +739,7 @@ const questions = [
     explanation: "The correct answer is Documentation.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Patching can be viewed as a configuration modification and therefore subject to the organization’s configuration management program and methods. What may also be an aspect of patching in terms of configuration management?",
@@ -753,7 +753,7 @@ const questions = [
     explanation: "The correct answer is The configuration or change management committee or board may grant blanket approval for patches (at a certain impact level) without the need to go through the formal change process..",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Clustering hosts allows you to do all the following except ______.",
@@ -767,7 +767,7 @@ const questions = [
     explanation: "The correct answer is Apply updates, patches, or configuration modifications instantly.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is not a way to apportion resources in a pooled environment?",
@@ -781,7 +781,7 @@ const questions = [
     explanation: "The correct answer is Tokens.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "A loosely coupled storage cluster will have performance and capacity limitations based on the ______.",
@@ -795,7 +795,7 @@ const questions = [
     explanation: "The correct answer is Physical backplane connecting it.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "When putting a system into maintenance mode, it’s important to do all of the following except ______.",
@@ -809,7 +809,7 @@ const questions = [
     explanation: "The correct answer is Turn off logging.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Typically, a cloud customer seeking stand-alone hosting will expect all of the following except ______.",
@@ -823,7 +823,7 @@ const questions = [
     explanation: "The correct answer is Lower costs for the environment.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Methods for achieving 'high availability' cloud environments include all of the following except ______.",
@@ -837,7 +837,7 @@ const questions = [
     explanation: "The correct answer is Failover capability back to the customer’s on-premises environment.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "You are in charge of a cloud migration for your organization. You anticipate attack traffic from various sources, each using a variety of both automated and manual intrusion techniques. In order to deter novel attacks used only against your organization, you would be wise to employ firewalls that use ______ to detect threats.",
@@ -851,7 +851,7 @@ const questions = [
     explanation: "The correct answer is Behavioral outliers.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Firewalls can be included in all the following aspects of a cloud environment except ______.",
@@ -865,7 +865,7 @@ const questions = [
     explanation: "The correct answer is Bandwidth providers used to connect to the cloud.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "A honeypot can be used for all the following purposes except ______.",
@@ -879,7 +879,7 @@ const questions = [
     explanation: "The correct answer is Delaying attackers.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Which of the following should honeypots contain?",
@@ -893,7 +893,7 @@ const questions = [
     explanation: "The correct answer is Detection systems.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Because all cloud access is remote access, contact between users and the environment should include all of the following except ______.",
@@ -907,7 +907,7 @@ const questions = [
     explanation: "The correct answer is Once in-all in.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Most attacks that overcome encryption protections exploit ______.",
@@ -921,7 +921,7 @@ const questions = [
     explanation: "The correct answer is Misconfigurations.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Administrators and engineers who work for cloud service providers will have a significant amount of control over multiple customer environments and therefore pose a severe risk. Which of the following is not a technique used to mitigate this level of increased risk from privileged users in the cloud data center?",
@@ -935,7 +935,7 @@ const questions = [
     explanation: "The correct answer is Assigning permanent administrators to select customer accounts.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Which of these is a vital action to determine whether the business continuity and disaster recovery (BC/DR) effort has a chance of being successful?",
@@ -949,7 +949,7 @@ const questions = [
     explanation: "The correct answer is Periodically restore from backups..",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Patches do all the following except ______.",
@@ -963,7 +963,7 @@ const questions = [
     explanation: "The correct answer is Solve cloud interoperability problems.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "When applying patches, it is necessary to do all of the following except ______.",
@@ -977,7 +977,7 @@ const questions = [
     explanation: "The correct answer is Inform users of any impact or interruptions.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is a risk associated with automated patching?",
@@ -991,7 +991,7 @@ const questions = [
     explanation: "The correct answer is Patches can come loaded with malware, in a Trojan horse attack..",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is a risk associated with automated patching, especially in the cloud?",
@@ -1005,7 +1005,7 @@ const questions = [
     explanation: "The correct answer is Snapshot/saved virtual machine (VM) images won’t take a patch..",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is a risk associated with manual patching, especially in the cloud?",
@@ -1019,7 +1019,7 @@ const questions = [
     explanation: "The correct answer is It’s not scalable..",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is a risk associated with manual patching especially in the cloud?",
@@ -1033,7 +1033,7 @@ const questions = [
     explanation: "The correct answer is The possibility for human error exists..",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "You are the security manager for an organization that uses the cloud for its production environment. According to your contract with the cloud provider, your organization is responsible for patching. A new patch is issued by one of your vendors. You decide not to apply it immediately for fear of interoperability problems. What additional risk are you accepting?",
@@ -1047,7 +1047,7 @@ const questions = [
     explanation: "The correct answer is Your organization is subject to the vulnerability the patch addresses..",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "You are the security manager for an organization that uses the cloud for its production environment. According to your contract with the cloud provider, your organization is responsible for patching. A new patch is issued by one of your vendors. You decide not to apply it immediately for fear of interoperability problems. Who may impose penalties on your organization for this decision if the vulnerability is exploited?",
@@ -1061,7 +1061,7 @@ const questions = [
     explanation: "The correct answer is Regulators.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Which of the following aspects of a cloud environment is most likely to add risk to the patch management process?",
@@ -1075,7 +1075,7 @@ const questions = [
     explanation: "The correct answer is Variations in user training and familiarity with the cloud.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Which type of web application monitoring most closely measures actual activity?",
@@ -1089,7 +1089,7 @@ const questions = [
     explanation: "The correct answer is Real-user monitoring (RUM).",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "When using real-user monitoring (RUM) for web application activity analysis, which of the following do you need to take into account?",
@@ -1103,7 +1103,7 @@ const questions = [
     explanation: "The correct answer is Privacy concerns.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Synthetic performance monitoring may be preferable to real-user monitoring (RUM) because ______.",
@@ -1117,7 +1117,7 @@ const questions = [
     explanation: "The correct answer is It costs less.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "You are the security manager for an organization with a cloud-based production environment. You are tasked with setting up the event monitoring and logging systems. In your jurisdiction, private entities are allowed to monitor all activity involving their systems, without exception. Which of the following best describes a logging scheme you would recommend?",
@@ -1131,7 +1131,7 @@ const questions = [
     explanation: "The correct answer is Sufficient logging to reconstruct a narrative of events at some later date.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Who should be performing log review?",
@@ -1145,7 +1145,7 @@ const questions = [
     explanation: "The correct answer is Someone with knowledge of the operation and a security background.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Which of these subsystems is probably most important for acquiring useful log information?",
@@ -1159,7 +1159,7 @@ const questions = [
     explanation: "The correct answer is Clock.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "A SIEM (security information and event management) system does not eliminate the need for human participation in ______.",
@@ -1173,7 +1173,7 @@ const questions = [
     explanation: "The correct answer is Responding to alerts.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Log data should be protected ______.",
@@ -1187,7 +1187,7 @@ const questions = [
     explanation: "The correct answer is At least at the same sensitivity level as the systems from which it was collected.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Risk is usually viewed with consideration for all the following elements except ______.",
@@ -1201,7 +1201,7 @@ const questions = [
     explanation: "The correct answer is According to risks recently realized by other organizations in the same industry.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Risk management entails evaluating all of the following except ______.",
@@ -1215,7 +1215,7 @@ const questions = [
     explanation: "The correct answer is Customers.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Impact resulting from risk being realized is often measured in terms of ______.",
@@ -1229,7 +1229,7 @@ const questions = [
     explanation: "The correct answer is Money.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "You are the security officer for a small nonprofit organization. You are tasked with performing a risk assessment for your organization; you have one month to complete it. The IT personnel you work with have been with the organization for many years and have built the systems and infrastructure from the ground up. They have little training and experience in the field of risk. Which type of risk assessment would you choose to conduct?",
@@ -1243,7 +1243,7 @@ const questions = [
     explanation: "The correct answer is Qualitative.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is most useful in determining the single loss expectancy (SLE) of an asset?",
@@ -1257,7 +1257,7 @@ const questions = [
     explanation: "The correct answer is The dollar value of the asset.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Which of the following will likely best help you predict the annualized rate of occurrence (ARO) of a specific loss?",
@@ -1271,7 +1271,7 @@ const questions = [
     explanation: "The correct answer is Historical data.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Which of the following has the most effect on exposure factor (EF)?",
@@ -1285,7 +1285,7 @@ const questions = [
     explanation: "The correct answer is The type of threat vector.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "You are a consultant, performing an external security review on a large manufacturing firm. You determine that its newest assembly plant, which cost $24 million, could be completely destroyed by a fire but that a fire suppression system could effectively protect the plant. The fire suppression system costs $15 million. An insurance policy that would cover the full replacement cost of the plant costs $1 million per month. What is the annual rate of occurrence (ARO) in this scenario?",
@@ -1299,7 +1299,7 @@ const questions = [
     explanation: "The correct answer is 1.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "You are a consultant performing an external security review on a large manufacturing firm. You determine that its newest assembly plant, which cost $24 million, could be completely destroyed by a fire but that a fire suppression system could effectively protect the plant. The fire suppression system costs $15 million. An insurance policy that would cover the full replacement cost of the plant costs $1 million per month. What would you recommend?",
@@ -1313,7 +1313,7 @@ const questions = [
     explanation: "The correct answer is Get the fire suppression system..",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "You are a consultant performing an external security review on a large manufacturing firm. You determine that its newest assembly plant, which cost $24 million, could be completely destroyed by a fire but that a fire suppression system could effectively protect the plant. The fire suppression system costs $15 million. An insurance policy that would cover the full replacement cost of the plant costs $1 million per month. In order to establish the true annualized loss expectancy (ALE), you would need all of the following information except ______.",
@@ -1327,7 +1327,7 @@ const questions = [
     explanation: "The correct answer is The amount of product the plant creates.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "You are a consultant performing an external security review on a large manufacturing firm. You determine that its newest assembly plant, which cost $24 million, could be completely destroyed by a fire but that a fire suppression system could effectively protect the plant. The fire suppression system costs $15 million. An insurance policy that would cover the full replacement cost of the plant costs $1 million per month. The plant generates $2 million of revenue each month. The time to rebuild the plant at the current location is six months. What should you recommend?",
@@ -1341,7 +1341,7 @@ const questions = [
     explanation: "The correct answer is Get the fire suppression system..",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Risk mitigation must always also entail which other method of addressing risk?",
@@ -1355,7 +1355,7 @@ const questions = [
     explanation: "The correct answer is Risk acceptance.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Which of the following poses a secondary risk?",
@@ -1369,7 +1369,7 @@ const questions = [
     explanation: "The correct answer is Oxygen-displacing fire suppression.",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   },
   {
     question: "Which of the following is not true about risk mitigation?",
@@ -1383,7 +1383,7 @@ const questions = [
     explanation: "The correct answer is Risk mitigation is always the best means to address risk..",
     domain: "Cloud Security Operations",
     type: "undefined",
-    difficulty: "undefined"
+    difficulty: "hard"
   }
 ];
 

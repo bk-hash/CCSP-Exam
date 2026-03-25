@@ -6,6 +6,14 @@ const UserDashboard = ({ setSection }) => {
 	const { user } = useAuth();
 	const { theme } = useTheme();
 	const { userStats, getOverallAccuracy, getWeakestDomains, getStrongestDomains, getDailyProgress } = useStats();
+	const examSeriesStats = Object.values(userStats?.examSeriesStats || {})
+		.filter((series) => series.total > 0)
+		.sort((leftSeries, rightSeries) => {
+			const leftRecent = leftSeries.lastStudiedAt || '';
+			const rightRecent = rightSeries.lastStudiedAt || '';
+			return rightRecent.localeCompare(leftRecent);
+		})
+		.slice(0, 4);
 
 	// Inject CSS for animated progress bars (only once)
 	useEffect(() => {
@@ -137,6 +145,54 @@ const UserDashboard = ({ setSection }) => {
 									);
 								})}
 							</div>
+					</div>
+				</div>
+
+				<div style={{ marginBottom: 18 }}>
+					<div style={{ background: theme.cardBackground, padding: 16, borderRadius: 12, border: `1px solid ${theme.border}` }}>
+						<div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 12, gap: 12, flexWrap: 'wrap' }}>
+							<div style={{ fontSize: '0.95rem', color: theme.textSecondary }}>Exam Series Performance</div>
+							<button
+								onClick={() => setSection('PracticeExams')}
+								style={{
+									padding: '8px 12px',
+									borderRadius: 8,
+									border: 'none',
+									background: theme.primary,
+									color: '#fff',
+									cursor: 'pointer',
+									fontWeight: 600
+								}}
+							>
+								Open Exam Library
+							</button>
+						</div>
+						{examSeriesStats.length === 0 ? (
+							<div style={{ color: theme.textSecondary, fontSize: '0.92rem' }}>
+								No dedicated exam attempts yet. Start Final Exam 1, Final Exam 2, or Final Exam 3 to build series-specific stats.
+							</div>
+						) : (
+							<div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: 12 }}>
+								{examSeriesStats.map((series) => {
+									const accuracy = series.accuracy || 0;
+									const color = accuracy >= 70 ? '#34a853' : accuracy >= 50 ? '#fbbc04' : '#ea4335';
+									return (
+										<div key={series.title} style={{ background: 'rgba(255,255,255,0.03)', padding: 14, borderRadius: 10, border: `1px solid ${theme.border}` }}>
+											<div style={{ display: 'flex', justifyContent: 'space-between', gap: 8, marginBottom: 8 }}>
+												<div style={{ fontWeight: 700, color: theme.text }}>{series.title}</div>
+												<div style={{ color, fontWeight: 700 }}>{accuracy}%</div>
+											</div>
+											<div style={{ color: theme.textSecondary, fontSize: '0.88rem', marginBottom: 8 }}>
+												{series.correct}/{series.total} correct across {series.attempts} answered questions
+											</div>
+											<div style={{ width: '100%', height: 8, background: theme.border, borderRadius: 6, overflow: 'hidden' }}>
+												<div className="userdashboard-progress-inner pulse" style={{ width: `${accuracy}%`, height: '100%', background: color }} />
+											</div>
+										</div>
+									);
+								})}
+							</div>
+						)}
 					</div>
 				</div>
 

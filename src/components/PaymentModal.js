@@ -424,8 +424,6 @@ const PaymentForm = ({ onClose, selectedPlan = 'monthly' }) => {
 };
 
 const PaymentModal = ({ isOpen, onClose, selectedPlan }) => {
-  const { theme } = useTheme();
-  
   if (!isOpen) return null;
 
   return (

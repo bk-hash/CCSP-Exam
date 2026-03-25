@@ -5,7 +5,14 @@ import { useStats } from '../contexts/StatsContext';
 import UpgradePrompt from './UpgradePrompt';
 import ResultModal from './ResultModal';
 
-function Quiz({ questions, showScore = false, sessionKey = "default-quiz" }) {
+function Quiz({
+  questions,
+  showScore = false,
+  sessionKey = "default-quiz",
+  quizTitle = "Quiz",
+  examSeriesKey = null,
+  allowDomainFilter = true
+}) {
   const [current, setCurrent] = useState(0);
   const [selected, setSelected] = useState(null);
   const [showResult, setShowResult] = useState(false);
@@ -20,7 +27,7 @@ function Quiz({ questions, showScore = false, sessionKey = "default-quiz" }) {
   
   const { updateProgress } = useProgress();
   const { saveQuizSession, getQuizSession, clearQuizSession } = useSession();
-  const { user, getUserLimits, isDemoUser, isLoading } = useAuth();
+  const { user, getUserLimits, isDemoUser } = useAuth();
   const { updateQuestionStats } = useStats();
 
   // Load session on component mount ONLY
@@ -53,9 +60,10 @@ function Quiz({ questions, showScore = false, sessionKey = "default-quiz" }) {
     }
     
     // Initialize fresh questions
-    const filtered = selectedDomain === "All"
+    const effectiveDomain = allowDomainFilter ? selectedDomain : "All";
+    const filtered = effectiveDomain === "All"
       ? [...questions]
-      : questions.filter((q) => q.domain === selectedDomain);
+      : questions.filter((q) => q.domain === effectiveDomain);
     
     if (filtered.length > 0) {
       // Apply content gating for demo users
@@ -73,7 +81,7 @@ function Quiz({ questions, showScore = false, sessionKey = "default-quiz" }) {
       setShowResult(false);
       setStartTime(Date.now());
     }
-  }, [selectedDomain, questions, sessionLoaded, shuffledQuestions, getUserLimits, user?.tier]);
+  }, [selectedDomain, allowDomainFilter, questions, sessionLoaded, shuffledQuestions, getUserLimits, user?.tier]);
 
   // Update shuffled options when current question changes
   useEffect(() => {
@@ -128,11 +136,17 @@ function Quiz({ questions, showScore = false, sessionKey = "default-quiz" }) {
       setShowResult(true);
       
       // Update progress tracking
-      const questionId = `${q.question.substring(0, 50)}-${current}`;
-      updateProgress(questionId, q.domain, isCorrect, timeSpent);
+      const questionId = `${sessionKey}-${current}-${q.question.substring(0, 50)}`;
+      const trackingMetadata = examSeriesKey ? {
+        examSeriesKey,
+        examSeriesTitle: quizTitle,
+        totalQuestions: shuffledQuestions.length
+      } : {};
+
+      updateProgress(questionId, q.domain, isCorrect, timeSpent, trackingMetadata);
       
       // Update user statistics
-      updateQuestionStats(q.domain, isCorrect);
+      updateQuestionStats(q.domain, isCorrect, trackingMetadata);
       
       if (isCorrect) {
         setScore((s) => s + 1);
@@ -160,9 +174,10 @@ function Quiz({ questions, showScore = false, sessionKey = "default-quiz" }) {
     clearQuizSession(sessionKey);
     
     // Reset all state to start fresh
-    const filtered = selectedDomain === "All"
+    const effectiveDomain = allowDomainFilter ? selectedDomain : "All";
+    const filtered = effectiveDomain === "All"
       ? [...questions]
-      : questions.filter((q) => q.domain === selectedDomain);
+      : questions.filter((q) => q.domain === effectiveDomain);
     const shuffled = shuffleArray(filtered);
     setShuffledQuestions(shuffled);
     setCurrent(0);
@@ -172,13 +187,6 @@ function Quiz({ questions, showScore = false, sessionKey = "default-quiz" }) {
     setShowResult(false);
     setStartTime(Date.now());
   };
-
-  const handleQuizComplete = () => {
-    // Clear session when quiz is completed
-    clearQuizSession(sessionKey);
-  };
-
-  
 
   const progressPercent = Math.round(((current + (showResult ? 1 : 0)) / shuffledQuestions.length) * 100);
 
@@ -258,7 +266,8 @@ function Quiz({ questions, showScore = false, sessionKey = "default-quiz" }) {
             📚 Session Restored
           </div>
           <div style={{ fontSize: "0.95rem", marginBottom: 12 }}>
-            You were at question {current + 1} of {shuffledQuestions.length} ({selectedDomain})
+            You were at question {current + 1} of {shuffledQuestions.length}
+            {allowDomainFilter ? ` (${selectedDomain})` : ` in ${quizTitle}`}
           </div>
           <button
             onClick={startNewQuiz}
@@ -280,23 +289,13 @@ function Quiz({ questions, showScore = false, sessionKey = "default-quiz" }) {
       
       <div style={{ marginBottom: 24 }}>
         <div style={{ marginBottom: 8, fontWeight: 600 }}>
-          Domain: {selectedDomain} | Question {current + 1} of {shuffledQuestions.length}
+          {allowDomainFilter ? `Domain: ${selectedDomain}` : quizTitle} | Question {current + 1} of {shuffledQuestions.length}
         </div>
         <div style={{ background: "#333", borderRadius: 8, height: 12, width: "100%", marginBottom: 8, overflow: "hidden" }}>
           <div style={{ width: `${progressPercent}%`, background: "#43a047", height: "100%", borderRadius: 8, transition: "width 0.3s" }} />
         </div>
         <div style={{ fontSize: "1rem", color: "#90caf9" }}>Score: {score} / {shuffledQuestions.length}</div>
       </div>
-
-      {/* Debug logging for tier issues */}
-      {console.log('🔍 Quiz Debug:', {
-        userEmail: user?.email,
-        userTier: user?.tier,
-        isDemoUserResult: isDemoUser(user),
-        questionsLength: shuffledQuestions.length,
-        isLoading: isLoading
-      })}
-
       {/* Upgrade Prompt for Demo Users */}
       {isDemoUser(user) && (
         <UpgradePrompt
@@ -351,18 +350,20 @@ function Quiz({ questions, showScore = false, sessionKey = "default-quiz" }) {
             style={{ marginTop: 28, background: "#2196f3", color: "#fff", border: "none", padding: "14px 32px", borderRadius: 8, cursor: "pointer", fontSize: "1.08rem", fontWeight: 600, boxShadow: "0 2px 8px 0 rgba(33,150,243,0.12)" }}
             onClick={handleNext}
           >
-            {current === shuffledQuestions.length - 1 ? "Finish Domain" : "Next Question"}
+            {current === shuffledQuestions.length - 1 ? (allowDomainFilter ? "Finish Domain" : "Finish Exam") : "Next Question"}
           </button>
         </div>
       )}
-      <div style={{ marginTop: 20 }}>
-        <select value={selectedDomain} onChange={(e) => { setCurrent(0); setSelectedDomain(e.target.value); setScore(0); setIncorrect([]); }}>
-          <option value="All">All Domains</option>
-          {[...new Set(questions.map((q) => q.domain))].map((domain) => (
-            <option key={domain} value={domain}>{domain}</option>
-          ))}
-        </select>
-      </div>
+      {allowDomainFilter && (
+        <div style={{ marginTop: 20 }}>
+          <select value={selectedDomain} onChange={(e) => { setCurrent(0); setSelectedDomain(e.target.value); setScore(0); setIncorrect([]); }}>
+            <option value="All">All Domains</option>
+            {[...new Set(questions.map((q) => q.domain))].map((domain) => (
+              <option key={domain} value={domain}>{domain}</option>
+            ))}
+          </select>
+        </div>
+      )}
     </div>
   );
 }

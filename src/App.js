@@ -1,5 +1,5 @@
 import React, { useState, useEffect, Suspense, lazy } from "react";
-import { ThemeProvider, ProgressProvider, SessionProvider, AuthProvider, useTheme, useAuth } from "./contexts";
+import { ThemeProvider, ProgressProvider, SessionProvider, AuthProvider, useTheme, useAuth, AIAssistantProvider, useAIAssistant } from "./contexts";
 import { StatsProvider } from "./contexts/StatsContext";
 import ThemeToggle from "./components/ThemeToggle";
 import StudyTimer from "./components/StudyTimer";
@@ -11,6 +11,8 @@ import UserProfile from "./components/UserProfile";
 import UserDashboard from "./components/UserDashboard";
 import MobileHeader from "./components/MobileHeader";
 import MobileBottomNav from "./components/MobileBottomNav";
+import AIAssistant from "./components/AIAssistant";
+import AIAssistantButton from "./components/AIAssistantButton";
 const PricingSection = lazy(() => import("./components/PricingPage"));
 const AdminPanel = lazy(() => import("./components/AdminPanel"));
 const QuizSection = lazy(() => import("./QuizSection"));
@@ -21,6 +23,7 @@ const PracticeExamsSection = lazy(() => import("./components/PracticeExamsSectio
 function AppContent({ section, setSection }) {
   const { theme } = useTheme();
   const { user, isLoading } = useAuth();
+  const { isOpen: isAIAssistantOpen, context: aiContext, open: openAI, close: closeAI } = useAIAssistant();
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   
   // Motivational messages that rotate
@@ -191,6 +194,16 @@ function AppContent({ section, setSection }) {
           <ThemeToggle />
         </div>
       )}
+
+      {/* AI Learning Assistant */}
+      {!isAIAssistantOpen && (
+        <AIAssistantButton onClick={openAI} />
+      )}
+      <AIAssistant 
+        isOpen={isAIAssistantOpen} 
+        onClose={closeAI}
+        context={aiContext}
+      />
     </div>
   );
 }
@@ -204,7 +217,9 @@ function App() {
         <SessionProvider>
           <AuthProvider>
             <StatsProvider>
-              <AppContent section={section} setSection={setSection} />
+              <AIAssistantProvider>
+                <AppContent section={section} setSection={setSection} />
+              </AIAssistantProvider>
             </StatsProvider>
           </AuthProvider>
         </SessionProvider>
