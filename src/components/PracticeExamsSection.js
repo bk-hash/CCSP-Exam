@@ -389,6 +389,7 @@ function PracticeExamsSection() {
       ) : (
         currentExam && currentExam.questions && currentExam.questions.length > 0 ? (
           <Quiz
+            key={currentExam.id}
             questions={currentExam.questions}
             showScore={true}
             sessionKey={`practice-exam-${currentExam.id}`}

@@ -29,6 +29,8 @@ function Quiz({
   const { saveQuizSession, getQuizSession, clearQuizSession } = useSession();
   const { user, getUserLimits, isDemoUser } = useAuth();
   const { updateQuestionStats } = useStats();
+  // Track the previous questions reference so the initialization effect can detect changes
+  const prevQuestionsRef = React.useRef(questions);
 
   // Load session on component mount ONLY
   useEffect(() => {
@@ -49,12 +51,32 @@ function Quiz({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [sessionKey]); // Only depend on sessionKey
 
+  // Reset quiz progress state when the source questions change (e.g., switching exams).
+  // The sessionLoaded guard prevents overwriting session data that is being restored on
+  // initial mount (the session load effect above sets sessionLoaded=true; without this
+  // guard the reset would run in the same render cycle and wipe the restored session).
+  useEffect(() => {
+    if (!sessionLoaded) return;
+    setCurrent(0);
+    setScore(0);
+    setIncorrect([]);
+    setSelected(null);
+    setShowResult(false);
+    setStartTime(Date.now());
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [questions]);
+
   // Initialize questions when domain changes or on first load
   useEffect(() => {
     if (!sessionLoaded) return;
-    
-    // Check if we already have questions for this domain from session
-    if (shuffledQuestions.length > 0 && 
+
+    const questionsChanged = prevQuestionsRef.current !== questions;
+    prevQuestionsRef.current = questions;
+
+    // Check if we already have questions for this domain from session.
+    // Skip this guard when the questions source has changed so we always
+    // re-initialize with the new question set.
+    if (!questionsChanged && shuffledQuestions.length > 0 && 
         (selectedDomain === "All" || shuffledQuestions[0]?.domain === selectedDomain)) {
       return;
     }
